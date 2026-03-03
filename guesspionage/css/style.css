@@ -413,9 +413,11 @@ body {
   left: 0;
   right: 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 1rem 2rem;
+  gap: 0.2rem;
   background: rgba(15, 15, 26, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -427,9 +429,9 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 .hud-round {
-  font-weight: 700;
+  font-weight: 600;
   color: var(--text-secondary);
-  font-size: 1.15rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -440,7 +442,7 @@ body {
 }
 .hud-team {
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 .hud-team span { color: var(--gold); }
 
@@ -448,6 +450,7 @@ body {
 #screen-question {
   position: relative;
   overflow: hidden;
+  padding-top: 6rem;
 }
 .question-container {
   text-align: center;
