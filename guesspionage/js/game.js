@@ -13,8 +13,7 @@ const SCORING = {
     { maxDiff: 5,  points: 4000 },
     { maxDiff: 10, points: 2000 },
     { maxDiff: 15, points: 1000 },
-    { maxDiff: 25, points: 500  },
-    { maxDiff: 35, points: 500  },
+    { maxDiff: 20, points: 500 },
   ],
   HIGHER_LOWER_CORRECT: 1000
 };
