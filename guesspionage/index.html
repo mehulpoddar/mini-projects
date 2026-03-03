@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guesspionage 🕵️</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- SCREEN: Title / Landing -->
+  <div id="screen-title" class="screen active">
+    <div class="title-bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="floating-stats">
+      <span class="float-chip fc-1">🍵 80%</span>
+      <span class="float-chip fc-2">📱 96%</span>
+      <span class="float-chip fc-3">✈️ 90%</span>
+      <span class="float-chip fc-4">💸 58%</span>
+      <span class="float-chip fc-5">🥦 31%</span>
+      <span class="float-chip fc-6">💳 5%</span>
+      <span class="float-chip fc-7">🛂 6.5%</span>
+      <span class="float-chip fc-8">🎬 41%</span>
+    </div>
+    <div class="title-container">
+      <div class="title-eyebrow">🕵️ A Party Guessing Game</div>
+      <h1 class="game-title">GUESS<span class="title-accent">PIONAGE</span></h1>
+      <p class="game-subtitle">Think you know India? Prove it with numbers.</p>
+      <div class="title-rules">
+        <span>📊 Guess the %</span>
+        <span class="title-dot">·</span>
+        <span>⬆⬇ Higher or Lower</span>
+        <span class="title-dot">·</span>
+        <span>🏆 Outsmart everyone</span>
+      </div>
+      <button id="btn-start" class="btn btn-primary btn-lg btn-glow">START GAME</button>
+    </div>
+  </div>
+
+  <!-- SCREEN: Team Setup -->
+  <div id="screen-setup" class="screen">
+    <div class="screen-bg-accent"></div>
+    <div class="setup-container glass-card">
+      <div class="setup-icon">👥</div>
+      <h2>Assemble Your Teams</h2>
+      <p class="setup-hint">Name your squads (2–6 teams)</p>
+      <div id="team-inputs" class="team-inputs">
+        <div class="team-input-row">
+          <span class="team-color-dot" style="background:var(--team1)"></span>
+          <input type="text" class="team-name-input" placeholder="Team 1" maxlength="20">
+        </div>
+        <div class="team-input-row">
+          <span class="team-color-dot" style="background:var(--team2)"></span>
+          <input type="text" class="team-name-input" placeholder="Team 2" maxlength="20">
+        </div>
+      </div>
+      <div class="setup-actions">
+        <button id="btn-add-team" class="btn btn-secondary">+ Add Team</button>
+        <button id="btn-remove-team" class="btn btn-secondary btn-danger">− Remove Team</button>
+      </div>
+      <button id="btn-begin" class="btn btn-primary btn-lg btn-glow">LET'S GO!</button>
+    </div>
+  </div>
+
+  <!-- SCREEN: Question -->
+  <div id="screen-question" class="screen">
+    <div class="screen-bg-accent"></div>
+    <div class="game-hud glass-hud">
+      <div class="hud-round">Round <span id="hud-round-num">1</span> / <span id="hud-total-rounds">9</span></div>
+      <div class="hud-team">🎯 <span id="hud-active-team">Team 1</span>'s turn</div>
+    </div>
+    <div class="question-container glass-card">
+      <div class="question-icon">🤔</div>
+      <div class="category-badge" id="question-category">Food & Drink 🍵</div>
+      <h2 class="question-text" id="question-text">Loading question...</h2>
+      <button id="btn-show-guess" class="btn btn-primary btn-lg btn-glow">Ready to Guess!</button>
+    </div>
+  </div>
+
+  <!-- SCREEN: Active Team Guess -->
+  <div id="screen-guess" class="screen">
+    <div class="screen-bg-accent"></div>
+    <div class="game-hud glass-hud">
+      <div class="hud-round">Round <span id="hud-round-num2">1</span> / <span id="hud-total-rounds2">9</span></div>
+      <div class="hud-team">🎯 <span id="hud-active-team2">Team 1</span>'s guess</div>
+    </div>
+    <div class="guess-container">
+      <div class="guess-card glass-card">
+        <h3 class="guess-label">What's your guess?</h3>
+        <div class="slider-container">
+          <div class="slider-value-wrapper">
+            <div class="slider-value" id="slider-value">50%</div>
+          </div>
+          <div class="slider-track-wrapper">
+            <input type="range" id="guess-slider" min="0" max="100" value="50" class="guess-slider">
+          </div>
+          <div class="slider-labels">
+            <span>0%</span>
+            <span>50%</span>
+            <span>100%</span>
+          </div>
+        </div>
+      </div>
+      <button id="btn-lock-guess" class="btn btn-primary btn-lg btn-glow">🔒 LOCK IN GUESS</button>
+    </div>
+  </div>
+
+  <!-- SCREEN: Higher / Lower Voting -->
+  <div id="screen-vote" class="screen">
+    <div class="screen-bg-accent"></div>
+    <div class="game-hud glass-hud">
+      <div class="hud-round">Round <span id="hud-round-num3">1</span> / <span id="hud-total-rounds3">9</span></div>
+      <div class="hud-team">⚡ Other teams vote!</div>
+    </div>
+    <div class="vote-container">
+      <div class="vote-context glass-card">
+        <p><span id="vote-team-name">Team 1</span> guessed</p>
+        <div class="vote-guess-display" id="vote-guess-display">50%</div>
+        <div class="vote-prompt">Is the real answer higher or lower?</div>
+      </div>
+      <div id="vote-teams" class="vote-teams"></div>
+      <button id="btn-reveal" class="btn btn-primary btn-lg btn-glow">🎯 REVEAL ANSWER</button>
+    </div>
+  </div>
+
+  <!-- SCREEN: Answer Reveal -->
+  <div id="screen-reveal" class="screen">
+    <div class="screen-bg-accent"></div>
+    <div class="reveal-container">
+      <div class="reveal-question" id="reveal-question">Question text here</div>
+      <div class="reveal-numbers">
+        <div class="reveal-guess-block glass-card">
+          <div class="reveal-label">Your Guess</div>
+          <div class="reveal-number" id="reveal-guess">50%</div>
+        </div>
+        <div class="reveal-vs-badge">VS</div>
+        <div class="reveal-answer-block glass-card">
+          <div class="reveal-label">Actual Answer</div>
+          <div class="reveal-number reveal-actual" id="reveal-answer">80%</div>
+        </div>
+      </div>
+      <div class="reveal-bar-container">
+        <div class="reveal-bar">
+          <div class="reveal-bar-guess" id="reveal-bar-guess"></div>
+          <div class="reveal-bar-answer" id="reveal-bar-answer"></div>
+          <div class="reveal-bar-marker-guess" id="reveal-bar-marker-guess"></div>
+          <div class="reveal-bar-marker-answer" id="reveal-bar-marker-answer"></div>
+        </div>
+        <div class="reveal-bar-labels">
+          <span>0%</span>
+          <span>100%</span>
+        </div>
+      </div>
+      <div class="fun-fact-card glass-card" id="fun-fact-card">
+        <div class="fun-fact-title">💡 Fun Fact</div>
+        <p id="fun-fact-text">Fun fact goes here...</p>
+        <p class="fun-fact-source" id="fun-fact-source"></p>
+      </div>
+      <div class="round-scores" id="round-scores"></div>
+      <button id="btn-next-round" class="btn btn-primary btn-lg btn-glow">Next Round →</button>
+    </div>
+  </div>
+
+  <!-- SCREEN: Scoreboard (between rounds) -->
+  <div id="screen-scoreboard" class="screen">
+    <div class="screen-bg-accent"></div>
+    <div class="scoreboard-container">
+      <div class="scoreboard-trophy">🏆</div>
+      <h2 class="scoreboard-title">Leaderboard</h2>
+      <div class="scoreboard-divider"></div>
+      <div id="scoreboard-list" class="scoreboard-list"></div>
+      <button id="btn-continue" class="btn btn-primary btn-lg btn-glow">Continue →</button>
+    </div>
+  </div>
+
+  <!-- SCREEN: Final Results -->
+  <div id="screen-final" class="screen">
+    <div class="screen-bg-accent"></div>
+    <div class="final-container">
+      <div class="confetti-wrapper" id="confetti-wrapper"></div>
+      <div class="final-trophy">👑</div>
+      <h2 class="final-title">Game Over!</h2>
+      <div class="final-winner" id="final-winner">Team X wins!</div>
+      <div class="final-divider"></div>
+      <div id="final-scoreboard" class="scoreboard-list"></div>
+      <button id="btn-play-again" class="btn btn-primary btn-lg btn-glow">Play Again 🔄</button>
+    </div>
+  </div>
+
+  <script src="js/questions.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
