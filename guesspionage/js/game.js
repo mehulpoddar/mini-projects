@@ -5,7 +5,7 @@ const TEAM_COLORS = [
   'var(--team4)', 'var(--team5)', 'var(--team6)'
 ];
 
-const MAX_QUESTIONS = 2;
+const MAX_QUESTIONS = 18;
 
 const SCORING = {
   GUESS_TIERS: [
