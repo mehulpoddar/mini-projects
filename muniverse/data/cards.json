@@ -1,0 +1,814 @@
+{
+  "universes": [
+    "The Bad Boy's Girl",
+    "Me Before You",
+    "Shinchan",
+    "Harry Potter",
+    "Disney Cars",
+    "Pokémon",
+    "Mario"
+  ],
+  "categories": [
+    "magic_and_mystery",
+    "power_and_action",
+    "mind_and_mischief",
+    "heart_and_soul",
+    "luck_and_destiny"
+  ],
+  "stat_caps": {
+    "standard": {
+      "min": 200,
+      "max": 220
+    },
+    "full_art_rare": {
+      "min": 230,
+      "max": 240
+    }
+  },
+  "cards": [
+    {
+      "id": "bbg-001",
+      "title": "The Doorstep Collision",
+      "universe": "The Bad Boy's Girl",
+      "rarity": "standard",
+      "art_description": "Tessa swings open her front door and nearly crashes into Cole, who leans against the frame with a lazy smirk. Grocery bags slip from her arms. Warm suburban afternoon light, porch steps, autumn leaves scattered on the ground.",
+      "flavor_text": "Of all the doors in all the suburbs...",
+      "stats": {
+        "magic_and_mystery": 25,
+        "power_and_action": 25,
+        "mind_and_mischief": 45,
+        "heart_and_soul": 40,
+        "luck_and_destiny": 75
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "bbg-002",
+      "title": "Paint War",
+      "universe": "The Bad Boy's Girl",
+      "rarity": "standard",
+      "art_description": "Cole and Tessa mid-paint fight in a sun-drenched backyard. Both splattered head-to-toe in every color — Tessa winds up for a throw while Cole shields himself with a paint tray, both laughing breathlessly. A half-painted fence behind them.",
+      "flavor_text": "It started with 'you missed a spot.'",
+      "stats": {
+        "magic_and_mystery": 10,
+        "power_and_action": 70,
+        "mind_and_mischief": 50,
+        "heart_and_soul": 40,
+        "luck_and_destiny": 35
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "bbg-003",
+      "title": "One Punch",
+      "universe": "The Bad Boy's Girl",
+      "rarity": "standard",
+      "art_description": "Cole's fist connects with Jay's jaw in a school hallway. Motion blur on the punch, Jay reeling backward. Tessa stands behind Cole, eyes wide. Harsh fluorescent lighting, scattered papers in the air.",
+      "flavor_text": "He didn't need to be asked.",
+      "stats": {
+        "magic_and_mystery": 5,
+        "power_and_action": 88,
+        "mind_and_mischief": 15,
+        "heart_and_soul": 60,
+        "luck_and_destiny": 42
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "bbg-004",
+      "title": "Dinner Table Destruction",
+      "universe": "The Bad Boy's Girl",
+      "rarity": "standard",
+      "art_description": "Family dinner scene. Tessa sits across from Cole at a crowded table, gesturing mid-roast with a fork. Cole's expression is stunned. The rest of the family frozen mid-chew. Warm dining room lighting, food spread across the table.",
+      "flavor_text": "Pass the salt. And your dignity.",
+      "stats": {
+        "magic_and_mystery": 5,
+        "power_and_action": 10,
+        "mind_and_mischief": 90,
+        "heart_and_soul": 30,
+        "luck_and_destiny": 70
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "bbg-005",
+      "title": "Midnight Ride",
+      "universe": "The Bad Boy's Girl",
+      "rarity": "standard",
+      "art_description": "Cole's motorcycle carving through empty city streets at night. Tessa holds on tight behind him, hair whipping in the wind. Neon signs and streetlights streak past in long exposure trails. Cool blue and pink neon glow on wet asphalt.",
+      "flavor_text": "No helmets. No plan. No regrets.",
+      "stats": {
+        "magic_and_mystery": 25,
+        "power_and_action": 55,
+        "mind_and_mischief": 30,
+        "heart_and_soul": 45,
+        "luck_and_destiny": 55
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "bbg-006",
+      "title": "Breaking Free",
+      "universe": "The Bad Boy's Girl",
+      "rarity": "standard",
+      "art_description": "Tessa stands in a living room doorway, fists clenched at her sides, facing her mother who sits rigid in an armchair. Tension visible in their postures. Late afternoon light through blinds casting long shadows across the room.",
+      "flavor_text": "I am not your project.",
+      "stats": {
+        "magic_and_mystery": 10,
+        "power_and_action": 40,
+        "mind_and_mischief": 55,
+        "heart_and_soul": 75,
+        "luck_and_destiny": 25
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "bbg-007",
+      "title": "Stars and Confessions",
+      "universe": "The Bad Boy's Girl",
+      "rarity": "full_art_rare",
+      "art_description": "Cole and Tessa on a rooftop at night. City lights spread below them like a second sky. Cole faces Tessa, hands in his jacket pockets, finally vulnerable. Stars above, warm string lights nearby. Intimate, cinematic composition with the cityscape stretching to the horizon.",
+      "flavor_text": "I'm not good at this. But I'm good at you.",
+      "stats": {
+        "magic_and_mystery": 40,
+        "power_and_action": 10,
+        "mind_and_mischief": 25,
+        "heart_and_soul": 95,
+        "luck_and_destiny": 65
+      },
+      "stat_total": 235
+    },
+    {
+      "id": "mbv-001",
+      "title": "The Worst First Day",
+      "universe": "Me Before You",
+      "rarity": "standard",
+      "art_description": "Lou Clark stands in a doorway wearing a bright polka-dot dress and red cardigan, smile frozen. Will Traynor sits in his wheelchair across the room, expression icy and dismissive. Grand but cold living room. Stark contrast between her color and his grey world.",
+      "flavor_text": "You're not what I expected either.",
+      "stats": {
+        "magic_and_mystery": 5,
+        "power_and_action": 15,
+        "mind_and_mischief": 55,
+        "heart_and_soul": 65,
+        "luck_and_destiny": 60
+      },
+      "stat_total": 200
+    },
+    {
+      "id": "mbv-002",
+      "title": "Betting on Thunder",
+      "universe": "Me Before You",
+      "rarity": "standard",
+      "art_description": "Lou leaps from her seat at a horse racing track, fists in the air, screaming at the top of her lungs. Tickets flying everywhere. Will beside her in his wheelchair, genuinely surprised, the ghost of a smile breaking through. Crowded grandstand, golden afternoon light.",
+      "flavor_text": "Number seven! NUMBER SEVEN!",
+      "stats": {
+        "magic_and_mystery": 20,
+        "power_and_action": 35,
+        "mind_and_mischief": 30,
+        "heart_and_soul": 35,
+        "luck_and_destiny": 90
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "mbv-003",
+      "title": "Concert in the Rain",
+      "universe": "Me Before You",
+      "rarity": "standard",
+      "art_description": "Lou and Will sit outside a jazz bar in the rain, sharing a single pair of earphones. Rain streaks the awning above. Warm amber light from the bar window. Both lost in the music, eyes closed. Puddles reflecting streetlights around them.",
+      "flavor_text": "He gave her a world she didn't know existed.",
+      "stats": {
+        "magic_and_mystery": 45,
+        "power_and_action": 10,
+        "mind_and_mischief": 35,
+        "heart_and_soul": 70,
+        "luck_and_destiny": 50
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "mbv-004",
+      "title": "Bumblebee Tights",
+      "universe": "Me Before You",
+      "rarity": "standard",
+      "art_description": "Lou strides into the room wearing bold black-and-yellow striped bumblebee tights with a clashing outfit. Will, caught off guard, is mid-laugh — real, unguarded laughter for the first time. Bright morning light flooding through tall windows.",
+      "flavor_text": "She dressed like no one was watching. Everyone was.",
+      "stats": {
+        "magic_and_mystery": 10,
+        "power_and_action": 15,
+        "mind_and_mischief": 65,
+        "heart_and_soul": 75,
+        "luck_and_destiny": 45
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "mbv-005",
+      "title": "The Castle Birthday",
+      "universe": "Me Before You",
+      "rarity": "standard",
+      "art_description": "Will's birthday celebration on the grounds of a medieval castle. Bunting and candles on a stone table. Lou arranges everything while Will watches from his chair, castle towers rising behind them. Golden hour, pastoral English countryside.",
+      "flavor_text": "For one afternoon, the chair was invisible.",
+      "stats": {
+        "magic_and_mystery": 35,
+        "power_and_action": 20,
+        "mind_and_mischief": 50,
+        "heart_and_soul": 60,
+        "luck_and_destiny": 40
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "mbv-006",
+      "title": "The Rainy Ultimatum",
+      "universe": "Me Before You",
+      "rarity": "standard",
+      "art_description": "Lou and Will face each other in a dimly lit room, rain hammering the windows behind them. Lou's face is streaked with tears, hands trembling. Will is resolute but breaking. Dark moody lighting with rain-shadow patterns on the walls.",
+      "flavor_text": "You can change your mind. You just won't.",
+      "stats": {
+        "magic_and_mystery": 10,
+        "power_and_action": 45,
+        "mind_and_mischief": 40,
+        "heart_and_soul": 85,
+        "luck_and_destiny": 25
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "mbv-007",
+      "title": "The Last Shore",
+      "universe": "Me Before You",
+      "rarity": "full_art_rare",
+      "art_description": "Will and Lou at the beach. She holds his hand as waves wash over the shore. Sunset paints everything in amber and rose. His wheelchair tracks lead through the sand behind them. She smiles because she promised she would. The sea stretches endlessly, the sky ablaze with color. Painterly, deeply emotional composition.",
+      "flavor_text": "Live boldly. Push yourself. Don't settle.",
+      "stats": {
+        "magic_and_mystery": 50,
+        "power_and_action": 5,
+        "mind_and_mischief": 20,
+        "heart_and_soul": 98,
+        "luck_and_destiny": 62
+      },
+      "stat_total": 235
+    },
+    {
+      "id": "sc-001",
+      "title": "The Elephant Dance",
+      "universe": "Shinchan",
+      "rarity": "standard",
+      "art_description": "Shinchan stands on a coffee table performing his infamous elephant dance, underwear on his head. Misae lunges toward him in fury while Hiroshi hides behind a newspaper. Living room in chaos, toys scattered everywhere. Bright exaggerated anime energy.",
+      "flavor_text": "Zou-san! Zou-san!",
+      "stats": {
+        "magic_and_mystery": 5,
+        "power_and_action": 60,
+        "mind_and_mischief": 80,
+        "heart_and_soul": 10,
+        "luck_and_destiny": 55
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "sc-002",
+      "title": "Action Kamen Fantasy",
+      "universe": "Shinchan",
+      "rarity": "standard",
+      "art_description": "Shinchan reimagines himself as Action Kamen's sidekick, leaping through an explosion in full superhero costume. The fantasy bleeds into his living room — the wall cracks with imagined impact. Bold action lines, dramatic poses, over-the-top effects.",
+      "flavor_text": "In his mind, he already saved the world.",
+      "stats": {
+        "magic_and_mystery": 70,
+        "power_and_action": 65,
+        "mind_and_mischief": 25,
+        "heart_and_soul": 15,
+        "luck_and_destiny": 30
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "sc-003",
+      "title": "Snack Negotiation",
+      "universe": "Shinchan",
+      "rarity": "standard",
+      "art_description": "Shinchan sits cross-legged on a supermarket floor, arms folded, negotiating with Misae who towers above him holding a shopping basket. Other shoppers stare. A pyramid of Chocobi snack boxes stacked behind him like a fortress. Fluorescent store lighting.",
+      "flavor_text": "Final offer: two boxes and a juice.",
+      "stats": {
+        "magic_and_mystery": 15,
+        "power_and_action": 10,
+        "mind_and_mischief": 95,
+        "heart_and_soul": 20,
+        "luck_and_destiny": 70
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "sc-004",
+      "title": "Kazama's Study Sabotage",
+      "universe": "Shinchan",
+      "rarity": "standard",
+      "art_description": "Kazama sits at his desk surrounded by textbooks with a look of existential crisis. Shinchan hangs upside down from the window behind him making funny faces. Papers flutter through the air. Kazama's perfectly organized desk descending into chaos.",
+      "flavor_text": "I was top of the class until you moved in.",
+      "stats": {
+        "magic_and_mystery": 5,
+        "power_and_action": 30,
+        "mind_and_mischief": 85,
+        "heart_and_soul": 25,
+        "luck_and_destiny": 55
+      },
+      "stat_total": 200
+    },
+    {
+      "id": "sc-005",
+      "title": "Nohara Road Trip",
+      "universe": "Shinchan",
+      "rarity": "standard",
+      "art_description": "The Nohara family car packed to bursting, driving down a countryside highway. Shinchan presses his face against the rear window. Misae argues with Hiroshi over a map. Shiro rides on the roof rack. Bags falling off. Sunny day, green rice fields on both sides.",
+      "flavor_text": "Are we there yet? Are we there yet? Are we—",
+      "stats": {
+        "magic_and_mystery": 15,
+        "power_and_action": 50,
+        "mind_and_mischief": 45,
+        "heart_and_soul": 50,
+        "luck_and_destiny": 55
+      },
+      "stat_total": 215
+    },
+    {
+      "id": "sc-006",
+      "title": "Himawari's First Smile",
+      "universe": "Shinchan",
+      "rarity": "full_art_rare",
+      "art_description": "Newborn Himawari lies in Misae's arms in the hospital. The entire Nohara family crowds around — Shinchan on tiptoe, Hiroshi with tears streaming, grandparents in the doorway. Himawari smiles for the first time. Soft golden hospital light, warmth radiating from every face. Tender, intimate, every detail glowing.",
+      "flavor_text": "The littlest Nohara stole every heart in the room.",
+      "stats": {
+        "magic_and_mystery": 30,
+        "power_and_action": 5,
+        "mind_and_mischief": 10,
+        "heart_and_soul": 100,
+        "luck_and_destiny": 90
+      },
+      "stat_total": 235
+    },
+    {
+      "id": "sc-007",
+      "title": "Running Through Time",
+      "universe": "Shinchan",
+      "rarity": "full_art_rare",
+      "art_description": "Young adult Shinchan sprinting through a collapsing time corridor, reaching desperately for his father's hand. Behind them the Adult Empire's monochrome world crumbles. Ahead, color and life bloom. Wind tearing at their clothes, tears streaming, determination in Shinchan's eyes. Epic scale, swirling temporal energy.",
+      "flavor_text": "He ran because tomorrow needed his dad in it.",
+      "stats": {
+        "magic_and_mystery": 85,
+        "power_and_action": 70,
+        "mind_and_mischief": 30,
+        "heart_and_soul": 50,
+        "luck_and_destiny": 5
+      },
+      "stat_total": 240
+    },
+    {
+      "id": "hp-001",
+      "title": "Hermione Punches Draco",
+      "universe": "Harry Potter",
+      "rarity": "standard",
+      "art_description": "Hermione's fist connects squarely with Draco's jaw by the lake near Hagrid's hut. Draco stumbles backward in shock. Ron and Harry stand behind Hermione with stunned expressions. Hogwarts grounds, overcast sky, the Black Lake shimmering.",
+      "flavor_text": "That felt good.",
+      "stats": {
+        "magic_and_mystery": 5,
+        "power_and_action": 85,
+        "mind_and_mischief": 40,
+        "heart_and_soul": 30,
+        "luck_and_destiny": 45
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "hp-002",
+      "title": "The Sorting Hat",
+      "universe": "Harry Potter",
+      "rarity": "standard",
+      "art_description": "A small Harry Potter sits on the stool in the Great Hall, the enormous Sorting Hat draped over his eyes. Hundreds of candles float overhead. The four house tables stretch into the distance. The Hat's brim moves as it deliberates. Warm candlelight, gothic grandeur.",
+      "flavor_text": "Not Slytherin... not Slytherin...",
+      "stats": {
+        "magic_and_mystery": 90,
+        "power_and_action": 5,
+        "mind_and_mischief": 30,
+        "heart_and_soul": 35,
+        "luck_and_destiny": 50
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "hp-003",
+      "title": "Fred & George's Grand Exit",
+      "universe": "Harry Potter",
+      "rarity": "standard",
+      "art_description": "Fred and George soar on broomsticks through the Hogwarts entrance hall, fireworks exploding behind them in dragons and starbursts. Umbridge stands below, covered in soot, mouth agape. Students cheer from every balcony. Brilliant pyrotechnic colors against stone corridors.",
+      "flavor_text": "Give her hell from us, Peeves.",
+      "stats": {
+        "magic_and_mystery": 70,
+        "power_and_action": 35,
+        "mind_and_mischief": 65,
+        "heart_and_soul": 10,
+        "luck_and_destiny": 30
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "hp-004",
+      "title": "Dumbledore's Army Training",
+      "universe": "Harry Potter",
+      "rarity": "standard",
+      "art_description": "The Room of Requirement filled with students practicing spells. Patronuses leap through the air — a stag, an otter, a terrier. Harry stands at the center, wand raised, teaching. Mirrors line the walls, cushions on the floor. Silver-blue patronus light fills the room.",
+      "flavor_text": "Every great wizard started as a student.",
+      "stats": {
+        "magic_and_mystery": 55,
+        "power_and_action": 50,
+        "mind_and_mischief": 60,
+        "heart_and_soul": 25,
+        "luck_and_destiny": 15
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "hp-005",
+      "title": "Neville vs Voldemort",
+      "universe": "Harry Potter",
+      "rarity": "standard",
+      "art_description": "Neville stands alone before Voldemort's army, the burning Sorting Hat on his head. He reaches in and draws the sword of Gryffindor, blade gleaming. Hogwarts burns behind him. Death Eaters recoil. Dawn light breaking through smoke.",
+      "flavor_text": "I'll join you when hell freezes over.",
+      "stats": {
+        "magic_and_mystery": 35,
+        "power_and_action": 70,
+        "mind_and_mischief": 20,
+        "heart_and_soul": 45,
+        "luck_and_destiny": 50
+      },
+      "stat_total": 220
+    },
+    {
+      "id": "hp-006",
+      "title": "After All This Time",
+      "universe": "Harry Potter",
+      "rarity": "full_art_rare",
+      "art_description": "Snape's memories swirl in the Pensieve. Young Snape and young Lily stand in a sunlit meadow, her red hair catching the wind. The scene dissolves at the edges into silver memory-mist. Dumbledore's office surrounds the Pensieve, dark and somber. A single silver doe patronus emerges from the mist. Achingly beautiful, bittersweet light.",
+      "flavor_text": "Always.",
+      "stats": {
+        "magic_and_mystery": 60,
+        "power_and_action": 5,
+        "mind_and_mischief": 15,
+        "heart_and_soul": 100,
+        "luck_and_destiny": 55
+      },
+      "stat_total": 235
+    },
+    {
+      "id": "hp-007",
+      "title": "The Walk to Death",
+      "universe": "Harry Potter",
+      "rarity": "full_art_rare",
+      "art_description": "Harry walks alone through the Forbidden Forest at night, the Resurrection Stone in his hand. The ghostly figures of his parents, Sirius, and Lupin walk beside him, translucent and glowing. The forest is dark and ancient, shafts of moonlight breaking through. His expression is calm, resolved. Monumental, solemn, sacred.",
+      "flavor_text": "The last enemy that shall be destroyed is death.",
+      "stats": {
+        "magic_and_mystery": 80,
+        "power_and_action": 15,
+        "mind_and_mischief": 45,
+        "heart_and_soul": 60,
+        "luck_and_destiny": 40
+      },
+      "stat_total": 240
+    },
+    {
+      "id": "dc-001",
+      "title": "Crash into Radiator Springs",
+      "universe": "Disney Cars",
+      "rarity": "standard",
+      "art_description": "Lightning McQueen tangled in power lines and road, having torn up the main street of a sleepy Route 66 town. Dust cloud settles. Broken asphalt, knocked-over traffic cones. The neon signs of Radiator Springs flicker in the desert dusk. Mater watches from behind a fence.",
+      "flavor_text": "I'm a precision instrument of speed and aerodynamics... stuck in a fence.",
+      "stats": {
+        "magic_and_mystery": 35,
+        "power_and_action": 70,
+        "mind_and_mischief": 20,
+        "heart_and_soul": 20,
+        "luck_and_destiny": 65
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "dc-002",
+      "title": "Paving the Road",
+      "universe": "Disney Cars",
+      "rarity": "standard",
+      "art_description": "McQueen attached to Bessie the road paver, grudgingly dragging fresh asphalt down the main road. Residents of Radiator Springs watch from their shops. The road behind him gleams smooth and black while ahead it's cracked and ruined. Hot desert sun, mirage shimmer.",
+      "flavor_text": "The road to redemption is freshly paved.",
+      "stats": {
+        "magic_and_mystery": 10,
+        "power_and_action": 65,
+        "mind_and_mischief": 35,
+        "heart_and_soul": 55,
+        "luck_and_destiny": 40
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "dc-003",
+      "title": "Mater's Backward Driving",
+      "universe": "Disney Cars",
+      "rarity": "standard",
+      "art_description": "Mater drives backward at full speed through a dirt field at night, headlights off, grinning maniacally. McQueen follows in his lane, terrified, eyes wide as saucers. Dust trails spiral behind them. Moonlit desert landscape, cacti silhouettes.",
+      "flavor_text": "Don't need to see where I'm goin'. Just need to know where I've been.",
+      "stats": {
+        "magic_and_mystery": 10,
+        "power_and_action": 55,
+        "mind_and_mischief": 75,
+        "heart_and_soul": 15,
+        "luck_and_destiny": 55
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "dc-004",
+      "title": "Doc Hudson's Secret",
+      "universe": "Disney Cars",
+      "rarity": "standard",
+      "art_description": "McQueen discovers Doc Hudson's trophy room hidden behind a garage wall — three Piston Cups gleaming in dusty display cases. Newspaper clippings of a devastating crash cover the opposite wall. Doc stands in the doorway, caught. Dramatic chiaroscuro lighting, dust motes.",
+      "flavor_text": "The racing world forgot him. He made sure of it.",
+      "stats": {
+        "magic_and_mystery": 65,
+        "power_and_action": 35,
+        "mind_and_mischief": 50,
+        "heart_and_soul": 35,
+        "luck_and_destiny": 20
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "dc-005",
+      "title": "Pit Stop Disaster",
+      "universe": "Disney Cars",
+      "rarity": "standard",
+      "art_description": "McQueen's pit crew scrambles in chaos during the Dinoco 400 — tires rolling away, fuel spraying, a bolt pinging off the camera. McQueen waits on the track, fuming. The stadium crowd watches in horror. Motion blur, sparks, utter pandemonium.",
+      "flavor_text": "In. Out. How hard could it possibly be?",
+      "stats": {
+        "magic_and_mystery": 5,
+        "power_and_action": 70,
+        "mind_and_mischief": 40,
+        "heart_and_soul": 10,
+        "luck_and_destiny": 85
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "dc-006",
+      "title": "Chick's Dirty Bump",
+      "universe": "Disney Cars",
+      "rarity": "standard",
+      "art_description": "Chick Hicks rams The King from behind on the final lap, sending him spinning toward the wall. Sparks fly from metal-on-metal contact. The crowd gasps. The track bends ahead. Aggressive low angle, speed lines, tire smoke.",
+      "flavor_text": "Second place is just first loser.",
+      "stats": {
+        "magic_and_mystery": 10,
+        "power_and_action": 75,
+        "mind_and_mischief": 80,
+        "heart_and_soul": 5,
+        "luck_and_destiny": 45
+      },
+      "stat_total": 215
+    },
+    {
+      "id": "dc-007",
+      "title": "Pushing The King Home",
+      "universe": "Disney Cars",
+      "rarity": "full_art_rare",
+      "art_description": "McQueen stops inches from the finish line and reverses to push the battered, crumpled King across instead. The massive Dinoco 400 stadium is silent, then erupts. Chick Hicks crosses first but no one watches him. Sunset floods the track. An act of pure sportsmanship. Epic wide shot, crowd on their feet.",
+      "flavor_text": "He already won the only race that mattered.",
+      "stats": {
+        "magic_and_mystery": 30,
+        "power_and_action": 50,
+        "mind_and_mischief": 10,
+        "heart_and_soul": 85,
+        "luck_and_destiny": 60
+      },
+      "stat_total": 235
+    },
+    {
+      "id": "pk-001",
+      "title": "Pikachu Refuses the Pokéball",
+      "universe": "Pokémon",
+      "rarity": "standard",
+      "art_description": "Ash holds out a Pokéball on a dirt road outside Pallet Town. Pikachu sits defiantly, turning away with folded arms. Professor Oak's lab visible in the background. Morning light, the beginning of everything. Pikachu's cheeks spark slightly with annoyance.",
+      "flavor_text": "This one chooses its own terms.",
+      "stats": {
+        "magic_and_mystery": 60,
+        "power_and_action": 15,
+        "mind_and_mischief": 40,
+        "heart_and_soul": 65,
+        "luck_and_destiny": 25
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "pk-002",
+      "title": "Magikarp Evolves",
+      "universe": "Pokémon",
+      "rarity": "standard",
+      "art_description": "A Magikarp glows white-hot mid-evolution, water exploding upward from a lake. The outline of Gyarados begins to form — massive, serpentine, terrifying. Trainers on the shore stumble backward. Blinding light, churning water, raw transformation energy.",
+      "flavor_text": "They laughed at the fish. They're not laughing now.",
+      "stats": {
+        "magic_and_mystery": 90,
+        "power_and_action": 65,
+        "mind_and_mischief": 5,
+        "heart_and_soul": 10,
+        "luck_and_destiny": 40
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "pk-003",
+      "title": "Team Rocket Blasts Off",
+      "universe": "Pokémon",
+      "rarity": "standard",
+      "art_description": "Jessie, James, and Meowth launched into the sky by a Thunderbolt, their hot air balloon disintegrating around them. They spin into the distance as a star twinkles. Pikachu stands below, cheeks sparking, satisfied. Blue sky, contrail of smoke.",
+      "flavor_text": "Looks like Team Rocket's blasting off again!",
+      "stats": {
+        "magic_and_mystery": 35,
+        "power_and_action": 55,
+        "mind_and_mischief": 70,
+        "heart_and_soul": 5,
+        "luck_and_destiny": 40
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "pk-004",
+      "title": "Misty's Goodbye",
+      "universe": "Pokémon",
+      "rarity": "standard",
+      "art_description": "Misty stands on one side of a wooden bridge, Ash on the other. She holds her bike — finally fixed — but neither moves to leave. Brock waits awkwardly in the background. Late afternoon, river flowing beneath, autumn leaves falling.",
+      "flavor_text": "The bike was just an excuse to stay.",
+      "stats": {
+        "magic_and_mystery": 25,
+        "power_and_action": 10,
+        "mind_and_mischief": 40,
+        "heart_and_soul": 75,
+        "luck_and_destiny": 50
+      },
+      "stat_total": 200
+    },
+    {
+      "id": "pk-005",
+      "title": "Ash vs Gary",
+      "universe": "Pokémon",
+      "rarity": "standard",
+      "art_description": "Ash's Charizard and Gary's Blastoise clash in the Silver Conference stadium. Fire and water collide in a massive steam explosion at center field. Both trainers call commands from their boxes. Scoreboard shows they're tied. Packed stadium, floodlights, electric atmosphere.",
+      "flavor_text": "This wasn't about badges. It was about everything.",
+      "stats": {
+        "magic_and_mystery": 50,
+        "power_and_action": 80,
+        "mind_and_mischief": 55,
+        "heart_and_soul": 10,
+        "luck_and_destiny": 15
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "pk-006",
+      "title": "Tears of Stone",
+      "universe": "Pokémon",
+      "rarity": "full_art_rare",
+      "art_description": "Pikachu stands on the chest of Ash, turned to stone by crossfire between Mew and Mewtwo. Pikachu's cheeks spark desperately, sending Thunderbolts into Ash's stone form. Nothing works. Tears roll down Pikachu's face. All the Pokémon begin to cry, their tears glowing and floating upward. The stone begins to crack with golden light. Cathedral-like stadium space, deeply emotional.",
+      "flavor_text": "Every tear carried a wish.",
+      "stats": {
+        "magic_and_mystery": 95,
+        "power_and_action": 15,
+        "mind_and_mischief": 10,
+        "heart_and_soul": 75,
+        "luck_and_destiny": 40
+      },
+      "stat_total": 235
+    },
+    {
+      "id": "pk-007",
+      "title": "Charizard's Redemption",
+      "universe": "Pokémon",
+      "rarity": "full_art_rare",
+      "art_description": "Charizard roars and unleashes a full-power Flamethrower in the Charific Valley, defending Ash against a wild Charizard twice its size. Fire engulfs the canyon walls. For the first time, Charizard fights not for pride but for its trainer. Volcanic landscape, intense heat shimmer, molten determination in Charizard's eyes.",
+      "flavor_text": "He finally fought for someone other than himself.",
+      "stats": {
+        "magic_and_mystery": 80,
+        "power_and_action": 75,
+        "mind_and_mischief": 30,
+        "heart_and_soul": 20,
+        "luck_and_destiny": 30
+      },
+      "stat_total": 235
+    },
+    {
+      "id": "mar-001",
+      "title": "First Goomba Stomp",
+      "universe": "Mario",
+      "rarity": "standard",
+      "art_description": "Mario leaps high above a Goomba in World 1-1, one foot extended for the iconic stomp. Brick blocks and question mark blocks frame the scene. Green pipes, blue sky, pixel-perfect hills rendered in lush illustration style. Pure kinetic energy.",
+      "flavor_text": "Every hero starts with a single stomp.",
+      "stats": {
+        "magic_and_mystery": 70,
+        "power_and_action": 65,
+        "mind_and_mischief": 30,
+        "heart_and_soul": 10,
+        "luck_and_destiny": 30
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "mar-002",
+      "title": "Bowser Kidnaps Peach",
+      "universe": "Mario",
+      "rarity": "standard",
+      "art_description": "Bowser's airship descends on Peach's castle, his massive claw reaching through a shattered stained-glass window to grab Princess Peach. Toads scatter in panic. Fire rains from the sky. The Mushroom Kingdom burns in the background. Dark clouds rolling in.",
+      "flavor_text": "Your princess is in another castle. Again.",
+      "stats": {
+        "magic_and_mystery": 60,
+        "power_and_action": 55,
+        "mind_and_mischief": 40,
+        "heart_and_soul": 40,
+        "luck_and_destiny": 10
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "mar-003",
+      "title": "Star Power",
+      "universe": "Mario",
+      "rarity": "standard",
+      "art_description": "Mario grabs a Super Star from a glowing question block and erupts in rainbow invincibility. His body flashes through every color as he sprints through a gauntlet of enemies, all bouncing away on contact. Trail of sparkles, speed lines, pure euphoria. Vibrant explosive color.",
+      "flavor_text": "Ten seconds of being absolutely untouchable.",
+      "stats": {
+        "magic_and_mystery": 100,
+        "power_and_action": 45,
+        "mind_and_mischief": 30,
+        "heart_and_soul": 10,
+        "luck_and_destiny": 25
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "mar-004",
+      "title": "Luigi's Haunted Mansion",
+      "universe": "Mario",
+      "rarity": "standard",
+      "art_description": "Luigi creeps through a dark Victorian mansion hallway, Poltergust 3000 strapped to his back, flashlight trembling in his hand. Ghosts peek from behind curtains and doorframes. A massive portrait's eyes follow him. Green glow from flashlight, purple shadows, cobwebs everywhere.",
+      "flavor_text": "M-M-Mario? Is that you?",
+      "stats": {
+        "magic_and_mystery": 90,
+        "power_and_action": 30,
+        "mind_and_mischief": 55,
+        "heart_and_soul": 20,
+        "luck_and_destiny": 10
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "mar-005",
+      "title": "Barrel Jumping",
+      "universe": "Mario",
+      "rarity": "standard",
+      "art_description": "Mario leaps between rolling barrels on steel girders high above a construction site. Donkey Kong beats his chest at the top, Pauline calling for help beside him. Barrels cascade down ramps. Industrial setting, dramatic height, retro arcade energy rendered in rich detail.",
+      "flavor_text": "Jump. Climb. Repeat. Don't look down.",
+      "stats": {
+        "magic_and_mystery": 50,
+        "power_and_action": 70,
+        "mind_and_mischief": 50,
+        "heart_and_soul": 25,
+        "luck_and_destiny": 10
+      },
+      "stat_total": 205
+    },
+    {
+      "id": "mar-006",
+      "title": "Rainbow Road",
+      "universe": "Mario",
+      "rarity": "standard",
+      "art_description": "Mario's kart drifts around a hairpin turn on Rainbow Road — a luminous track suspended in deep space. Stars, galaxies, and nebulae surround the track. No guardrails. The track curves impossibly into the cosmic distance. Vibrant prismatic colors against the void of space. Vertigo-inducing perspective.",
+      "flavor_text": "One wrong turn and you're orbiting Jupiter.",
+      "stats": {
+        "magic_and_mystery": 85,
+        "power_and_action": 60,
+        "mind_and_mischief": 55,
+        "heart_and_soul": 5,
+        "luck_and_destiny": 5
+      },
+      "stat_total": 210
+    },
+    {
+      "id": "mar-007",
+      "title": "Flying Through the Cosmos",
+      "universe": "Mario",
+      "rarity": "full_art_rare",
+      "art_description": "Mario and Peach soar hand-in-hand through a cosmic sky filled with stars, comets, and tiny planetoids. The Comet Observatory glows in the distance. Rosalina's Lumas dance around them as trails of stardust follow their path. Below, the Mushroom Kingdom is a tiny jewel on a blue-green world. Vast, awe-inspiring, full of wonder and warmth.",
+      "flavor_text": "Every star they passed remembered their names.",
+      "stats": {
+        "magic_and_mystery": 95,
+        "power_and_action": 35,
+        "mind_and_mischief": 20,
+        "heart_and_soul": 55,
+        "luck_and_destiny": 30
+      },
+      "stat_total": 235
+    }
+  ]
+}

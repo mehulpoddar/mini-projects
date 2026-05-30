@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ card.title }} — Muniverse</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111118;
+    font-family: 'Lora', Georgia, serif;
+  }
+
+  .card {
+    width: 750px;
+    height: 1050px;
+    border-radius: 26px;
+    background: linear-gradient(160deg, #c0c0c8, #9a9aa6, #b8b8c2, #8a8a96);
+    padding: 16px;
+    box-shadow:
+      0 4px 20px rgba(0,0,0,0.4),
+      0 20px 60px rgba(0,0,0,0.3),
+      inset 0 1px 0 rgba(255,255,255,0.3);
+    position: relative;
+  }
+
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #f5f4ef, #eae8e0);
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d0cfc8;
+  }
+
+  /* --- Header --- */
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 22px 14px;
+    background: linear-gradient(135deg, #ededea, #e0dfda);
+    border-bottom: 2px solid #cccbc4;
+  }
+
+  .card-title {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    flex: 1;
+    line-height: 1.2;
+    padding-right: 12px;
+  }
+
+  .card-universe {
+    font-family: 'Lora', serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #5a5a5a;
+    background: rgba(0,0,0,0.06);
+    padding: 5px 14px;
+    border-radius: 14px;
+    border: 1px solid #c4c3bc;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+  }
+
+  /* --- Art Frame --- */
+  .card-art {
+    margin: 14px 18px 10px;
+    height: 440px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid #a8a79e;
+    background: #1e1e2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.3);
+  }
+
+  .card-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-art .placeholder {
+    color: #6a6a7a;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* --- Flavor Text --- */
+  .card-flavor {
+    padding: 10px 26px;
+    font-style: italic;
+    font-size: 14px;
+    color: #4a4a4a;
+    text-align: center;
+    line-height: 1.5;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* --- Stats --- */
+  .card-stats {
+    flex: 1;
+    padding: 10px 22px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .stat-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #3a3a3a;
+    width: 128px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+
+  .stat-bar-track {
+    flex: 1;
+    height: 20px;
+    background: #dddcd4;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #c8c7c0;
+  }
+
+  .stat-bar-fill {
+    height: 100%;
+    border-radius: 10px;
+    min-width: 4px;
+  }
+
+  .stat-value {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2a2a2a;
+    width: 32px;
+    text-align: right;
+    font-family: 'Cinzel', serif;
+  }
+
+  .stat-magic .stat-bar-fill  { background: linear-gradient(90deg, #6d28d9, #a78bfa); }
+  .stat-power .stat-bar-fill  { background: linear-gradient(90deg, #b91c1c, #f87171); }
+  .stat-mind .stat-bar-fill   { background: linear-gradient(90deg, #047857, #6ee7b7); }
+  .stat-heart .stat-bar-fill  { background: linear-gradient(90deg, #be185d, #f9a8d4); }
+  .stat-luck .stat-bar-fill   { background: linear-gradient(90deg, #b45309, #fcd34d); }
+
+  /* --- Footer --- */
+  .card-footer {
+    padding: 10px 22px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #d4d3cc;
+  }
+
+  .card-total {
+    font-family: 'Cinzel', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #3a3a3a;
+  }
+
+  .card-rarity {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #7a7a7a;
+    font-weight: 600;
+  }
+
+  /* --- Print (2.5" × 3.5" at 300 DPI = 750×1050px) --- */
+  @page {
+    size: 2.5in 3.5in;
+    margin: 0;
+  }
+
+  @media print {
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: white;
+      min-height: auto;
+      width: 2.5in;
+      height: 3.5in;
+      overflow: hidden;
+      display: block;
+    }
+
+    .card {
+      transform: scale(0.32);
+      transform-origin: top left;
+      box-shadow: none;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="card-inner">
+
+    <div class="card-header">
+      <span class="card-title">{{ card.title }}</span>
+      <span class="card-universe">{{ card.universe }}</span>
+    </div>
+
+    <div class="card-art">
+      {% if art_path %}
+      <img src="{{ art_path }}" alt="{{ card.title }}">
+      {% else %}
+      <div class="placeholder">Art not yet generated</div>
+      {% endif %}
+    </div>
+
+    <div class="card-flavor">"{{ card.flavor_text }}"</div>
+
+    <div class="card-stats">
+      <div class="stat-row stat-magic">
+        <span class="stat-label">Magic &amp; Mystery</span>
+        <div class="stat-bar-track"><div class="stat-bar-fill" style="width: {{ card.stats.magic_and_mystery }}%"></div></div>
+        <span class="stat-value">{{ card.stats.magic_and_mystery }}</span>
+      </div>
+      <div class="stat-row stat-power">
+        <span class="stat-label">Power &amp; Action</span>
+        <div class="stat-bar-track"><div class="stat-bar-fill" style="width: {{ card.stats.power_and_action }}%"></div></div>
+        <span class="stat-value">{{ card.stats.power_and_action }}</span>
+      </div>
+      <div class="stat-row stat-mind">
+        <span class="stat-label">Mind &amp; Mischief</span>
+        <div class="stat-bar-track"><div class="stat-bar-fill" style="width: {{ card.stats.mind_and_mischief }}%"></div></div>
+        <span class="stat-value">{{ card.stats.mind_and_mischief }}</span>
+      </div>
+      <div class="stat-row stat-heart">
+        <span class="stat-label">Heart &amp; Soul</span>
+        <div class="stat-bar-track"><div class="stat-bar-fill" style="width: {{ card.stats.heart_and_soul }}%"></div></div>
+        <span class="stat-value">{{ card.stats.heart_and_soul }}</span>
+      </div>
+      <div class="stat-row stat-luck">
+        <span class="stat-label">Luck &amp; Destiny</span>
+        <div class="stat-bar-track"><div class="stat-bar-fill" style="width: {{ card.stats.luck_and_destiny }}%"></div></div>
+        <span class="stat-value">{{ card.stats.luck_and_destiny }}</span>
+      </div>
+    </div>
+
+    <div class="card-footer">
+      <span class="card-total">{{ card.stat_total }}</span>
+      <span class="card-rarity">Standard</span>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
