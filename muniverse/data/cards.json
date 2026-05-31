@@ -31,8 +31,9 @@
       "title": "The Doorstep Collision",
       "universe": "The Bad Boy's Girl",
       "rarity": "standard",
-      "art_description": "Tessa swings open her front door and nearly crashes into Cole, who leans against the frame with a lazy smirk. Grocery bags slip from her arms. Warm suburban afternoon light, porch steps, autumn leaves scattered on the ground.",
+      "art_description": "Tessa opens her front door from inside the house and nearly crashes into Cole, who leans against the porch doorframe outside with a lazy smirk. Grocery bags slip from her arms onto the porch. View from inside the house looking out — Cole framed by the doorway, warm suburban afternoon light behind him, porch steps and autumn leaves scattered on the ground.",
       "flavor_text": "Of all the doors in all the suburbs...",
+      "scene_context": "The moment Tessa and Cole first meet. He's her new neighbor — the school's notorious bad boy. This chance encounter on her own doorstep sets the entire story in motion, proving that fate has a sense of humor.",
       "stats": {
         "magic_and_mystery": 35,
         "power_and_action": 30,
@@ -49,6 +50,7 @@
       "rarity": "standard",
       "art_description": "Tessa grips the handlebars of Cole's motorcycle alone on an empty stretch of highway at dusk. Hair flying, knuckles white, a mix of terror and exhilaration on her face. Cole watches from the roadside, arms crossed, smirking. The speedometer reads way too high. Orange sky, motion blur on the asphalt, wind-whipped dust. 6:5 landscape composition.",
       "flavor_text": "She didn't ask permission. He didn't expect her to.",
+      "scene_context": "Tessa proves she's not the predictable good girl everyone assumes. By taking Cole's motorcycle on her own terms, she shatters his expectations and establishes herself as his equal — not his project.",
       "stats": {
         "magic_and_mystery": 20,
         "power_and_action": 80,
@@ -63,8 +65,9 @@
       "title": "One Punch",
       "universe": "The Bad Boy's Girl",
       "rarity": "standard",
-      "art_description": "Cole's fist connects with Jay's jaw in a school hallway. Motion blur on the punch, Jay reeling backward. Tessa stands behind Cole, eyes wide. Harsh fluorescent lighting, scattered papers in the air.",
+      "art_description": "Cole's fist connects with his brother Jay's jaw in a school hallway. Motion blur on the punch, Jay reeling backward. Tessa stands behind Cole, eyes wide, one hand half-raised. Harsh fluorescent lighting, scattered papers in the air, other students frozen mid-step in the background.",
       "flavor_text": "He didn't need to be asked.",
+      "scene_context": "Cole's protective instincts override everything when his own brother Jay threatens Tessa. This isn't calculated violence — it's raw, immediate, and reveals how deeply he already cares, even before he can admit it to himself.",
       "stats": {
         "magic_and_mystery": 10,
         "power_and_action": 90,
@@ -81,6 +84,7 @@
       "rarity": "standard",
       "art_description": "Family dinner scene. Tessa sits across from Cole at a crowded table, gesturing mid-roast with a fork. Cole's expression is stunned. The rest of the family frozen mid-chew. Warm dining room lighting, food spread across the table.",
       "flavor_text": "Pass the salt. And your dignity.",
+      "scene_context": "The dinner scene where Tessa verbally dismantles Cole in front of both their families. It's the moment everyone realizes she's not intimidated by him — and he realizes he's met his match.",
       "stats": {
         "magic_and_mystery": 10,
         "power_and_action": 25,
@@ -97,6 +101,7 @@
       "rarity": "full_art_rare",
       "art_description": "Softly lit bedroom at night, warm amber glow from a bedside lamp. Cole and Tessa in a close embrace, foreheads touching, eyes closed. Rumpled sheets and pillows around them. The composition is intimate and tender — shot from slightly above, their faces and intertwined hands the focal point. Moonlight filters through sheer curtains, mixing with the warm lamplight. The mood is vulnerable, electric, and deeply personal. Portrait 5:7 composition.",
       "flavor_text": "Some walls aren't meant to stay up forever.",
+      "scene_context": "The turning point of their relationship. Both Cole and Tessa finally drop their walls simultaneously. This is the moment they stop fighting what they feel and become truly vulnerable with each other.",
       "stats": {
         "magic_and_mystery": 65,
         "power_and_action": 25,
@@ -113,6 +118,7 @@
       "rarity": "standard",
       "art_description": "Tessa stands in a living room doorway, fists clenched at her sides, facing her mother who sits rigid in an armchair. Tension visible in their postures. Late afternoon light through blinds casting long shadows across the room.",
       "flavor_text": "I am not your project.",
+      "scene_context": "Tessa confronts her controlling mother and asserts her independence. This scene isn't about Cole at all — it's about Tessa reclaiming her own identity and refusing to be defined by someone else's expectations.",
       "stats": {
         "magic_and_mystery": 15,
         "power_and_action": 50,
@@ -129,6 +135,7 @@
       "rarity": "full_art_rare",
       "art_description": "Cole and Tessa on a rooftop at night. City lights spread below them like a second sky. Cole faces Tessa, hands in his jacket pockets, finally vulnerable. Stars above, warm string lights nearby. Intimate, cinematic composition with the cityscape stretching to the horizon.",
       "flavor_text": "I'm not good at this. But I'm good at you.",
+      "scene_context": "Cole, who has spent the entire story hiding behind sarcasm and bravado, finally tells Tessa how he feels. On a rooftop under the stars, the bad boy becomes just a boy — terrified and honest for the first time.",
       "stats": {
         "magic_and_mystery": 55,
         "power_and_action": 15,
@@ -145,6 +152,7 @@
       "rarity": "standard",
       "art_description": "Lou Clark stands in a doorway wearing a bright polka-dot dress and red cardigan, smile frozen. Will Traynor sits in his wheelchair across the room, expression icy and dismissive. Grand but cold living room. Stark contrast between her color and his grey world.",
       "flavor_text": "You're not what I expected either.",
+      "scene_context": "Lou Clark's first day as Will Traynor's caretaker. She arrives full of color and optimism; he greets her with ice-cold dismissal. The contrast between them — her warmth vs his bitterness — establishes the emotional journey ahead.",
       "stats": {
         "magic_and_mystery": 10,
         "power_and_action": 20,
@@ -161,6 +169,7 @@
       "rarity": "standard",
       "art_description": "Lou leaps from her seat at a horse racing track, fists in the air, screaming at the top of her lungs. Tickets flying everywhere. Will beside her in his wheelchair, genuinely surprised, the ghost of a smile breaking through. Crowded grandstand, golden afternoon light.",
       "flavor_text": "Number seven! NUMBER SEVEN!",
+      "scene_context": "Lou's first attempt to show Will that life still holds joy — and a spectacular failure. She didn't research wheelchair logistics, Will stoically suffered through it, and told her afterward he'd always hated horses. But her raw, uninhibited excitement planted a seed: she genuinely cared enough to try.",
       "stats": {
         "magic_and_mystery": 25,
         "power_and_action": 50,
@@ -172,11 +181,12 @@
     },
     {
       "id": "mbv-003",
-      "title": "Concert in the Rain",
+      "title": "The Orchestra Night",
       "universe": "Me Before You",
       "rarity": "standard",
-      "art_description": "Lou and Will sit outside a jazz bar in the rain, sharing a single pair of earphones. Rain streaks the awning above. Warm amber light from the bar window. Both lost in the music, eyes closed. Puddles reflecting streetlights around them.",
-      "flavor_text": "He gave her a world she didn't know existed.",
+      "art_description": "Lou and Will sit side by side in a grand concert hall during an orchestra performance. Lou wears a red dress, eyes wide with wonder as she takes in the music for the first time. Will watches her reaction more than the stage, a quiet contentment on his face. Warm golden stage lighting spills across rows of seats, the orchestra mid-crescendo. Ornate balconies and a chandelier above. 6:5 landscape composition.",
+      "flavor_text": "She wore red. He forgot his chair.",
+      "scene_context": "After the horse race disaster, Lou researches properly and takes Will to the orchestra. It works. Will is transported by the music and the illusion of being on a real date with a girl in a red dress. This is the moment Lou proves she can reach him — by meeting him in his world, not dragging him into hers.",
       "stats": {
         "magic_and_mystery": 80,
         "power_and_action": 15,
@@ -191,8 +201,9 @@
       "title": "Bumblebee Tights",
       "universe": "Me Before You",
       "rarity": "standard",
-      "art_description": "Lou strides into the room wearing bold black-and-yellow striped bumblebee tights with a clashing outfit. Will, caught off guard, is mid-laugh — real, unguarded laughter for the first time. Bright morning light flooding through tall windows.",
+      "art_description": "Lou's birthday dinner at her parents' crowded dining table. Lou holds up a pair of bold black-and-yellow striped bumblebee tights, freshly unwrapped from Will's gift. Her face lights up with genuine delight. Will sits at the table in his wheelchair, grinning. Patrick sits beside Lou looking deflated, his rejected necklace gift still in its box on the table. Warm domestic lighting, family members mid-reaction. 6:5 landscape composition.",
       "flavor_text": "She dressed like no one was watching. Everyone was.",
+      "scene_context": "At Lou's birthday dinner, Patrick gives her a necklace she's indifferent to. Then Will's gift — bumblebee tights — makes her light up. The moment crystallizes the love triangle: Will understands Lou in a way Patrick never has.",
       "stats": {
         "magic_and_mystery": 15,
         "power_and_action": 20,
@@ -207,8 +218,9 @@
       "title": "The Wheelchair Dance",
       "universe": "Me Before You",
       "rarity": "standard",
-      "art_description": "Lou spins Will's wheelchair across a wooden dance floor at a wedding reception. She holds one of his hands and steers the chair with the other, both mid-laugh. Other guests form a circle around them, some clapping, some wiping eyes. Fairy lights and bunting overhead, warm amber reception glow. Her outfit is predictably bold and clashing. 6:5 landscape composition.",
+      "art_description": "Lou spins Will's wheelchair across a wooden dance floor at Alicia and Rupert's wedding reception — Will's ex-girlfriend and ex-best friend's wedding. She holds one of his hands and steers the chair with the other, both mid-laugh. Other guests form a circle around them, some clapping, some wiping eyes. Fairy lights and bunting overhead, warm amber reception glow. Lou's outfit is predictably bold and clashing, slightly tipsy grin. 6:5 landscape composition.",
       "flavor_text": "For three minutes, gravity forgot about them.",
+      "scene_context": "At the wedding of Will's ex-girlfriend Alicia and his ex-best friend Rupert, Lou — slightly drunk — asks Will to dance. She spins his wheelchair across the floor, turning what should be his worst night into his best. They stay overnight at a hotel afterward, and something between them quietly shifts.",
       "stats": {
         "magic_and_mystery": 30,
         "power_and_action": 55,
@@ -220,11 +232,12 @@
     },
     {
       "id": "mbv-006",
-      "title": "The Rainy Ultimatum",
+      "title": "The Last Night in Mauritius",
       "universe": "Me Before You",
       "rarity": "standard",
-      "art_description": "Lou and Will face each other in a dimly lit room, rain hammering the windows behind them. Lou's face is streaked with tears, hands trembling. Will is resolute but breaking. Dark moody lighting with rain-shadow patterns on the walls.",
+      "art_description": "Lou and Will face each other in a Mauritius hotel room at night, warm tropical air drifting through open balcony doors. The ocean is visible behind them, moonlit and vast. Lou's face is streaked with tears, hands trembling. Will is resolute but breaking. Soft lamplight, the remnants of a perfect holiday scattered around them — sunscreen, shells on the nightstand.",
       "flavor_text": "You can change your mind. You just won't.",
+      "scene_context": "Their last night in Mauritius. After nine perfect days, Will tells Lou he's still going to Dignitas. Lou tells him she's known for months and has been trying to change his mind. She tells him she loves him. He says he loves her too — but it's not enough. He asks her to come to Switzerland to say goodbye.",
       "stats": {
         "magic_and_mystery": 15,
         "power_and_action": 35,
@@ -241,6 +254,7 @@
       "rarity": "full_art_rare",
       "art_description": "Will and Lou at the beach. She holds his hand as waves wash over the shore. Sunset paints everything in amber and rose. His wheelchair tracks lead through the sand behind them. She smiles because she promised she would. The sea stretches endlessly, the sky ablaze with color. Painterly, deeply emotional composition.",
       "flavor_text": "Live boldly. Push yourself. Don't settle.",
+      "scene_context": "Their final day together at the beach. Lou holds his hand knowing what's coming. Will has given her the courage to live boldly — his last gift is showing her she's strong enough to do it without him.",
       "stats": {
         "magic_and_mystery": 65,
         "power_and_action": 15,
@@ -257,6 +271,7 @@
       "rarity": "standard",
       "art_description": "Shinchan stands on a coffee table performing his infamous elephant dance, underwear on his head. Misae lunges toward him in fury while Hiroshi hides behind a newspaper. Living room in chaos, toys scattered everywhere. Bright exaggerated anime energy.",
       "flavor_text": "Zou-san! Zou-san!",
+      "scene_context": "Shinchan's signature move: the elephant dance with underwear on his head. It's pure chaos — Misae is furious, Hiroshi hides, and Shinchan is completely in his element. This single scene defines his character: shameless, joyful, and utterly unstoppable.",
       "stats": {
         "magic_and_mystery": 10,
         "power_and_action": 70,
@@ -273,6 +288,7 @@
       "rarity": "standard",
       "art_description": "Shinchan reimagines himself as Action Kamen's sidekick, leaping through an explosion in full superhero costume. The fantasy bleeds into his living room — the wall cracks with imagined impact. Bold action lines, dramatic poses, over-the-top effects.",
       "flavor_text": "In his mind, he already saved the world.",
+      "scene_context": "Shinchan's imagination transforms his mundane living room into an action movie set. His hero worship of Action Kamen is both hilarious and endearing — in his mind, he's already saving the world. The fantasy-reality bleed is classic Shinchan.",
       "stats": {
         "magic_and_mystery": 90,
         "power_and_action": 70,
@@ -289,6 +305,7 @@
       "rarity": "standard",
       "art_description": "Shinchan sits cross-legged on a supermarket floor, arms folded, negotiating with Misae who towers above him holding a shopping basket. Other shoppers stare. A pyramid of Chocobi snack boxes stacked behind him like a fortress. Fluorescent store lighting.",
       "flavor_text": "Final offer: two boxes and a juice.",
+      "scene_context": "Shinchan's legendary stubbornness on full display. His ability to negotiate with Misae in a supermarket — building a Chocobi fortress and refusing to budge — showcases his surprising cunning and the family dynamic that makes the show timeless.",
       "stats": {
         "magic_and_mystery": 20,
         "power_and_action": 25,
@@ -305,6 +322,7 @@
       "rarity": "standard",
       "art_description": "Kazama sits at his desk surrounded by textbooks with a look of existential crisis. Shinchan hangs upside down from the window behind him making funny faces. Papers flutter through the air. Kazama's perfectly organized desk descending into chaos.",
       "flavor_text": "I was top of the class until you moved in.",
+      "scene_context": "The friendship between perfectionist Kazama and chaotic Shinchan is one of the show's best dynamics. Shinchan effortlessly destroys Kazama's carefully organized study session, and Kazama loves him for it despite everything.",
       "stats": {
         "magic_and_mystery": 10,
         "power_and_action": 40,
@@ -321,6 +339,7 @@
       "rarity": "standard",
       "art_description": "The Nohara family car packed to bursting, driving down a countryside highway. Shinchan presses his face against the rear window. Misae argues with Hiroshi over a map. Shiro rides on the roof rack. Bags falling off. Sunny day, green rice fields on both sides.",
       "flavor_text": "Are we there yet? Are we there yet? Are we—",
+      "scene_context": "The Nohara family road trip captures everything about this family: Misae and Hiroshi bickering, Shinchan being insufferable in the back seat, Shiro somehow on the roof. It's chaotic, dysfunctional, and full of love.",
       "stats": {
         "magic_and_mystery": 20,
         "power_and_action": 55,
@@ -337,6 +356,7 @@
       "rarity": "full_art_rare",
       "art_description": "Newborn Himawari lies in Misae's arms in the hospital. The entire Nohara family crowds around — Shinchan on tiptoe, Hiroshi with tears streaming, grandparents in the doorway. Himawari smiles for the first time. Soft golden hospital light, warmth radiating from every face. Tender, intimate, every detail glowing.",
       "flavor_text": "The littlest Nohara stole every heart in the room.",
+      "scene_context": "The birth of Himawari is one of Shinchan's most emotionally powerful moments. The entire family gathered in the hospital, Hiroshi crying, and Shinchan on tiptoe to see his baby sister. Beneath all the comedy, this show has enormous heart.",
       "stats": {
         "magic_and_mystery": 50,
         "power_and_action": 20,
@@ -351,8 +371,9 @@
       "title": "Running Through Time",
       "universe": "Shinchan",
       "rarity": "full_art_rare",
-      "art_description": "Young adult Shinchan sprinting through a collapsing time corridor, reaching desperately for his father's hand. Behind them the Adult Empire's monochrome world crumbles. Ahead, color and life bloom. Wind tearing at their clothes, tears streaming, determination in Shinchan's eyes. Epic scale, swirling temporal energy.",
+      "art_description": "Five-year-old Shinchan sprinting alone through the corridors of the 20th Century Museum, tears streaming, bare feet slapping the floor. Behind him, his family has fallen — Hiroshi, Misae, even Shiro — each sacrificing themselves to buy him time. Ahead, the control room door. The building shakes around him. He stumbles, scrapes his knees, gets back up. A kindergartener carrying the weight of the future on his tiny shoulders. Epic scale, desperate determination in his eyes. Portrait 5:7 composition.",
       "flavor_text": "He ran because tomorrow needed his dad in it.",
+      "scene_context": "From the Crayon Shin-chan movie 'The Adult Empire Strikes Back.' A nostalgia machine threatens to trap all adults in the past. One by one, every member of the Nohara family sacrifices themselves to clear the path. Five-year-old Shinchan — alone, exhausted, bleeding — sprints through the building to reach the control room. A kindergartener saves the future. This scene elevated Shinchan from comedy to genuine cinematic brilliance.",
       "stats": {
         "magic_and_mystery": 90,
         "power_and_action": 80,
@@ -369,6 +390,7 @@
       "rarity": "standard",
       "art_description": "Hermione's fist connects squarely with Draco's jaw by the lake near Hagrid's hut. Draco stumbles backward in shock. Ron and Harry stand behind Hermione with stunned expressions. Hogwarts grounds, overcast sky, the Black Lake shimmering.",
       "flavor_text": "That felt good.",
+      "scene_context": "Prisoner of Azkaban. Hermione, the rule-following bookworm, hauls off and hits Draco Malfoy for mocking Buckbeak's execution. In the book she slaps him; in the movie she punches him. Either way, it's the most satisfying moment in the series — Hermione choosing action over words for once.",
       "stats": {
         "magic_and_mystery": 30,
         "power_and_action": 90,
@@ -385,6 +407,7 @@
       "rarity": "standard",
       "art_description": "A small Harry Potter sits on the stool in the Great Hall, the enormous Sorting Hat draped over his eyes. Hundreds of candles float overhead. The four house tables stretch into the distance. The Hat's brim moves as it deliberates. Warm candlelight, gothic grandeur.",
       "flavor_text": "Not Slytherin... not Slytherin...",
+      "scene_context": "Harry's first moments at Hogwarts. The Sorting Hat deliberates between Slytherin and Gryffindor while Harry desperately whispers his plea. This single choice shapes everything that follows — and it's Harry's choice, not the Hat's.",
       "stats": {
         "magic_and_mystery": 95,
         "power_and_action": 10,
@@ -401,6 +424,7 @@
       "rarity": "standard",
       "art_description": "Fred and George soar on broomsticks through the Hogwarts entrance hall, fireworks exploding behind them in dragons and starbursts. Umbridge stands below, covered in soot, mouth agape. Students cheer from every balcony. Brilliant pyrotechnic colors against stone corridors.",
       "flavor_text": "Give her hell from us, Peeves.",
+      "scene_context": "Order of the Phoenix. Fred and George refuse to endure Umbridge's tyranny one more day. They summon their broomsticks, set off a spectacular firework display, and fly out of Hogwarts forever — the ultimate act of joyful defiance.",
       "stats": {
         "magic_and_mystery": 75,
         "power_and_action": 45,
@@ -416,7 +440,8 @@
       "universe": "Harry Potter",
       "rarity": "standard",
       "art_description": "The Room of Requirement filled with students practicing spells. Patronuses leap through the air — a stag, an otter, a terrier. Harry stands at the center, wand raised, teaching. Mirrors line the walls, cushions on the floor. Silver-blue patronus light fills the room.",
-      "flavor_text": "Every great wizard started as a student.",
+      "flavor_text": "The ones they said couldn't fight back.",
+      "scene_context": "Harry secretly teaches defense against the dark arts to fellow students in the Room of Requirement. Students who felt powerless under Umbridge's regime learn to fight back. The silver patronuses filling the room represent hope reclaimed.",
       "stats": {
         "magic_and_mystery": 85,
         "power_and_action": 60,
@@ -433,6 +458,7 @@
       "rarity": "standard",
       "art_description": "Neville stands alone before Voldemort's army, the burning Sorting Hat on his head. He reaches in and draws the sword of Gryffindor, blade gleaming. Hogwarts burns behind him. Death Eaters recoil. Dawn light breaking through smoke.",
       "flavor_text": "I'll join you when hell freezes over.",
+      "scene_context": "Deathly Hallows. Neville Longbottom, the boy everyone underestimated, stands alone before Voldemort's entire army with the burning Sorting Hat on his head. He draws the Sword of Gryffindor and destroys the final Horcrux — the ultimate underdog moment.",
       "stats": {
         "magic_and_mystery": 45,
         "power_and_action": 80,
@@ -449,6 +475,7 @@
       "rarity": "full_art_rare",
       "art_description": "Snape's memories swirl in the Pensieve. Young Snape and young Lily stand in a sunlit meadow, her red hair catching the wind. The scene dissolves at the edges into silver memory-mist. Dumbledore's office surrounds the Pensieve, dark and somber. A single silver doe patronus emerges from the mist. Achingly beautiful, bittersweet light.",
       "flavor_text": "Always.",
+      "scene_context": "Snape's memories in the Pensieve reveal the truth: his entire life was shaped by his love for Lily Potter. The silver doe patronus — matching hers — proves that Severus Snape protected Harry for decades out of undying love.",
       "stats": {
         "magic_and_mystery": 85,
         "power_and_action": 15,
@@ -465,6 +492,7 @@
       "rarity": "full_art_rare",
       "art_description": "Harry walks alone through the Forbidden Forest at night, the Resurrection Stone in his hand. The ghostly figures of his parents, Sirius, and Lupin walk beside him, translucent and glowing. The forest is dark and ancient, shafts of moonlight breaking through. His expression is calm, resolved. Monumental, solemn, sacred.",
       "flavor_text": "The last enemy that shall be destroyed is death.",
+      "scene_context": "Harry walks into the Forbidden Forest to sacrifice himself, using the Resurrection Stone to summon the ghosts of his parents, Sirius, and Lupin. He goes to his death willingly, calmly, surrounded by the love of everyone he's lost.",
       "stats": {
         "magic_and_mystery": 95,
         "power_and_action": 30,
@@ -481,6 +509,7 @@
       "rarity": "standard",
       "art_description": "Lightning McQueen tangled in power lines and road, having torn up the main street of a sleepy Route 66 town. Dust cloud settles. Broken asphalt, knocked-over traffic cones. The neon signs of Radiator Springs flicker in the desert dusk. Mater watches from behind a fence.",
       "flavor_text": "I'm a precision instrument of speed and aerodynamics... stuck in a fence.",
+      "scene_context": "Lightning McQueen, the arrogant rookie racer, accidentally destroys the main street of a forgotten Route 66 town. This humbling crash forces him to slow down and discover what actually matters — the beginning of his entire character arc.",
       "stats": {
         "magic_and_mystery": 40,
         "power_and_action": 75,
@@ -497,6 +526,7 @@
       "rarity": "standard",
       "art_description": "Mater and McQueen hide behind a hay bale at the edge of a moonlit field, stifling laughter. A row of sleeping tractors snores peacefully. One tractor mid-tip, legs in the air, startled awake. In the far background, Frank the combine harvester's headlights flick on ominously. Dusty farmland, fireflies, mischievous night energy. 6:5 landscape composition.",
       "flavor_text": "I swear, Mater, if we die doing this—",
+      "scene_context": "Mater introduces McQueen to his favorite pastime: sneaking into fields at night and scaring sleeping tractors. It's juvenile, dangerous, and the exact moment McQueen starts having genuine fun for the first time — not racing-podium fun.",
       "stats": {
         "magic_and_mystery": 20,
         "power_and_action": 65,
@@ -513,6 +543,7 @@
       "rarity": "standard",
       "art_description": "Mater drives backward at full speed through a dirt field at night, headlights off, grinning maniacally. McQueen follows in his lane, terrified, eyes wide as saucers. Dust trails spiral behind them. Moonlit desert landscape, cacti silhouettes.",
       "flavor_text": "Don't need to see where I'm goin'. Just need to know where I've been.",
+      "scene_context": "Mater's seemingly foolish talent — driving backward at full speed — is actually a metaphor for knowing where you've been. His unshakeable confidence in his own abilities teaches McQueen that skill comes in unexpected forms.",
       "stats": {
         "magic_and_mystery": 15,
         "power_and_action": 65,
@@ -529,6 +560,7 @@
       "rarity": "standard",
       "art_description": "McQueen discovers Doc Hudson's trophy room hidden behind a garage wall — three Piston Cups gleaming in dusty display cases. Newspaper clippings of a devastating crash cover the opposite wall. Doc stands in the doorway, caught. Dramatic chiaroscuro lighting, dust motes.",
       "flavor_text": "The racing world forgot him. He made sure of it.",
+      "scene_context": "McQueen discovers that Doc Hudson, the grumpy town judge, is actually the legendary Hudson Hornet — a three-time Piston Cup champion who disappeared after a devastating crash. Doc's hidden past adds depth to his mentorship of McQueen.",
       "stats": {
         "magic_and_mystery": 85,
         "power_and_action": 40,
@@ -545,6 +577,7 @@
       "rarity": "standard",
       "art_description": "Sally and McQueen cruise side by side along a winding mountain road at golden hour. Below them, the vast Arizona desert stretches to the horizon. The old road hugs red rock cliffs, wildflowers line the shoulder. Sally glances at McQueen — he's not looking at the view anymore, he's looking at her. Warm cinematic light, sweeping landscape. 6:5 landscape composition.",
       "flavor_text": "The road was never the destination.",
+      "scene_context": "Sally takes McQueen on a drive along the old mountain road, showing him the beauty of Route 66 before the interstate bypassed it. The moment McQueen stops looking at the view and starts looking at her marks his transformation from racer to person.",
       "stats": {
         "magic_and_mystery": 55,
         "power_and_action": 40,
@@ -561,6 +594,7 @@
       "rarity": "standard",
       "art_description": "Chick Hicks rams The King from behind on the final lap, sending him spinning toward the wall. Sparks fly from metal-on-metal contact. The crowd gasps. The track bends ahead. Aggressive low angle, speed lines, tire smoke.",
       "flavor_text": "Second place is just first loser.",
+      "scene_context": "Chick Hicks, desperate to win, deliberately rams The King on the final lap. This act of unsportsmanlike cruelty is the catalyst for McQueen's defining choice — to stop and push The King across the finish line instead of winning.",
       "stats": {
         "magic_and_mystery": 15,
         "power_and_action": 80,
@@ -577,6 +611,7 @@
       "rarity": "full_art_rare",
       "art_description": "McQueen stops inches from the finish line and reverses to push the battered, crumpled King across instead. The massive Dinoco 400 stadium is silent, then erupts. Chick Hicks crosses first but no one watches him. Sunset floods the track. An act of pure sportsmanship. Epic wide shot, crowd on their feet.",
       "flavor_text": "He already won the only race that mattered.",
+      "scene_context": "McQueen stops inches from the finish line to push the wrecked King across instead, sacrificing the Piston Cup. The stadium erupts. He loses the race but wins something far more important — becoming the kind of racer Doc Hudson was.",
       "stats": {
         "magic_and_mystery": 40,
         "power_and_action": 60,
@@ -593,6 +628,7 @@
       "rarity": "standard",
       "art_description": "Ash holds out a Pokéball on a dirt road outside Pallet Town. Pikachu sits defiantly, turning away with folded arms. Professor Oak's lab visible in the background. Morning light, the beginning of everything. Pikachu's cheeks spark slightly with annoyance.",
       "flavor_text": "This one chooses its own terms.",
+      "scene_context": "The very first episode. Ash receives Pikachu as his starter Pokémon, but Pikachu refuses to enter the Pokéball. This defiant act establishes the entire series: their bond must be earned, not forced. It's where everything begins.",
       "stats": {
         "magic_and_mystery": 80,
         "power_and_action": 20,
@@ -609,6 +645,7 @@
       "rarity": "standard",
       "art_description": "A Magikarp glows white-hot mid-evolution, water exploding upward from a lake. The outline of Gyarados begins to form — massive, serpentine, terrifying. Trainers on the shore stumble backward. Blinding light, churning water, raw transformation energy.",
       "flavor_text": "They laughed at the fish. They're not laughing now.",
+      "scene_context": "The ultimate underdog evolution. Magikarp, the most pathetic Pokémon in existence, transforms into Gyarados — one of the most terrifying. It's the Pokémon world's thesis statement: never judge potential by appearances.",
       "stats": {
         "magic_and_mystery": 95,
         "power_and_action": 75,
@@ -625,6 +662,7 @@
       "rarity": "standard",
       "art_description": "Jessie, James, and Meowth launched into the sky by a Thunderbolt, their hot air balloon disintegrating around them. They spin into the distance as a star twinkles. Pikachu stands below, cheeks sparking, satisfied. Blue sky, contrail of smoke.",
       "flavor_text": "Looks like Team Rocket's blasting off again!",
+      "scene_context": "The recurring gag that defines Pokémon's humor. Jessie, James, and Meowth's elaborate schemes always end the same way — blasted into the sky by Pikachu's Thunderbolt. Their persistence in failure is both hilarious and oddly admirable.",
       "stats": {
         "magic_and_mystery": 40,
         "power_and_action": 70,
@@ -641,6 +679,7 @@
       "rarity": "standard",
       "art_description": "Flashback scene: a young Meowth stands upright for the first time on a moonlit rooftop, wobbling on two legs. Below, a female Meowth walks away with a Persian. Meowth's reflection in a rain puddle shows him mid-transformation — half-feral, half-human-like. City lights twinkle below, clotheslines and TV antennas frame the scene. Bittersweet determination in his eyes. 6:5 landscape composition.",
       "flavor_text": "He became something new. She didn't even look back.",
+      "scene_context": "Meowth's origin story is one of the saddest in Pokémon. He taught himself to walk upright and speak human language to impress a female Meowth — who rejected him anyway, calling him a freak. He became something new, and lost everything for it.",
       "stats": {
         "magic_and_mystery": 70,
         "power_and_action": 55,
@@ -657,6 +696,7 @@
       "rarity": "standard",
       "art_description": "Ash's Charizard and Gary's Blastoise clash in the Silver Conference stadium. Fire and water collide in a massive steam explosion at center field. Both trainers call commands from their boxes. Scoreboard shows they're tied. Packed stadium, floodlights, electric atmosphere.",
       "flavor_text": "This wasn't about badges. It was about everything.",
+      "scene_context": "The Silver Conference battle between Ash and his lifelong rival Gary Oak. Charizard vs Blastoise — fire vs water. This battle represents the culmination of their entire rivalry from Episode 1, and Ash's victory proves he's finally surpassed his rival.",
       "stats": {
         "magic_and_mystery": 70,
         "power_and_action": 85,
@@ -673,6 +713,7 @@
       "rarity": "full_art_rare",
       "art_description": "Pikachu stands on the chest of Ash, turned to stone by crossfire between Mew and Mewtwo. Pikachu's cheeks spark desperately, sending Thunderbolts into Ash's stone form. Nothing works. Tears roll down Pikachu's face. All the Pokémon begin to cry, their tears glowing and floating upward. The stone begins to crack with golden light. Cathedral-like stadium space, deeply emotional.",
       "flavor_text": "Every tear carried a wish.",
+      "scene_context": "From Pokémon: The First Movie. Ash is turned to stone by crossfire between Mew and Mewtwo. Pikachu desperately shocks him, then cries. Every Pokémon's tears, carrying pure emotion, bring Ash back to life. The scene that made an entire generation cry in theaters.",
       "stats": {
         "magic_and_mystery": 95,
         "power_and_action": 30,
@@ -687,8 +728,9 @@
       "title": "Charizard's Redemption",
       "universe": "Pokémon",
       "rarity": "full_art_rare",
-      "art_description": "Charizard roars and unleashes a full-power Flamethrower in the Charific Valley, defending Ash against a wild Charizard twice its size. Fire engulfs the canyon walls. For the first time, Charizard fights not for pride but for its trainer. Volcanic landscape, intense heat shimmer, molten determination in Charizard's eyes.",
+      "art_description": "Ash kneels beside his fallen Charizard on a rocky battlefield at dawn, rubbing the frozen Pokémon's body desperately to keep him warm. Charizard is encased in ice from a Poliwrath's Ice Beam, eyes barely open. Ash's hands are raw and red from hours of rubbing. A small campfire flickers nearby, blankets draped over Charizard's wings. First light breaks over the horizon. Charizard's tail flame, nearly extinguished, begins to glow brighter. The moment trust is finally earned. Portrait 5:7 composition.",
       "flavor_text": "He finally fought for someone other than himself.",
+      "scene_context": "Episode 'Charizard Chills.' After seasons of disobedience, Charizard is frozen solid by a trainer's Poliwrath. Ash stays up all night rubbing Charizard warm, refusing to give up on him. When Charizard wakes, he sees what Ash endured — and decides to obey and respect him. Not from defeat, but from love.",
       "stats": {
         "magic_and_mystery": 85,
         "power_and_action": 80,
@@ -705,6 +747,7 @@
       "rarity": "standard",
       "art_description": "Mario leaps high above a Goomba in World 1-1, one foot extended for the iconic stomp. Brick blocks and question mark blocks frame the scene. Green pipes, blue sky, pixel-perfect hills rendered in lush illustration style. Pure kinetic energy.",
       "flavor_text": "Every hero starts with a single stomp.",
+      "scene_context": "World 1-1 of Super Mario Bros. The first Goomba encounter teaches every player the fundamental mechanic: jump on enemies. This single stomp launched an entire genre and remains the most iconic moment in platforming history.",
       "stats": {
         "magic_and_mystery": 90,
         "power_and_action": 80,
@@ -720,7 +763,8 @@
       "universe": "Mario",
       "rarity": "standard",
       "art_description": "Mario leaps headfirst into a massive oil painting of Bob-omb Battlefield hanging on the castle wall. His body stretches and warps as it crosses the canvas boundary — half in the real castle corridor, half dissolving into the painted mountainscape. The painting ripples like water around him. Peach's Castle interior, checkered marble floor, golden sunlight through stained glass. The moment between worlds. 6:5 landscape composition.",
-      "flavor_text": "He jumped into a painting and found a world.",
+      "flavor_text": "The canvas rippled. The castle disappeared.",
+      "scene_context": "Super Mario 64's most revolutionary moment. Mario jumps into a painting on the castle wall and enters a fully 3D world. This scene represents the leap from 2D to 3D gaming — literally jumping into a new dimension. It changed video games forever.",
       "stats": {
         "magic_and_mystery": 95,
         "power_and_action": 35,
@@ -737,6 +781,7 @@
       "rarity": "standard",
       "art_description": "Mario grabs a Super Star from a glowing question block and erupts in rainbow invincibility. His body flashes through every color as he sprints through a gauntlet of enemies, all bouncing away on contact. Trail of sparkles, speed lines, pure euphoria. Vibrant explosive color.",
       "flavor_text": "Ten seconds of being absolutely untouchable.",
+      "scene_context": "The Super Star power-up transforms Mario into an invincible, rainbow-flashing force of nature for ten glorious seconds. It's pure power fantasy — the feeling of being completely unstoppable, set to one of gaming's most recognizable jingles.",
       "stats": {
         "magic_and_mystery": 100,
         "power_and_action": 70,
@@ -753,6 +798,7 @@
       "rarity": "standard",
       "art_description": "Luigi creeps through a dark Victorian mansion hallway, Poltergust 3000 strapped to his back, flashlight trembling in his hand. Ghosts peek from behind curtains and doorframes. A massive portrait's eyes follow him. Green glow from flashlight, purple shadows, cobwebs everywhere.",
       "flavor_text": "M-M-Mario? Is that you?",
+      "scene_context": "From Luigi's Mansion. Luigi, always the timid brother, must explore a haunted mansion alone to rescue Mario. Armed with only a vacuum cleaner and a flashlight, he faces his fears. It's Mario's universe seen through the eyes of its most lovable coward.",
       "stats": {
         "magic_and_mystery": 100,
         "power_and_action": 50,
@@ -769,6 +815,7 @@
       "rarity": "standard",
       "art_description": "Mario leaps between rolling barrels on steel girders high above a construction site. Donkey Kong beats his chest at the top, Pauline calling for help beside him. Barrels cascade down ramps. Industrial setting, dramatic height, retro arcade energy rendered in rich detail.",
       "flavor_text": "Jump. Climb. Repeat. Don't look down.",
+      "scene_context": "The original Donkey Kong arcade game (1981). Mario (then 'Jumpman') leaps over barrels thrown by Donkey Kong to rescue Pauline. This is where it all started — the game that created Mario, created Nintendo's empire, and defined the platformer genre.",
       "stats": {
         "magic_and_mystery": 65,
         "power_and_action": 90,
@@ -785,6 +832,7 @@
       "rarity": "standard",
       "art_description": "Mario's kart drifts around a hairpin turn on Rainbow Road — a luminous track suspended in deep space. Stars, galaxies, and nebulae surround the track. No guardrails. The track curves impossibly into the cosmic distance. Vibrant prismatic colors against the void of space. Vertigo-inducing perspective.",
       "flavor_text": "One wrong turn and you're orbiting Jupiter.",
+      "scene_context": "Mario Kart's most infamous track. A luminous road suspended in space with no guardrails, impossible turns, and the constant threat of falling into the void. Rainbow Road is the ultimate test of skill — beautiful, terrifying, and unforgettable.",
       "stats": {
         "magic_and_mystery": 90,
         "power_and_action": 85,
@@ -801,6 +849,7 @@
       "rarity": "full_art_rare",
       "art_description": "Mario and Peach soar hand-in-hand through a cosmic sky filled with stars, comets, and tiny planetoids. The Comet Observatory glows in the distance. Rosalina's Lumas dance around them as trails of stardust follow their path. Below, the Mushroom Kingdom is a tiny jewel on a blue-green world. Vast, awe-inspiring, full of wonder and warmth.",
       "flavor_text": "Every star they passed remembered their names.",
+      "scene_context": "From Super Mario Galaxy. Mario and Peach soar through space together, surrounded by Rosalina's Lumas. Galaxy elevated Mario from platformer to something cosmic and emotionally resonant — wonder on an astronomical scale.",
       "stats": {
         "magic_and_mystery": 100,
         "power_and_action": 40,

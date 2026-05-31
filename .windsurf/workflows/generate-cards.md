@@ -30,6 +30,7 @@ Before generating cards, read `muniverse/README.md` and `muniverse/data/cards.js
      "rarity": "standard" | "full_art_rare",
      "art_description": "Detailed scene description for AI image generation. Compose for 6:5 landscape (standard) or 5:7 portrait (full_art_rare).",
      "flavor_text": "A memorable quote or flavor line",
+     "scene_context": "A paragraph explaining the scene's narrative significance and relevance to its universe.",
      "stats": {
        "magic_and_mystery": 0,
        "power_and_action": 0,

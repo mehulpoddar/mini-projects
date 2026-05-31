@@ -49,7 +49,7 @@ Generate a single illustration for a trading card.
 - Art style: semi-realistic anime / illustration hybrid (not photorealistic, not chibi).
 - Lighting should emphasize the mood of the scene (warm for emotional moments, cool/dramatic for action).
 
-**Do not** include any text, titles, labels, watermarks, signatures, or logos in the image. The image should contain artwork only — all text is added separately.\
+**Do not** include any text, titles, labels, borders, frames, watermarks, signatures, or logos in the image. The image should contain scene artwork only — all text and borders are added separately.\
 """
 
 FULL_ART_RARE_PROMPT = """\
@@ -72,7 +72,7 @@ Generate a single full-bleed illustration for a premium trading card.
 - Use a strong focal point with the rest of the composition flowing around it.
 - Color palette should be bold and intentional — use complementary or split-complementary schemes for visual impact.
 
-**Do not** include any text, titles, labels, watermarks, signatures, or logos in the image. The image should contain artwork only — all text is added separately.\
+**Do not** include any text, titles, labels, borders, frames, watermarks, signatures, or logos in the image. The image should contain scene artwork only — all text and borders are added separately.\
 """
 
 
