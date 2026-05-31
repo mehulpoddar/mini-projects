@@ -35,8 +35,8 @@ STANDARD_PROMPT = """\
 Generate a single illustration for a trading card.
 
 **Image specifications:**
-- Orientation: landscape (3:2 ratio)
-- Resolution: 1800×1200px minimum
+- Orientation: landscape (6:5 ratio)
+- Resolution: 1800×1500px minimum
 - The image will be printed inside a bordered frame on a physical 2.5" × 3.5" card
 - Ensure fine details are crisp and will hold up at print resolution
 
@@ -118,12 +118,8 @@ def generate_prompts(
         "# Muniverse Card Art Prompts\n",
         f"**Total prompts:** {len(cards)}\n",
         "Generated from `data/cards.json`. Paste each prompt into "
-        "[Google AI Studio](https://aistudio.google.com) to generate card art.\n",
-        "**Before generating**, set the aspect ratio in AI Studio:\n"
-        "- Standard cards → **3:2 landscape**\n"
-        "- Full Art Rare cards → **5:7 portrait**\n",
-        "Generate images **in the order listed below**, then run "
-        "`organize_art.py` to rename and validate them.\n",
+        "[Gemini app](https://gemini.google.com) chat to generate card art.\n",
+        "Save each image to `assets/art/` named by card ID.\n",
         "---\n",
     ]
 
@@ -131,7 +127,7 @@ def generate_prompts(
         rarity_label = (
             "Full Art Rare" if card["rarity"] == "full_art_rare" else "Standard"
         )
-        aspect = "5:7 portrait" if card["rarity"] == "full_art_rare" else "3:2 landscape"
+        aspect = "5:7 portrait" if card["rarity"] == "full_art_rare" else "6:5 landscape"
         prompt = build_prompt(card)
 
         lines.append(f"## {i}. `{card['id']}` — {card['title']} ({rarity_label})\n")
@@ -149,11 +145,9 @@ def generate_prompts(
     print(f"Generated {len(cards)} prompt(s) → {prompts_path}")
     print(
         f"\nWorkflow:\n"
-        f"  1. Open {prompts_path.name} and paste each prompt into AI Studio\n"
-        f"  2. Set the correct aspect ratio before generating\n"
-        f"  3. Save each image named by card ID (e.g. hp-001.png)\n"
-        f"  4. Place all downloads in assets/art/staging/\n"
-        f"  5. Run: python scripts/organize_art.py"
+        f"  1. Open {prompts_path.name} and paste each prompt into Gemini app chat\n"
+        f"  2. Save each image to assets/art/ named by card ID (e.g. hp-001.png)\n"
+        f"  3. Run: python scripts/render_cards.py"
     )
 
 

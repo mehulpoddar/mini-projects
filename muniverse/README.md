@@ -48,16 +48,29 @@ Every card is scored **1–100** across five traits:
 Stats must not be predictable by universe. Base them strictly on the specific scene. Example: *"Hermione punching Draco"* scores high in Power & Action but low in Magic & Mystery. A Shinchan moment might surprise with a massive Heart & Soul score.
 
 ### Total Stat Cap
-- **Standard card**: total stat sum ~200–220
-- **Full Art Rare**: total stat sum ~240
+- **Standard card**: total stat sum ~250–270
+- **Full Art Rare**: total stat sum ~280–300
 
-This forces real trade-offs — an 88 in Mind & Mischief means terrible scores elsewhere.
+Cards should have **2–3 competitive stats** (55–80 range) alongside clear weaknesses. This creates real choice when calling a category — no card should have a single obvious "always pick this" stat.
+
+### Category Hierarchy (Enforced Imbalance)
+
+The deck is intentionally imbalanced across categories. The following hierarchy must hold by deck-wide average:
+
+```
+Luck & Destiny   ← highest (fate drives these stories)
+Heart & Soul     ← 2nd    (romance universes + emotional peaks)
+Magic & Mystery  ← 3rd    (3 magical universes: HP, Pokémon, Mario)
+Power & Action   ← 4th    (action exists but isn't dominant)
+Mind & Mischief  ← lowest (rare trait — makes high-MiM cards strategic weapons)
+```
+
+**MiM scoring rule:** Only score Mind & Mischief ≥ 70 for scenes involving genuine cunning, scheming, clever pranks, or strategic deception (e.g. Shinchan's negotiations, Fred & George's exit, Chick's dirty bump). **Never** inflate MiM for: awkwardness, defiance, platforming skill, racing, emotional confrontations, or general chaos.
+
+**MM scoring rule:** Cards set in magical worlds (Harry Potter, Pokémon, Mario) should reflect that — even non-magical acts at Hogwarts or in the Mushroom Kingdom carry ambient magic.
 
 ### Mix Specialists and Generalists
 Include specialist cards (one spike stat, weak everywhere else) alongside generalist "Jack-of-all-Trades" cards (~40–50 across the board). Generalists are safe defensive plays; specialists are high-risk, high-reward.
-
-### Global Deck Equilibrium
-The sum total of all cards across the entire deck should be roughly equal per category. When new cards are added, their stats should intentionally fill existing deficits. Running totals are computed from `data/cards.json` automatically via the card generation workflow.
 
 ### Rarity Distribution
 Target ratio of **~4:1** — roughly 4 Standard cards for every 1 Full Art Rare. Full Art Rares should feel genuinely special and be reserved for the most iconic moments in each universe.
@@ -72,9 +85,11 @@ Target ratio of **~4:1** — roughly 4 Standard cards for every 1 Full Art Rare.
 
 muniverse/
 ├── README.md
+├── BUILD.md                   # Setup, art generation, rendering & printing guide
 ├── requirements.txt           # Python dependencies (jinja2, playwright, pikepdf, Pillow)
 ├── assets/
-│   └── art/                   # Card art images, named <card-id>.png
+│   └── art/                   # Upscaled card art images, named <card-id>.png
+│       └── raw/               # Raw downloaded images (git-ignored, input to upscaler)
 ├── data/
 │   └── cards.json             # All card data — single source of truth
 ├── output/                    # Generated card PDFs (git-ignored)
@@ -85,73 +100,15 @@ muniverse/
 ├── scripts/
 │   ├── deck_stats.py          # Deck running totals and stat validation
 │   ├── generate_prompts.py    # Generates ready-to-paste AI image prompts
+│   ├── upscale_art.py         # Upscales undersized art with Real-ESRGAN
 │   └── render_cards.py        # Validates art + renders print-ready PDFs
 └── templates/
     ├── standard.html          # HTML/CSS card template — bordered layout
     └── full-art-rare.html     # HTML/CSS card template — full bleed layout
 ```
 
-### Data Management
+All card data lives in `data/cards.json`. Use the **`/generate-cards`** Windsurf workflow to create new cards.
 
-All card data lives in `data/cards.json`. Stats, running totals, and deck equilibrium are all derived directly from the JSON at generation time.
+Card art images are stored in `assets/art/`, named by card ID (e.g. `hp-001.png`).
 
-Use the **`/generate-cards`** Windsurf workflow (defined at `.windsurf/workflows/generate-cards.md` in the repo root) to create new cards. It automatically reads current deck totals from the JSON, generates cards with the LLM, and appends the results back to the JSON.
-
-### Card Dimensions
-
-All cards are sized to **2.5" × 3.5"** (63mm × 88mm) — standard poker card dimensions, designed for **physical printing at 300 DPI**.
-
-| Rarity | Art Orientation | Art Ratio | Min Resolution (print) |
-|---|---|---|---|
-| Standard | Landscape (framed window) | 3:2 | 1800×1200px |
-| Full Art Rare | Portrait (full bleed) | 5:7 | 1500×2100px |
-
-### Card Art
-
-Card art images are stored in `assets/art/`, named by card ID (e.g. `hp-001.png`). Each card in `cards.json` has an `art_description` field describing the scene. The prompt templates in `prompts/` provide style and composition guidelines for each rarity.
-
-#### Art Generation Workflow
-
-1. **Generate prompts** — builds ready-to-paste prompts from `cards.json` + style templates:
-   ```bash
-   python scripts/generate_prompts.py              # all cards
-   python scripts/generate_prompts.py --ids hp-001  # specific card
-   ```
-   Output: `output/prompts.md` (numbered, ready-to-paste prompts).
-
-2. **Generate images** — open [Google AI Studio](https://aistudio.google.com) and paste each prompt:
-   - Set aspect ratio: **3:2 landscape** for Standard, **5:7 portrait** for Full Art Rare
-   - Generate at **2K resolution** or higher for print quality
-   - Save each image directly to `assets/art/` named by card ID (e.g. `hp-001.png`)
-
-The prompts intentionally exclude card chrome (title, stats, flavor text, borders) because those are rendered by the HTML/CSS templates. The AI generates **scene art only**.
-
-### Rendering & Printing
-
-The render script validates that **all cards have art at print-quality resolution** before generating any PDFs. If any card is missing art or below the minimum dimensions, it fails immediately with a detailed error list.
-
-It then uses Playwright (headless Chromium) to convert the HTML/CSS card templates into **print-ready PDFs** at exact card dimensions (2.5"×3.5").
-
-```bash
-# Setup (one-time)
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-playwright install chromium
-
-# Render all cards to individual PDFs
-python scripts/render_cards.py
-
-# Render specific cards
-python scripts/render_cards.py hp-001 sc-003
-
-# Render all + merge into a single deck PDF
-python scripts/render_cards.py --merge
-
-# Merge with card back interleaved (front, back, front, back, ...)
-python scripts/render_cards.py --merge --back assets/art/card-back.png
-```
-
-Output goes to `output/` (git-ignored). Use `--merge` to produce a combined `muniverse-deck.pdf`. Add `--back <image>` to interleave a card back page after every front — ready for double-sided printing.
-
-**Recommended stock:** 300gsm+ cardstock for best feel. Standard 80lb cover stock works well for home printing. For professional results, use a print service with 350gsm coated cardstock.
+**See [BUILD.md](BUILD.md) for setup, art generation, upscaling, rendering, and printing instructions.**

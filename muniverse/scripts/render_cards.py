@@ -19,12 +19,13 @@ DATA_FILE = BASE_DIR / "data" / "cards.json"
 TEMPLATES_DIR = BASE_DIR / "templates"
 ART_DIR = BASE_DIR / "assets" / "art"
 OUTPUT_DIR = BASE_DIR / "output"
+CARD_BACK = ART_DIR / "card-back.png"
 
 ART_EXTENSIONS = [".png", ".jpg", ".jpeg", ".webp"]
 
 # Minimum dimensions for print quality (300 DPI at card size)
 MIN_DIMENSIONS = {
-    "standard": (1800, 1200),       # 3:2 landscape
+    "standard": (1800, 1500),       # 6:5 landscape
     "full_art_rare": (1500, 2100),  # 5:7 portrait
 }
 
@@ -84,7 +85,7 @@ def validate_art(cards: list[dict]) -> bool:
     return True
 
 
-def render_cards(card_ids: list[str] | None = None, merge: bool = False, back_image: str | None = None):
+def render_cards(card_ids: list[str] | None = None, merge: bool = False, skip_validation: bool = False):
     data = load_cards()
     cards = data["cards"]
 
@@ -102,7 +103,9 @@ def render_cards(card_ids: list[str] | None = None, merge: bool = False, back_im
             return
 
     # Validate all art before rendering anything
-    if not validate_art(cards):
+    if skip_validation:
+        print("Skipping art validation (--skip-validation)")
+    elif not validate_art(cards):
         sys.exit(1)
 
     env = Environment(loader=FileSystemLoader(TEMPLATES_DIR))
@@ -150,19 +153,16 @@ def render_cards(card_ids: list[str] | None = None, merge: bool = False, back_im
 
         browser.close()
 
-    back_pdf = None
-    if back_image:
-        back_path = Path(back_image)
-        if not back_path.exists():
-            print(f"Error: card back image not found: {back_path}")
-            sys.exit(1)
-        with sync_playwright() as p2:
-            b2 = p2.chromium.launch()
-            back_pdf = _render_back_pdf(back_path, b2)
-            b2.close()
-        print(f"  card-back → {back_pdf.name}")
-
     if merge and len(pdf_paths) > 1:
+        back_pdf = None
+        if CARD_BACK.exists():
+            with sync_playwright() as p2:
+                b2 = p2.chromium.launch()
+                back_pdf = _render_back_pdf(CARD_BACK, b2)
+                b2.close()
+            print(f"  card-back → {back_pdf.name}")
+        else:
+            print(f"  No card back found at {CARD_BACK.relative_to(BASE_DIR)} — merging without backs")
         _merge_pdfs(pdf_paths, back_pdf)
 
     print(f"\nRendered {len(pdf_paths)} card(s) to {OUTPUT_DIR}/")
@@ -239,7 +239,7 @@ def main():
         epilog="Examples:\n"
                "  python render_cards.py                  # all cards → individual PDFs\n"
                "  python render_cards.py hp-001 sc-003    # specific cards only\n"
-               "  python render_cards.py --merge          # all cards + merged deck PDF",
+               "  python render_cards.py --merge          # all cards + merged deck PDF (card back auto-included if present)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
@@ -253,12 +253,12 @@ def main():
         help="Also merge all rendered cards into muniverse-deck.pdf",
     )
     parser.add_argument(
-        "--back",
-        metavar="IMAGE",
-        help="Card back image to interleave after every front page in merged PDF",
+        "--skip-validation",
+        action="store_true",
+        help="Skip art presence and dimension checks",
     )
     args = parser.parse_args()
-    render_cards(args.ids if args.ids else None, merge=args.merge, back_image=args.back)
+    render_cards(args.ids if args.ids else None, merge=args.merge, skip_validation=args.skip_validation)
 
 
 if __name__ == "__main__":

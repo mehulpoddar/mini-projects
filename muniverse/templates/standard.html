@@ -34,12 +34,12 @@
   .card-inner {
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, #f5f4ef, #eae8e0);
     border-radius: 18px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     border: 1px solid #d0cfc8;
+    background: linear-gradient(180deg, #f5f4ef, #eae8e0);
   }
 
   /* --- Header --- */
@@ -64,7 +64,7 @@
 
   .card-universe {
     font-family: 'Lora', serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     color: #5a5a5a;
     background: rgba(0,0,0,0.06);
@@ -78,7 +78,7 @@
   /* --- Art Frame --- */
   .card-art {
     margin: 14px 18px 10px;
-    height: 440px;
+    height: 569px;
     border-radius: 10px;
     overflow: hidden;
     border: 3px solid #a8a79e;
@@ -107,24 +107,20 @@
   .card-flavor {
     padding: 10px 26px;
     font-style: italic;
-    font-size: 14px;
+    font-size: 18px;
     color: #4a4a4a;
     text-align: center;
     line-height: 1.5;
-    min-height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   /* --- Stats --- */
   .card-stats {
     flex: 1;
-    padding: 10px 22px 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
+    padding: 10px 22px 8px;
   }
 
   .stat-row {
@@ -134,34 +130,35 @@
   }
 
   .stat-label {
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 600;
     color: #3a3a3a;
-    width: 128px;
+    width: 170px;
+    flex-shrink: 0;
     text-transform: uppercase;
     letter-spacing: 0.6px;
+    white-space: nowrap;
   }
 
   .stat-bar-track {
     flex: 1;
-    height: 20px;
+    height: 10px;
     background: #dddcd4;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     border: 1px solid #c8c7c0;
   }
 
   .stat-bar-fill {
     height: 100%;
-    border-radius: 10px;
     min-width: 4px;
   }
 
   .stat-value {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     color: #2a2a2a;
-    width: 32px;
+    width: 30px;
     text-align: right;
     font-family: 'Cinzel', serif;
   }
@@ -183,13 +180,13 @@
 
   .card-total {
     font-family: 'Cinzel', serif;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 700;
     color: #3a3a3a;
   }
 
   .card-rarity {
-    font-size: 11px;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: #7a7a7a;
@@ -272,7 +269,7 @@
     </div>
 
     <div class="card-footer">
-      <span class="card-total">{{ card.stat_total }}</span>
+      <span class="card-total">Total: {{ card.stat_total }}</span>
       <span class="card-rarity">Standard</span>
     </div>
 
