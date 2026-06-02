@@ -44,7 +44,7 @@ Before generating cards, read `muniverse/README.md` and `muniverse/data/cards.js
 
    **Do NOT compute `stat_total` yourself.** Leave it as 0 — it will be validated and filled by the script in step 3.
 
-   Follow the README's balancing constraints (stat caps, stereotype-breaking, specialist/generalist mix). **Score stats authentically based on the scene** — do not artificially adjust stats for deck-wide balance. Present the generated cards to the user for review before proceeding.
+   Follow the README's balancing constraints (stat caps, specialist/generalist mix). **Scene-specific scoring is non-negotiable** — every stat must be justified by what actually happens in that specific scene. Never score by universe stereotype or general character traits. Do not artificially adjust stats for deck-wide balance. Present the generated cards to the user for review before proceeding.
 
 3. **Validate stat totals and append to cards.json**
    After user approval, for each new card, compute the correct `stat_total` by running:
@@ -64,12 +64,10 @@ Before generating cards, read `muniverse/README.md` and `muniverse/data/cards.js
 
 4. **Validate deck and print stats**
 // turbo
-   Run the validation script to check stat caps, category hierarchy, and flag high-MiM cards:
+   Run the validation script to check stat caps and report deck-wide averages:
    ```
    python3 muniverse/scripts/deck_stats.py
    ```
-   The script will **exit with error** if:
-   - Any card's `stat_total` is outside its rarity cap
-   - The category hierarchy is violated (LD > HS > MM > PA > MiM)
+   The script will **exit with error** if any card's `stat_total` is outside its rarity cap.
 
-   If validation fails, fix the offending cards before proceeding. Review any high-MiM cards (≥70) to confirm they involve genuine cunning/scheming — see README § "Category Hierarchy" for the MiM scoring rule.
+   Review the deck-wide category averages reported by the script. Present these to the user for review — adjustments are made by human decision, not by formula.

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Compute deck running totals, validate card stat totals, and enforce
-the category hierarchy from cards.json."""
+"""Compute deck running totals, validate card stat totals, and report
+deck-wide category averages from cards.json."""
 
 import json
 import sys
@@ -15,19 +15,6 @@ CATEGORIES = [
     "luck_and_destiny",
 ]
 
-# Enforced category hierarchy (highest → lowest by deck-wide average).
-# See README § "Category Hierarchy (Enforced Imbalance)".
-HIERARCHY = [
-    "luck_and_destiny",
-    "heart_and_soul",
-    "magic_and_mystery",
-    "power_and_action",
-    "mind_and_mischief",
-]
-
-# MiM threshold — flag cards with MiM >= this value for manual review
-MIM_HIGH_THRESHOLD = 70
-
 
 def load_cards():
     with open(DATA_FILE) as f:
@@ -40,32 +27,6 @@ def running_totals(cards):
         for cat in CATEGORIES:
             totals[cat] += card["stats"][cat]
     return totals
-
-
-def validate_hierarchy(totals, count):
-    """Check that deck averages follow the enforced hierarchy.
-    Returns (ok, violations) where violations is a list of strings."""
-    avgs = {cat: totals[cat] / count for cat in CATEGORIES}
-    violations = []
-    for i in range(len(HIERARCHY) - 1):
-        higher = HIERARCHY[i]
-        lower = HIERARCHY[i + 1]
-        if avgs[higher] <= avgs[lower]:
-            h_label = higher.replace("_", " ").title()
-            l_label = lower.replace("_", " ").title()
-            violations.append(
-                f"{h_label} ({avgs[higher]:.1f}) must be > "
-                f"{l_label} ({avgs[lower]:.1f})"
-            )
-    return len(violations) == 0, violations
-
-
-def find_high_mim_cards(cards):
-    """Return cards with MiM >= threshold for review."""
-    return [
-        card for card in cards
-        if card["stats"]["mind_and_mischief"] >= MIM_HIGH_THRESHOLD
-    ]
 
 
 def validate_stat_caps(data):
@@ -109,15 +70,7 @@ def print_deck_stats():
     print("-" * 42)
     print(f"    {'Grand Total':<22} {grand_total:>7} {grand_total / count:>7.1f}")
 
-    # --- Hierarchy check ---
-    ok, violations = validate_hierarchy(totals, count)
     print()
-    if ok:
-        print("✓ Category hierarchy holds")
-    else:
-        print("✗ Category hierarchy VIOLATED:")
-        for v in violations:
-            print(f"  - {v}")
 
     # --- Stat cap check ---
     caps_ok, cap_errors = validate_stat_caps(data)
@@ -128,15 +81,8 @@ def print_deck_stats():
         for e in cap_errors:
             print(f"  - {e}")
 
-    # --- High MiM review ---
-    high_mim = find_high_mim_cards(cards)
-    print(f"\nHigh MiM cards (≥{MIM_HIGH_THRESHOLD}): {len(high_mim)}")
-    for card in high_mim:
-        mim = card["stats"]["mind_and_mischief"]
-        print(f"  {card['id']:>8}  MiM={mim:>3}  {card['title']}")
-
-    # Exit with error if any validation failed
-    if not ok or not caps_ok:
+    # Exit with error if stat caps are violated
+    if not caps_ok:
         sys.exit(1)
 
 

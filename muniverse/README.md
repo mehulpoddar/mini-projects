@@ -5,7 +5,7 @@ A cross-universe trading card game where iconic scenes from Mu's favourite ficti
 ## Mu Universes
 
 - The Bad Boy's Girl
-- Me Before You
+- Mu
 - Shinchan
 - Harry Potter
 - Disney Cars
@@ -44,8 +44,10 @@ Every card is scored **1–100** across five traits:
 
 ## Balancing Rules
 
-### Break Universe Stereotypes
-Stats must not be predictable by universe. Base them strictly on the specific scene. Example: *"Hermione punching Draco"* scores high in Power & Action but low in Magic & Mystery. A Shinchan moment might surprise with a massive Heart & Soul score.
+### Scene-Specific Scoring (Non-Negotiable)
+**Stats must be scored authentically based on what happens in the specific scene — this is the highest priority and absolutely non-negotiable.** Never score by universe stereotype or general character traits. Every stat must be justified by what is actually happening in that moment.
+
+Example: *"Hermione punching Draco"* scores high in Power & Action but low in Magic & Mystery — despite being set at Hogwarts. A Shinchan moment might surprise with a massive Heart & Soul score if the scene is genuinely emotional.
 
 ### Total Stat Cap
 - **Standard card**: total stat sum ~250–270
@@ -53,24 +55,11 @@ Stats must not be predictable by universe. Base them strictly on the specific sc
 
 Cards should have **2–3 competitive stats** (55–80 range) alongside clear weaknesses. This creates real choice when calling a category — no card should have a single obvious "always pick this" stat.
 
-### Category Hierarchy (Enforced Imbalance)
-
-The deck is intentionally imbalanced across categories. The following hierarchy must hold by deck-wide average:
-
-```
-Luck & Destiny   ← highest (fate drives these stories)
-Heart & Soul     ← 2nd    (romance universes + emotional peaks)
-Magic & Mystery  ← 3rd    (3 magical universes: HP, Pokémon, Mario)
-Power & Action   ← 4th    (action exists but isn't dominant)
-Mind & Mischief  ← lowest (rare trait — makes high-MiM cards strategic weapons)
-```
-
-**MiM scoring rule:** Only score Mind & Mischief ≥ 70 for scenes involving genuine cunning, scheming, clever pranks, or strategic deception (e.g. Shinchan's negotiations, Fred & George's exit, Chick's dirty bump). **Never** inflate MiM for: awkwardness, defiance, platforming skill, racing, emotional confrontations, or general chaos.
-
-**MM scoring rule:** Cards set in magical worlds (Harry Potter, Pokémon, Mario) should reflect that — even non-magical acts at Hogwarts or in the Mushroom Kingdom carry ambient magic.
+### Natural Imbalance
+The deck will naturally develop category imbalances from authentic scene-based scoring. This is desirable — it makes certain stats rarer and more strategic. Run `deck_stats.py` after any card changes to review deck-wide averages. If adjustments are needed, make them by adding or swapping scenes — not by tweaking individual card stats.
 
 ### Mix Specialists and Generalists
-Include specialist cards (one spike stat, weak everywhere else) alongside generalist "Jack-of-all-Trades" cards (~40–50 across the board). Generalists are safe defensive plays; specialists are high-risk, high-reward.
+Include specialist cards (2–3 spike stats, weak everywhere else) alongside generalist "Jack-of-all-Trades" cards (~40–50 across the board). Generalists are safe defensive plays; specialists are high-risk, high-reward.
 
 ### Rarity Distribution
 Target ratio of **~4:1** — roughly 4 Standard cards for every 1 Full Art Rare. Full Art Rares should feel genuinely special and be reserved for the most iconic moments in each universe.

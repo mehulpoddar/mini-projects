@@ -14,6 +14,8 @@ from jinja2 import Environment, FileSystemLoader
 from PIL import Image
 from playwright.sync_api import sync_playwright
 
+from deck_stats import print_deck_stats
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_FILE = BASE_DIR / "data" / "cards.json"
 TEMPLATES_DIR = BASE_DIR / "templates"
@@ -85,7 +87,7 @@ def validate_art(cards: list[dict]) -> bool:
     return True
 
 
-def render_cards(card_ids: list[str] | None = None, merge: bool = False, skip_validation: bool = False):
+def render_cards(card_ids: list[str] | None = None, merge: bool = False, back: bool = False, skip_validation: bool = False):
     data = load_cards()
     cards = data["cards"]
 
@@ -162,8 +164,8 @@ def render_cards(card_ids: list[str] | None = None, merge: bool = False, skip_va
                 b2.close()
             print(f"  card-back → {back_pdf.name}")
         else:
-            print(f"  No card back found at {CARD_BACK.relative_to(BASE_DIR)} — merging without backs")
-        _merge_pdfs(pdf_paths, back_pdf)
+            print(f"  No card back found at {CARD_BACK.relative_to(BASE_DIR)} — merging without cover/backs")
+        _merge_pdfs(pdf_paths, back_pdf, interleave_backs=back)
 
     print(f"\nRendered {len(pdf_paths)} card(s) to {OUTPUT_DIR}/")
 
@@ -204,8 +206,13 @@ def _render_back_pdf(back_image: Path, browser) -> Path:
         os.unlink(tmp_path)
 
 
-def _merge_pdfs(pdf_paths: list[Path], back_pdf: Path | None = None):
-    """Merge individual card PDFs into a single deck file, optionally interleaving a back page."""
+def _merge_pdfs(pdf_paths: list[Path], back_pdf: Path | None = None, interleave_backs: bool = False):
+    """Merge individual card PDFs into a single deck file.
+
+    The card-back page (if available) is always added as the first page (cover).
+    When interleave_backs is True, a card-back page is also inserted after every
+    front page (useful for double-sided printing).
+    """
     try:
         from pikepdf import Pdf
     except ImportError:
@@ -220,10 +227,15 @@ def _merge_pdfs(pdf_paths: list[Path], back_pdf: Path | None = None):
         back_src = Pdf.open(back_pdf)
 
     merged = Pdf.new()
+
+    # Card-back as cover page
+    if back_src:
+        merged.pages.append(back_src.pages[0])
+
     for path in sorted(pdf_paths):
         with Pdf.open(path) as src:
             merged.pages.extend(src.pages)
-        if back_src:
+        if interleave_backs and back_src:
             merged.pages.append(back_src.pages[0])
 
     merged_path = pdf_paths[0].parent / "muniverse-deck.pdf"
@@ -239,7 +251,8 @@ def main():
         epilog="Examples:\n"
                "  python render_cards.py                  # all cards → individual PDFs\n"
                "  python render_cards.py hp-001 sc-003    # specific cards only\n"
-               "  python render_cards.py --merge          # all cards + merged deck PDF (card back auto-included if present)",
+               "  python render_cards.py --merge          # all cards + merged deck PDF (card-back as cover)\n"
+               "  python render_cards.py --merge --back    # merged PDF with card-back interleaved for double-sided printing",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
@@ -250,7 +263,12 @@ def main():
     parser.add_argument(
         "--merge",
         action="store_true",
-        help="Also merge all rendered cards into muniverse-deck.pdf",
+        help="Merge all rendered cards into muniverse-deck.pdf (card-back as cover page)",
+    )
+    parser.add_argument(
+        "--back",
+        action="store_true",
+        help="Interleave card-back after every front page in merged PDF (requires --merge)",
     )
     parser.add_argument(
         "--skip-validation",
@@ -258,7 +276,13 @@ def main():
         help="Skip art presence and dimension checks",
     )
     args = parser.parse_args()
-    render_cards(args.ids if args.ids else None, merge=args.merge, skip_validation=args.skip_validation)
+    if args.back and not args.merge:
+        parser.error("--back requires --merge")
+    render_cards(args.ids if args.ids else None, merge=args.merge, back=args.back, skip_validation=args.skip_validation)
+    print("\n" + "=" * 42)
+    print("DECK BALANCE REPORT")
+    print("=" * 42)
+    print_deck_stats()
 
 
 if __name__ == "__main__":
