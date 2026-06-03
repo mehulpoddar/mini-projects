@@ -36,13 +36,12 @@
       "flavor_text": "Welcome home, Tessie. Think fast!",
       "scene_context": "After three years away at military school, Cole Stone marks his return by immediately pranking his childhood target, Tessa O'Connell. This moment establishes their renewed dynamic: Cole as the relentless provocateur and Tessa as the fiery but coordinated-challenged 'shortcake'.",
       "stats": {
-        "magic_and_mystery": 5,
-        "power_and_action": 70,
-        "mind_and_mischief": 90,
-        "heart_and_soul": 35,
-        "luck_and_destiny": 60
-      },
-      "stat_total": 260
+        "magic_and_mystery": 1,
+        "power_and_action": 69,
+        "mind_and_mischief": 89,
+        "heart_and_soul": 37,
+        "luck_and_destiny": 63
+      }
     },
     {
       "id": "bbg-002",
@@ -53,13 +52,12 @@
       "flavor_text": "He's an idiot. Let's give him some payback.",
       "scene_context": "Drunk on spiked punch and victory after the gala, Tessa agrees to Cole's 'unconventional' method of stress relief: slashing Jay's tires. It is a moment of pure, rebellious bonding that highlights Cole's 'bad boy' influence.",
       "stats": {
-        "magic_and_mystery": 5,
-        "power_and_action": 70,
+        "magic_and_mystery": 6,
+        "power_and_action": 71,
         "mind_and_mischief": 90,
-        "heart_and_soul": 35,
-        "luck_and_destiny": 60
-      },
-      "stat_total": 260
+        "heart_and_soul": 30,
+        "luck_and_destiny": 63
+      }
     },
     {
       "id": "bbg-003",
@@ -70,13 +68,12 @@
       "flavor_text": "You were looking at me with hearts in your eyes.",
       "scene_context": "Cole manipulates his teacher into making Tessa his tutor, despite being smarter than her. He uses the 'study sessions' as an excuse to relentlessly flirt, eventually making her nod in agreement when he calls himself a 'sex god'.",
       "stats": {
-        "magic_and_mystery": 10,
-        "power_and_action": 25,
-        "mind_and_mischief": 90,
-        "heart_and_soul": 75,
-        "luck_and_destiny": 60
-      },
-      "stat_total": 260
+        "magic_and_mystery": 7,
+        "power_and_action": 20,
+        "mind_and_mischief": 88,
+        "heart_and_soul": 84,
+        "luck_and_destiny": 57
+      }
     },
     {
       "id": "bbg-004",
@@ -88,12 +85,11 @@
       "scene_context": "The emotional turning point where Cole apologizes for fourteen years of 'misery'. He reveals that he was always in love with her and bullied her out of jealousy over Jay and his own insecurities. He affirms that he never cared about her weight, only her.",
       "stats": {
         "magic_and_mystery": 35,
-        "power_and_action": 25,
-        "mind_and_mischief": 15,
+        "power_and_action": 22,
+        "mind_and_mischief": 16,
         "heart_and_soul": 90,
-        "luck_and_destiny": 85
-      },
-      "stat_total": 250
+        "luck_and_destiny": 87
+      }
     },
     {
       "id": "bbg-005",
@@ -104,13 +100,12 @@
       "flavor_text": "Stop overthinking, Tessie. Just enjoy the moment.",
       "scene_context": "What began as a playful pancake batter fight ends in high-tension proximity in the Stone family pool. It is the first time Tessa admits to herself that she wants to be closer to him.",
       "stats": {
-        "magic_and_mystery": 5,
-        "power_and_action": 50,
+        "magic_and_mystery": 8,
+        "power_and_action": 51,
         "mind_and_mischief": 60,
-        "heart_and_soul": 90,
-        "luck_and_destiny": 55
-      },
-      "stat_total": 260
+        "heart_and_soul": 89,
+        "luck_and_destiny": 50
+      }
     },
     {
       "id": "bbg-006",
@@ -121,13 +116,12 @@
       "flavor_text": "I'm finding a better spot for this after school.",
       "scene_context": "Unable to wait for a moment alone, the couple sneaks into a closet between classes. This scene highlights their 'honeymoon phase' and the irresistible magnetic pull between them.",
       "stats": {
-        "magic_and_mystery": 10,
-        "power_and_action": 70,
-        "mind_and_mischief": 90,
-        "heart_and_soul": 80,
-        "luck_and_destiny": 40
-      },
-      "stat_total": 290
+        "magic_and_mystery": 12,
+        "power_and_action": 65,
+        "mind_and_mischief": 88,
+        "heart_and_soul": 81,
+        "luck_and_destiny": 44
+      }
     },
     {
       "id": "bbg-007",
@@ -138,13 +132,12 @@
       "flavor_text": "And that, ladies and gentlemen, is how you do a dip.",
       "scene_context": "The climax of Cole's plan to 'dethrone' Nicole. By presenting Tessa as a stunning, confident beauty at the Farrow Hills gala, he forces the town to see her as more than an outcast. This is the moment they officially become the 'it' couple.",
       "stats": {
-        "magic_and_mystery": 25,
-        "power_and_action": 50,
-        "mind_and_mischief": 40,
-        "heart_and_soul": 90,
+        "magic_and_mystery": 23,
+        "power_and_action": 48,
+        "mind_and_mischief": 44,
+        "heart_and_soul": 89,
         "luck_and_destiny": 85
-      },
-      "stat_total": 290
+      }
     },
     {
       "id": "mu-001",
@@ -155,13 +148,12 @@
       "flavor_text": "Angel wings on the wall. A real one in front of him.",
       "scene_context": "A chill afternoon at Artjuna cafe in Goa with their dance crew friends. After hanging out at the bohemian cafe, they played table tennis together for the first time in ages — competitive, laughing, and completely in their element.",
       "stats": {
-        "magic_and_mystery": 15,
-        "power_and_action": 70,
-        "mind_and_mischief": 50,
-        "heart_and_soul": 65,
-        "luck_and_destiny": 55
-      },
-      "stat_total": 255
+        "magic_and_mystery": 13,
+        "power_and_action": 71,
+        "mind_and_mischief": 53,
+        "heart_and_soul": 63,
+        "luck_and_destiny": 54
+      }
     },
     {
       "id": "mu-002",
@@ -172,13 +164,12 @@
       "flavor_text": "Clouds behind them. Mountains beneath them. Magic between them.",
       "scene_context": "At the tea estates of Munnar with friends. He had to convince her endlessly to climb just a few steps up a hill for a photo together — and it came out beautiful. She struck one of their signature poses, hands up in excitement, and he found her absolutely adorable.",
       "stats": {
-        "magic_and_mystery": 30,
-        "power_and_action": 70,
-        "mind_and_mischief": 45,
-        "heart_and_soul": 75,
-        "luck_and_destiny": 35
-      },
-      "stat_total": 255
+        "magic_and_mystery": 31,
+        "power_and_action": 66,
+        "mind_and_mischief": 49,
+        "heart_and_soul": 72,
+        "luck_and_destiny": 36
+      }
     },
     {
       "id": "mu-003",
@@ -189,13 +180,12 @@
       "flavor_text": "Stunning view. Nothing compared to her.",
       "scene_context": "An anniversary date at Skyye Lounge, a high rooftop restaurant with a stunning view, perfect breeze, and beautiful lighting. After much convincing, they took some pictures together — and they came out so well that it became their go-to photo to show family.",
       "stats": {
-        "magic_and_mystery": 75,
-        "power_and_action": 20,
-        "mind_and_mischief": 35,
-        "heart_and_soul": 80,
-        "luck_and_destiny": 50
-      },
-      "stat_total": 260
+        "magic_and_mystery": 76,
+        "power_and_action": 13,
+        "mind_and_mischief": 37,
+        "heart_and_soul": 83,
+        "luck_and_destiny": 49
+      }
     },
     {
       "id": "mu-004",
@@ -206,13 +196,12 @@
       "flavor_text": "She missed the pool. The pool missed out.",
       "scene_context": "On a Goa trip with their college crew, she fell sick and couldn't make it to the pool. But they turned the room into their own photoshoot — she looked absolutely stunning in a sheer top, struck some gorgeous sensual poses, and the pictures turned out fantastic.",
       "stats": {
-        "magic_and_mystery": 40,
-        "power_and_action": 25,
-        "mind_and_mischief": 70,
-        "heart_and_soul": 55,
-        "luck_and_destiny": 60
-      },
-      "stat_total": 250
+        "magic_and_mystery": 42,
+        "power_and_action": 26,
+        "mind_and_mischief": 72,
+        "heart_and_soul": 57,
+        "luck_and_destiny": 55
+      }
     },
     {
       "id": "mu-005",
@@ -225,11 +214,10 @@
       "stats": {
         "magic_and_mystery": 80,
         "power_and_action": 25,
-        "mind_and_mischief": 30,
-        "heart_and_soul": 65,
+        "mind_and_mischief": 28,
+        "heart_and_soul": 69,
         "luck_and_destiny": 65
-      },
-      "stat_total": 265
+      }
     },
     {
       "id": "mu-006",
@@ -240,13 +228,12 @@
       "flavor_text": "They cleaned the pool. They dipped the phone. They tripped in the ocean.",
       "scene_context": "A beautiful weekend at a beachfront private pool villa in South Goa — just the two of them. They hopped between the pool and the ocean, laughed endlessly, damaged a phone clicking pool pictures, and even cleaned the pool themselves. Before one session, they randomly took some photos that turned out to be among the most cherished pictures of them together.",
       "stats": {
-        "magic_and_mystery": 40,
+        "magic_and_mystery": 42,
         "power_and_action": 70,
-        "mind_and_mischief": 25,
-        "heart_and_soul": 75,
-        "luck_and_destiny": 55
-      },
-      "stat_total": 265
+        "mind_and_mischief": 27,
+        "heart_and_soul": 73,
+        "luck_and_destiny": 51
+      }
     },
     {
       "id": "mu-007",
@@ -257,13 +244,12 @@
       "flavor_text": "Look at the stars. Look how they shine for you.",
       "scene_context": "Their first concert together — Coldplay in Gujarat. They planned every detail meticulously: the perfect seats, how to wrap up food, all the logistics. And it all worked out beautifully. Surrounded by glowing lights, swaying to the music, they captured some of their happiest pictures in a night that felt like pure magic.",
       "stats": {
-        "magic_and_mystery": 85,
-        "power_and_action": 45,
-        "mind_and_mischief": 40,
-        "heart_and_soul": 80,
-        "luck_and_destiny": 40
-      },
-      "stat_total": 290
+        "magic_and_mystery": 87,
+        "power_and_action": 43,
+        "mind_and_mischief": 42,
+        "heart_and_soul": 78,
+        "luck_and_destiny": 39
+      }
     },
     {
       "id": "sc-001",
@@ -274,13 +260,12 @@
       "flavor_text": "Buri buri~!",
       "scene_context": "Shinchan's signature provocation: dropping his pants and shaking his butt at the worst possible moment. It's pure mischief — deliberate, shameless, and guaranteed to send Misae into a rage. The buri buri dance is the single most recognizable Shinchan moment worldwide.",
       "stats": {
-        "magic_and_mystery": 15,
-        "power_and_action": 65,
+        "magic_and_mystery": 23,
+        "power_and_action": 58,
         "mind_and_mischief": 90,
-        "heart_and_soul": 40,
-        "luck_and_destiny": 40
-      },
-      "stat_total": 250
+        "heart_and_soul": 44,
+        "luck_and_destiny": 37
+      }
     },
     {
       "id": "sc-002",
@@ -291,13 +276,12 @@
       "flavor_text": "In his mind, he already saved the world.",
       "scene_context": "Shinchan's hero worship of Action Kamen is one of his defining traits, and Chocobi snacks are his fuel. In his imagination, the living room becomes a battlefield and he's the star. The fantasy-reality bleed is classic Shinchan — hilarious and endearing.",
       "stats": {
-        "magic_and_mystery": 90,
-        "power_and_action": 70,
-        "mind_and_mischief": 15,
-        "heart_and_soul": 20,
-        "luck_and_destiny": 55
-      },
-      "stat_total": 250
+        "magic_and_mystery": 88,
+        "power_and_action": 74,
+        "mind_and_mischief": 14,
+        "heart_and_soul": 23,
+        "luck_and_destiny": 51
+      }
     },
     {
       "id": "sc-003",
@@ -309,12 +293,11 @@
       "scene_context": "Shinchan's shameless crush on his beautiful college-student teacher Nanako-sensei is one of the show's longest-running gags. He flirts with the confidence of a grown man, she has no idea how to handle a five-year-old suitor, and everyone else can only watch in stunned silence.",
       "stats": {
         "magic_and_mystery": 25,
-        "power_and_action": 30,
-        "mind_and_mischief": 80,
-        "heart_and_soul": 75,
-        "luck_and_destiny": 40
-      },
-      "stat_total": 250
+        "power_and_action": 28,
+        "mind_and_mischief": 82,
+        "heart_and_soul": 77,
+        "luck_and_destiny": 39
+      }
     },
     {
       "id": "sc-004",
@@ -325,13 +308,12 @@
       "flavor_text": "The bump grew. So did his next idea.",
       "scene_context": "The Misae head-bump is as iconic as Shinchan himself. No matter how many times she whacks him, the bump grows cartoonishly large and Shinchan is completely unfazed within seconds. It's the eternal cycle: mischief, punishment, repeat. Underneath it all, pure mother-son love.",
       "stats": {
-        "magic_and_mystery": 15,
-        "power_and_action": 85,
-        "mind_and_mischief": 55,
-        "heart_and_soul": 55,
+        "magic_and_mystery": 21,
+        "power_and_action": 81,
+        "mind_and_mischief": 57,
+        "heart_and_soul": 52,
         "luck_and_destiny": 40
-      },
-      "stat_total": 250
+      }
     },
     {
       "id": "sc-005",
@@ -342,13 +324,12 @@
       "flavor_text": "Five kids. One plan. Zero chance it works.",
       "scene_context": "The Kasukabe Defense Force — Shinchan, Kazama, Nene, Bo-chan, and Masao — is the greatest kindergarten squad in anime. Their 'missions' always go sideways, but the friendship is unbreakable. Each kid is a perfect archetype: the leader, the brain, the muscle, the mystery, and the crybaby.",
       "stats": {
-        "magic_and_mystery": 25,
+        "magic_and_mystery": 26,
         "power_and_action": 45,
-        "mind_and_mischief": 55,
-        "heart_and_soul": 65,
+        "mind_and_mischief": 54,
+        "heart_and_soul": 63,
         "luck_and_destiny": 70
-      },
-      "stat_total": 260
+      }
     },
     {
       "id": "sc-006",
@@ -359,13 +340,12 @@
       "flavor_text": "Two Noharas. One glass. Zero dignity.",
       "scene_context": "The Nohara siblings share a rare moment of synchronized mischief. Shinchan, the eternal troublemaker, finally finds a partner-in-crime in his baby sister. No rivalry, no face-grabbing — just two kids being perfectly, beautifully silly together.",
       "stats": {
-        "magic_and_mystery": 5,
-        "power_and_action": 55,
-        "mind_and_mischief": 85,
-        "heart_and_soul": 85,
-        "luck_and_destiny": 30
-      },
-      "stat_total": 260
+        "magic_and_mystery": 6,
+        "power_and_action": 53,
+        "mind_and_mischief": 83,
+        "heart_and_soul": 89,
+        "luck_and_destiny": 26
+      }
     },
     {
       "id": "sc-007",
@@ -376,13 +356,12 @@
       "flavor_text": "Shiro came back with everything. Correct change included.",
       "scene_context": "When the Nohara family needs something from the store, they send Shiro. And Shiro delivers — every time, correct items, correct change. He's quietly the most reliable and competent member of the entire household. A loyal, unflappable dog navigating suburban Japan with more composure than any human in the show.",
       "stats": {
-        "magic_and_mystery": 40,
-        "power_and_action": 45,
-        "mind_and_mischief": 30,
-        "heart_and_soul": 90,
-        "luck_and_destiny": 80
-      },
-      "stat_total": 285
+        "magic_and_mystery": 51,
+        "power_and_action": 43,
+        "mind_and_mischief": 29,
+        "heart_and_soul": 88,
+        "luck_and_destiny": 76
+      }
     },
     {
       "id": "hp-001",
@@ -394,12 +373,11 @@
       "scene_context": "The defining moment Harry truly realizes he is a wizard. The connection between his wand and Voldemort's establishes the inescapable destiny that will tie them together until the very end.",
       "stats": {
         "magic_and_mystery": 90,
-        "power_and_action": 15,
-        "mind_and_mischief": 20,
-        "heart_and_soul": 45,
-        "luck_and_destiny": 90
-      },
-      "stat_total": 260
+        "power_and_action": 21,
+        "mind_and_mischief": 17,
+        "heart_and_soul": 41,
+        "luck_and_destiny": 89
+      }
     },
     {
       "id": "hp-002",
@@ -411,12 +389,11 @@
       "scene_context": "Harry's first moments at Hogwarts. The Sorting Hat deliberates between Slytherin and Gryffindor while Harry desperately whispers his plea. This single choice shapes everything that follows — and it's Harry's choice, not the Hat's.",
       "stats": {
         "magic_and_mystery": 90,
-        "power_and_action": 10,
-        "mind_and_mischief": 15,
-        "heart_and_soul": 65,
-        "luck_and_destiny": 75
-      },
-      "stat_total": 255
+        "power_and_action": 12,
+        "mind_and_mischief": 16,
+        "heart_and_soul": 61,
+        "luck_and_destiny": 74
+      }
     },
     {
       "id": "hp-003",
@@ -427,13 +404,12 @@
       "flavor_text": "\"I knew I could do it this time, because I'd already done it.\"",
       "scene_context": "Prisoner of Azkaban. Harry realizes that no one is coming to save him—he has to save himself. Conjuring the corporeal Patronus is his transition from a boy relying on protectors to a powerful wizard in his own right.",
       "stats": {
-        "magic_and_mystery": 90,
+        "magic_and_mystery": 88,
         "power_and_action": 85,
-        "mind_and_mischief": 20,
-        "heart_and_soul": 65,
+        "mind_and_mischief": 22,
+        "heart_and_soul": 63,
         "luck_and_destiny": 10
-      },
-      "stat_total": 270
+      }
     },
     {
       "id": "hp-004",
@@ -444,13 +420,12 @@
       "flavor_text": "\"He will not be killed! He is mine!\"",
       "scene_context": "Goblet of Fire. Harry's first true duel with the resurrected Dark Lord. Their twin cores lock, saving Harry's life and allowing him to see the echoes of his parents one last time before escaping.",
       "stats": {
-        "magic_and_mystery": 90,
+        "magic_and_mystery": 88,
         "power_and_action": 70,
-        "mind_and_mischief": 15,
-        "heart_and_soul": 55,
+        "mind_and_mischief": 21,
+        "heart_and_soul": 49,
         "luck_and_destiny": 40
-      },
-      "stat_total": 270
+      }
     },
     {
       "id": "hp-005",
@@ -462,12 +437,11 @@
       "scene_context": "Order of the Phoenix. The only wizard Voldemort ever feared displays exactly why. A masterclass in magical combat that proves sheer power is nothing without absolute control and wisdom.",
       "stats": {
         "magic_and_mystery": 90,
-        "power_and_action": 90,
-        "mind_and_mischief": 65,
-        "heart_and_soul": 15,
-        "luck_and_destiny": 10
-      },
-      "stat_total": 270
+        "power_and_action": 86,
+        "mind_and_mischief": 67,
+        "heart_and_soul": 14,
+        "luck_and_destiny": 11
+      }
     },
     {
       "id": "hp-006",
@@ -479,12 +453,11 @@
       "scene_context": "Snape's memories in the Pensieve reveal the truth: his entire life was shaped by his love for Lily Potter. The silver doe patronus — matching hers — proves that Severus Snape protected Harry for decades out of undying love.",
       "stats": {
         "magic_and_mystery": 90,
-        "power_and_action": 15,
-        "mind_and_mischief": 10,
-        "heart_and_soul": 90,
-        "luck_and_destiny": 75
-      },
-      "stat_total": 280
+        "power_and_action": 19,
+        "mind_and_mischief": 12,
+        "heart_and_soul": 87,
+        "luck_and_destiny": 74
+      }
     },
     {
       "id": "hp-007",
@@ -495,13 +468,12 @@
       "flavor_text": "It showed him everything he ever wanted — and could never have.",
       "scene_context": "Harry's tragedy isn't that he must fight Voldemort, but that he grew up without the love of his family. The Mirror of Erised beautifully and heartbreakingly encapsulates the core motivation for everything he does.",
       "stats": {
-        "magic_and_mystery": 90,
-        "power_and_action": 10,
-        "mind_and_mischief": 15,
+        "magic_and_mystery": 87,
+        "power_and_action": 14,
+        "mind_and_mischief": 16,
         "heart_and_soul": 90,
-        "luck_and_destiny": 75
-      },
-      "stat_total": 280
+        "luck_and_destiny": 77
+      }
     },
     {
       "id": "dc-001",
@@ -512,13 +484,12 @@
       "flavor_text": "Turn left. Turn right. Bessie don't care.",
       "scene_context": "Lightning McQueen, the arrogant rookie racer, is sentenced to repave the road he destroyed using Bessie — the town's ancient, impossibly slow road-paving machine. It's the ultimate humiliation for a speed-obsessed race car, and the beginning of his entire character arc.",
       "stats": {
-        "magic_and_mystery": 40,
-        "power_and_action": 75,
-        "mind_and_mischief": 30,
-        "heart_and_soul": 25,
-        "luck_and_destiny": 80
-      },
-      "stat_total": 250
+        "magic_and_mystery": 42,
+        "power_and_action": 73,
+        "mind_and_mischief": 28,
+        "heart_and_soul": 27,
+        "luck_and_destiny": 81
+      }
     },
     {
       "id": "dc-002",
@@ -529,13 +500,12 @@
       "flavor_text": "I swear, Mater, if we die doing this—",
       "scene_context": "Mater introduces McQueen to his favorite pastime: sneaking into fields at night and scaring sleeping tractors. It's juvenile, dangerous, and the exact moment McQueen starts having genuine fun for the first time — not racing-podium fun.",
       "stats": {
-        "magic_and_mystery": 20,
-        "power_and_action": 60,
+        "magic_and_mystery": 26,
+        "power_and_action": 63,
         "mind_and_mischief": 80,
-        "heart_and_soul": 15,
+        "heart_and_soul": 8,
         "luck_and_destiny": 75
-      },
-      "stat_total": 250
+      }
     },
     {
       "id": "dc-003",
@@ -546,13 +516,12 @@
       "flavor_text": "Lights don't shine as brightly as they shone before.",
       "scene_context": "Before McQueen arrived, Radiator Springs was a ghost town — bypassed by the interstate decades ago, its businesses empty, its residents stuck in the past. This quiet, sun-baked beauty is what McQueen stumbles into and ultimately fights to protect.",
       "stats": {
-        "magic_and_mystery": 50,
+        "magic_and_mystery": 49,
         "power_and_action": 10,
-        "mind_and_mischief": 15,
-        "heart_and_soul": 90,
-        "luck_and_destiny": 90
-      },
-      "stat_total": 255
+        "mind_and_mischief": 24,
+        "heart_and_soul": 84,
+        "luck_and_destiny": 89
+      }
     },
     {
       "id": "dc-004",
@@ -563,13 +532,12 @@
       "flavor_text": "You drive like you fix roads. Lousy!",
       "scene_context": "Doc Hudson proves he isn't just a grumpy old judge—he still has the magic. The drifting technique he demonstrates here is exactly what saves McQueen from wiping out in the final Piston Cup race.",
       "stats": {
-        "magic_and_mystery": 25,
-        "power_and_action": 75,
-        "mind_and_mischief": 60,
-        "heart_and_soul": 60,
-        "luck_and_destiny": 40
-      },
-      "stat_total": 260
+        "magic_and_mystery": 34,
+        "power_and_action": 65,
+        "mind_and_mischief": 63,
+        "heart_and_soul": 63,
+        "luck_and_destiny": 34
+      }
     },
     {
       "id": "dc-005",
@@ -580,13 +548,12 @@
       "flavor_text": "A little slice of heaven on Route 66.",
       "scene_context": "The Cozy Cone Motel — Sally's pride and joy, and the place where McQueen discovers that life isn't just about the next race. Their quiet evenings together, parked side by side under the stars, mark his transformation from a self-centered racer to someone who cares about a place and its people.",
       "stats": {
-        "magic_and_mystery": 30,
-        "power_and_action": 15,
+        "magic_and_mystery": 32,
+        "power_and_action": 19,
         "mind_and_mischief": 25,
         "heart_and_soul": 90,
-        "luck_and_destiny": 90
-      },
-      "stat_total": 250
+        "luck_and_destiny": 86
+      }
     },
     {
       "id": "dc-006",
@@ -597,13 +564,12 @@
       "flavor_text": "Peet stop.",
       "scene_context": "At the final Piston Cup race, McQueen's real pit crew shows up — his Radiator Springs family. Doc Hudson, revealed as the legendary Hudson Hornet, serves as crew chief. The moment proves McQueen didn't just find a pit stop in Radiator Springs. He found a home.",
       "stats": {
-        "magic_and_mystery": 25,
-        "power_and_action": 70,
-        "mind_and_mischief": 40,
-        "heart_and_soul": 85,
-        "luck_and_destiny": 40
-      },
-      "stat_total": 260
+        "magic_and_mystery": 32,
+        "power_and_action": 68,
+        "mind_and_mischief": 41,
+        "heart_and_soul": 84,
+        "luck_and_destiny": 36
+      }
     },
     {
       "id": "dc-007",
@@ -614,13 +580,12 @@
       "flavor_text": "Speed. I am speed.",
       "scene_context": "The opening of the Piston Cup season. Lightning McQueen — brash, arrogant, and impossibly fast — bursts onto the biggest stage in racing. He doesn't have friends, a crew chief, or even a real sponsor. But he has speed, and in his mind, that's all he needs. The moment that introduces the world to a rookie who will learn the hard way that winning isn't everything.",
       "stats": {
-        "magic_and_mystery": 30,
-        "power_and_action": 90,
-        "mind_and_mischief": 60,
+        "magic_and_mystery": 33,
+        "power_and_action": 88,
+        "mind_and_mischief": 61,
         "heart_and_soul": 25,
-        "luck_and_destiny": 75
-      },
-      "stat_total": 280
+        "luck_and_destiny": 74
+      }
     },
     {
       "id": "pk-001",
@@ -631,13 +596,12 @@
       "flavor_text": "The flame was almost out. Then someone cared.",
       "scene_context": "Charmander was abandoned by its trainer Damian, who promised to return but never did. It waited loyally on a rock in a rainstorm, its life-sustaining tail flame nearly extinguished. Ash found it, shielded it, and rushed it to safety. Charmander's unwavering loyalty to Ash — and eventually its fiery defiance as Charizard — all traces back to this moment of rescue.",
       "stats": {
-        "magic_and_mystery": 80,
-        "power_and_action": 25,
-        "mind_and_mischief": 10,
-        "heart_and_soul": 90,
+        "magic_and_mystery": 82,
+        "power_and_action": 27,
+        "mind_and_mischief": 9,
+        "heart_and_soul": 88,
         "luck_and_destiny": 80
-      },
-      "stat_total": 285
+      }
     },
     {
       "id": "pk-002",
@@ -648,13 +612,12 @@
       "flavor_text": "It took a storm to show what kind of Trainer he truly was.",
       "scene_context": "Episode 1. Ash sacrifices himself to protect a Pokémon that has treated him with nothing but hostility. This single act of pure selflessness is what finally earns Pikachu's absolute, unwavering loyalty.",
       "stats": {
-        "magic_and_mystery": 35,
-        "power_and_action": 60,
-        "mind_and_mischief": 15,
-        "heart_and_soul": 85,
-        "luck_and_destiny": 55
-      },
-      "stat_total": 250
+        "magic_and_mystery": 36,
+        "power_and_action": 56,
+        "mind_and_mischief": 24,
+        "heart_and_soul": 87,
+        "luck_and_destiny": 48
+      }
     },
     {
       "id": "pk-003",
@@ -665,13 +628,12 @@
       "flavor_text": "Looks like Team Rocket's blasting off again!",
       "scene_context": "The recurring gag that defines Pokémon's humor. Jessie, James, and Meowth's elaborate schemes always end the same way — blasted into the sky by Pikachu's Thunderbolt. Their persistence in failure is both hilarious and oddly admirable.",
       "stats": {
-        "magic_and_mystery": 40,
-        "power_and_action": 70,
-        "mind_and_mischief": 75,
-        "heart_and_soul": 10,
+        "magic_and_mystery": 37,
+        "power_and_action": 67,
+        "mind_and_mischief": 78,
+        "heart_and_soul": 15,
         "luck_and_destiny": 55
-      },
-      "stat_total": 250
+      }
     },
     {
       "id": "pk-004",
@@ -682,13 +644,12 @@
       "flavor_text": "\"You take care of her, Butterfree!\"",
       "scene_context": "The first time Ash releases a Pokémon. It taught an entire generation of kids a profound lesson about love and growing up: sometimes, loving someone means knowing when to let them go.",
       "stats": {
-        "magic_and_mystery": 90,
-        "power_and_action": 25,
-        "mind_and_mischief": 10,
-        "heart_and_soul": 90,
-        "luck_and_destiny": 75
-      },
-      "stat_total": 290
+        "magic_and_mystery": 89,
+        "power_and_action": 22,
+        "mind_and_mischief": 15,
+        "heart_and_soul": 88,
+        "luck_and_destiny": 76
+      }
     },
     {
       "id": "pk-005",
@@ -699,13 +660,12 @@
       "flavor_text": "He took the battle to the stratosphere, and brought the heat down with him.",
       "scene_context": "The battle against Blaine. Charizard finally shows his true, terrifying power by carrying Magmar into the upper atmosphere and crashing down in an earth-shattering Seismic Toss. One of the most unforgettable anime battles.",
       "stats": {
-        "magic_and_mystery": 60,
-        "power_and_action": 90,
-        "mind_and_mischief": 15,
-        "heart_and_soul": 55,
-        "luck_and_destiny": 30
-      },
-      "stat_total": 250
+        "magic_and_mystery": 62,
+        "power_and_action": 88,
+        "mind_and_mischief": 20,
+        "heart_and_soul": 53,
+        "luck_and_destiny": 29
+      }
     },
     {
       "id": "pk-006",
@@ -716,13 +676,12 @@
       "flavor_text": "A desperate spark that faded into tears.",
       "scene_context": "From Pokémon: The First Movie. Ash is turned to stone by crossfire between Mew and Mewtwo. Pikachu desperately shocks him, then cries. Every Pokémon's tears, carrying pure emotion, bring Ash back to life. The scene that made an entire generation cry in theaters.",
       "stats": {
-        "magic_and_mystery": 85,
+        "magic_and_mystery": 87,
         "power_and_action": 25,
-        "mind_and_mischief": 10,
-        "heart_and_soul": 80,
-        "luck_and_destiny": 50
-      },
-      "stat_total": 250
+        "mind_and_mischief": 12,
+        "heart_and_soul": 76,
+        "luck_and_destiny": 51
+      }
     },
     {
       "id": "pk-007",
@@ -733,13 +692,12 @@
       "flavor_text": "The boy from Pallet Town is finally the best.",
       "scene_context": "After decades of journeys, leagues, and near-misses, Ash finally defeats Leon to become the strongest Trainer in the world. A moment that broke the internet and brought tears to fans worldwide.",
       "stats": {
-        "magic_and_mystery": 30,
-        "power_and_action": 85,
-        "mind_and_mischief": 50,
-        "heart_and_soul": 70,
-        "luck_and_destiny": 15
-      },
-      "stat_total": 250
+        "magic_and_mystery": 26,
+        "power_and_action": 83,
+        "mind_and_mischief": 52,
+        "heart_and_soul": 72,
+        "luck_and_destiny": 17
+      }
     },
     {
       "id": "mar-001",
@@ -750,13 +708,12 @@
       "flavor_text": "One jump. One Goomba. An empire begins.",
       "scene_context": "World 1-1 of Super Mario Bros. The first Goomba encounter teaches every player the fundamental mechanic: jump on enemies. This single stomp launched an entire genre and remains the most iconic moment in platforming history.",
       "stats": {
-        "magic_and_mystery": 90,
-        "power_and_action": 80,
-        "mind_and_mischief": 10,
-        "heart_and_soul": 15,
-        "luck_and_destiny": 55
-      },
-      "stat_total": 250
+        "magic_and_mystery": 88,
+        "power_and_action": 85,
+        "mind_and_mischief": 12,
+        "heart_and_soul": 9,
+        "luck_and_destiny": 57
+      }
     },
     {
       "id": "mar-002",
@@ -767,13 +724,12 @@
       "flavor_text": "Ten seconds of being absolutely untouchable.",
       "scene_context": "World 1-2 of Super Mario Bros. The underground level — dark brick tunnels, green pipes, and hidden blocks. Finding the Super Star here transforms Mario into a rainbow-flashing invincible force for ten glorious seconds. It's pure power fantasy, set to one of gaming's most recognizable jingles.",
       "stats": {
-        "magic_and_mystery": 85,
-        "power_and_action": 80,
-        "mind_and_mischief": 5,
+        "magic_and_mystery": 86,
+        "power_and_action": 77,
+        "mind_and_mischief": 4,
         "heart_and_soul": 10,
-        "luck_and_destiny": 70
-      },
-      "stat_total": 250
+        "luck_and_destiny": 74
+      }
     },
     {
       "id": "mar-003",
@@ -784,13 +740,12 @@
       "flavor_text": "An upside-down pyramid was just another Tuesday for the Mario Brothers.",
       "scene_context": "From The Super Mario Galaxy Movie. The opening scene after the prologue — Mario and Luigi ride dirt bikes through the Tostarena desert to investigate a disturbance at the Inverted Pyramid, a location from Super Mario Odyssey's Sand Kingdom. Inside the pyramid, they discover Yoshi hiding in a Warp Pipe. The moment that kicks off the movie's adventure.",
       "stats": {
-        "magic_and_mystery": 80,
-        "power_and_action": 65,
-        "mind_and_mischief": 15,
+        "magic_and_mystery": 82,
+        "power_and_action": 61,
+        "mind_and_mischief": 19,
         "heart_and_soul": 25,
-        "luck_and_destiny": 65
-      },
-      "stat_total": 250
+        "luck_and_destiny": 64
+      }
     },
     {
       "id": "mar-004",
@@ -801,13 +756,12 @@
       "flavor_text": "A festival in the sky for the plumber who always saves the day.",
       "scene_context": "From Super Mario Odyssey's Metro Kingdom. After saving New Donk City, Mario is honored at the city's festival. Pauline performs 'Jump Up, Super Star!' while Mario runs through a 2D throwback section on the side of a building — a love letter to Donkey Kong's original girders. Widely considered Odyssey's most joyful and celebrated moment.",
       "stats": {
-        "magic_and_mystery": 75,
-        "power_and_action": 55,
-        "mind_and_mischief": 15,
-        "heart_and_soul": 50,
-        "luck_and_destiny": 55
-      },
-      "stat_total": 250
+        "magic_and_mystery": 77,
+        "power_and_action": 49,
+        "mind_and_mischief": 25,
+        "heart_and_soul": 48,
+        "luck_and_destiny": 51
+      }
     },
     {
       "id": "mar-005",
@@ -818,13 +772,12 @@
       "flavor_text": "Two babies, one dinosaur, zero plan.",
       "scene_context": "From The Super Mario Galaxy Movie. Bowser Jr. zaps Mario and Luigi with a Super Scope, shrinking them into helpless babies. Yoshi — who they'd only just befriended — scoops them up and races through Fossil Falls with a T-Rex in pursuit. Yoshi finds the Super Scope and restores them. The scene where Yoshi proves he's family.",
       "stats": {
-        "magic_and_mystery": 90,
-        "power_and_action": 80,
-        "mind_and_mischief": 15,
-        "heart_and_soul": 55,
-        "luck_and_destiny": 50
-      },
-      "stat_total": 290
+        "magic_and_mystery": 89,
+        "power_and_action": 75,
+        "mind_and_mischief": 18,
+        "heart_and_soul": 56,
+        "luck_and_destiny": 53
+      }
     },
     {
       "id": "mar-006",
@@ -835,13 +788,12 @@
       "flavor_text": "Born from the same star. Found across a galaxy.",
       "scene_context": "From The Super Mario Galaxy Movie. Peach discovers that Rosalina is her long-lost older sister — both born from stardust. When they touch hands, they can summon the power of the cosmos. Rosalina had sent infant Peach to the Mushroom Kingdom years ago to protect her. The emotional core of the film.",
       "stats": {
-        "magic_and_mystery": 90,
-        "power_and_action": 25,
-        "mind_and_mischief": 10,
-        "heart_and_soul": 90,
-        "luck_and_destiny": 70
-      },
-      "stat_total": 285
+        "magic_and_mystery": 88,
+        "power_and_action": 29,
+        "mind_and_mischief": 12,
+        "heart_and_soul": 80,
+        "luck_and_destiny": 75
+      }
     },
     {
       "id": "mar-007",
@@ -852,13 +804,12 @@
       "flavor_text": "One axe. One bridge. The king falls.",
       "scene_context": "World 8-4 of Super Mario Bros. The final confrontation. Mario reaches Bowser on the bridge and grabs the axe, severing the chains and dropping the King of Koopas into the lava below. The moment that defined video game boss fights and established the template every game would follow.",
       "stats": {
-        "magic_and_mystery": 50,
-        "power_and_action": 90,
+        "magic_and_mystery": 54,
+        "power_and_action": 85,
         "mind_and_mischief": 50,
-        "heart_and_soul": 30,
-        "luck_and_destiny": 30
-      },
-      "stat_total": 250
+        "heart_and_soul": 35,
+        "luck_and_destiny": 27
+      }
     }
   ]
 }

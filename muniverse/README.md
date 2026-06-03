@@ -39,8 +39,35 @@ Every card is scored **1–100** across five traits:
 3. **Player A** selects one of the five categories from their top card and reads the score aloud.
 4. **Player B** reads the score of the same category from their top card.
 5. The higher score wins the round — the winner takes both cards and places them at the bottom of their stack.
-6. The winner chooses the category for the next turn.
-7. The game ends when one player holds all the cards.
+6. **Stat Clash** — if both cards have the same score in the called category, compare the **total stats** of the two cards. The higher total wins.
+7. **Double Clash** — if the totals are also equal, both players must shout **"Clash!"** as fast as possible. Whoever says it first picks the category for the next round, and the winner of that round takes all four cards.
+8. The winner chooses the category for the next turn.
+9. The game ends when one player holds all the cards.
+
+### Psychic Mode (Alternative)
+
+A mind-game variant where Player B can try to read Player A's strategy:
+
+1. **Player A** decides which category to call. **Player B** simultaneously predicts which stat rank Player A will pick — is it their 1st best stat? 2nd? 3rd? 4th? 5th?
+2. Both reveal at the same time — Player A calls a category, Player B calls a rank.
+3. **If Player B guesses the rank correctly** → Player A's call is overridden and they are forced to play their **lowest stat** instead.
+4. **If Player B guesses wrong** → the round plays out normally with Player A's chosen category.
+
+> **Tip:** Use a 3-2-1 countdown or slap-the-table reveal to keep it simultaneous and honest.
+
+#### Rank Callouts
+
+Instead of saying "1st, 2nd, 3rd…", call out the opponent's risk level:
+
+| Rank | Callout      |
+|------|--------------|
+| 1st (best) | **Reckless** |
+| 2nd | **Chicken**  |
+| 3rd | **Crafty**   |
+| 4th | **Brave**    |
+| 5th (worst) | **Legend**   |
+
+---
 
 ## Balancing Rules
 

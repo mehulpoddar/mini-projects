@@ -235,6 +235,7 @@
     font-weight: 700;
     color: #ffd700;
     text-shadow: 0 1px 6px rgba(0,0,0,0.4);
+    background: transparent;
   }
 
   .card-rarity {
@@ -243,6 +244,7 @@
     letter-spacing: 1.5px;
     color: rgba(255,215,0,0.8);
     font-weight: 700;
+    background: transparent;
   }
 
   /* --- Print (2.5" × 3.5" at 300 DPI = 750×1050px) --- */
@@ -328,7 +330,7 @@
       </div>
 
       <div class="card-footer">
-        <span class="card-total">Total: {{ card.stat_total }}</span>
+        <span class="card-total">Total: {{ card.stats.magic_and_mystery + card.stats.power_and_action + card.stats.mind_and_mischief + card.stats.heart_and_soul + card.stats.luck_and_destiny }}</span>
         <span class="card-rarity">Full Art Rare</span>
       </div>
     </div>
