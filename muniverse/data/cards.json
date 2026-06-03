@@ -5,7 +5,7 @@
     "Shinchan",
     "Harry Potter",
     "Disney Cars",
-    "Pokemon",
+    "Pokémon",
     "Mario"
   ],
   "categories": [
@@ -15,6 +15,7 @@
     "heart_and_soul",
     "luck_and_destiny"
   ],
+  "max_stat": 90,
   "stat_caps": {
     "standard": {
       "min": 250,
@@ -28,120 +29,120 @@
   "cards": [
     {
       "id": "bbg-001",
-      "title": "The Unexpected Return",
+      "title": "The Green Smurfette",
       "universe": "The Bad Boy's Girl",
       "rarity": "standard",
-      "art_description": "Tessa opens her bedroom door to find Cole Stone, her childhood tormentor, sitting casually on her bed. He's tall, gorgeous, with ocean-blue eyes and his signature smirk. He's back from military school.",
-      "flavor_text": "\"Hello, Shortcake.\"",
-      "scene_context": "Cole's return from military school turns Tessa's life upside down. He's no longer just the boy who bullied her—he's a completely different kind of danger.",
+      "art_description": "Tessa — 5'7\", thin build, long waist-length blond hair, green eyes — stands in the grand foyer of the Stone residence, completely drenched from head to toe in ice-cold water and vibrant green food coloring. Her blond hair is a wet, frizzy mess stuck to her face, cheeks splotchy red with fury. Cole Stone — 6'1\", athletic, shaggy brown hair, baby blue eyes, sharp jawline — stands on the stairs above her, clutching an empty bucket and laughing hysterically, his crooked smile showing deep dimples. 6:5 landscape composition.",
+      "flavor_text": "Welcome home, Tessie. Think fast!",
+      "scene_context": "After three years away at military school, Cole Stone marks his return by immediately pranking his childhood target, Tessa O'Connell. This moment establishes their renewed dynamic: Cole as the relentless provocateur and Tessa as the fiery but coordinated-challenged 'shortcake'.",
       "stats": {
-        "magic_and_mystery": 10,
-        "power_and_action": 40,
-        "mind_and_mischief": 75,
-        "heart_and_soul": 55,
-        "luck_and_destiny": 80
+        "magic_and_mystery": 5,
+        "power_and_action": 70,
+        "mind_and_mischief": 90,
+        "heart_and_soul": 35,
+        "luck_and_destiny": 60
       },
       "stat_total": 260
     },
     {
       "id": "bbg-002",
-      "title": "The Kit Kat Thief",
+      "title": "Tire Slashing Payback",
       "universe": "The Bad Boy's Girl",
       "rarity": "standard",
-      "art_description": "Cole lounging in Tessa's room, casually unwrapping a Kit Kat from her supposedly top-secret hidden stash. Tessa stands with hands on her hips, glaring at him in frustration.",
-      "flavor_text": "\"You know these are terrible for you, Shortcake.\"",
-      "scene_context": "Cole's constant invasion of Tessa's space and theft of her Kit Kats are infuriating, but they establish an undeniable intimacy. He knows all her hiding spots, and all her secrets.",
+      "art_description": "Cole — 6'1\", athletic build, shaggy brown hair, baby blue eyes, black leather jacket, dark jeans — and a slightly tipsy Tessa — long blond hair in beachy waves, green eyes, wearing a slouchy off-the-shoulder top — stand in a dark parking lot illuminated by moonlight. Tessa holds a small pocket knife, looking both terrified and exhilarated as she approaches the tires of Jay's Hummer. Cole stands behind her with a devious dimpled grin, urging her on. 6:5 landscape composition.",
+      "flavor_text": "He's an idiot. Let's give him some payback.",
+      "scene_context": "Drunk on spiked punch and victory after the gala, Tessa agrees to Cole's 'unconventional' method of stress relief: slashing Jay's tires. It is a moment of pure, rebellious bonding that highlights Cole's 'bad boy' influence.",
       "stats": {
         "magic_and_mystery": 5,
-        "power_and_action": 25,
-        "mind_and_mischief": 85,
-        "heart_and_soul": 65,
-        "luck_and_destiny": 70
+        "power_and_action": 70,
+        "mind_and_mischief": 90,
+        "heart_and_soul": 35,
+        "luck_and_destiny": 60
       },
-      "stat_total": 250
+      "stat_total": 260
     },
     {
       "id": "bbg-003",
-      "title": "The Underwear Drawer",
+      "title": "The 'Sex God' Tutoring",
       "universe": "The Bad Boy's Girl",
       "rarity": "standard",
-      "art_description": "Cole holding up a ridiculous piece of Tessa's underwear with a teasing grin. Tessa's face is bright red as she leaps to snatch it out of his hand. Chaos in her bedroom.",
-      "flavor_text": "\"Privacy is a privilege, not a right.\"",
-      "scene_context": "Cole's shameless habit of going through her underwear drawer is designed entirely to fluster her. It breaks down the walls of polite distance between them with pure, unfiltered mischief.",
+      "art_description": "Cole — 6'1\", athletic, shaggy brown hair falling over his baby blue eyes, snug gray t-shirt, dark jeans — and Tessa — long waist-length blond hair, green eyes, wearing a black graphic tee — sit cross-legged on Cole's bedroom floor, surrounded by scattered calculus textbooks and plates of grilled cheese. Cole leans in dangerously close, winking, his crooked smile with dimples on full display. Tessa looks flustered and dazed, cheeks beet red. 6:5 landscape composition.",
+      "flavor_text": "You were looking at me with hearts in your eyes.",
+      "scene_context": "Cole manipulates his teacher into making Tessa his tutor, despite being smarter than her. He uses the 'study sessions' as an excuse to relentlessly flirt, eventually making her nod in agreement when he calls himself a 'sex god'.",
       "stats": {
         "magic_and_mystery": 10,
-        "power_and_action": 30,
+        "power_and_action": 25,
         "mind_and_mischief": 90,
-        "heart_and_soul": 60,
-        "luck_and_destiny": 65
-      },
-      "stat_total": 255
-    },
-    {
-      "id": "bbg-004",
-      "title": "The Pool Table Confrontation",
-      "universe": "The Bad Boy's Girl",
-      "rarity": "standard",
-      "art_description": "A crowded, dimly lit high school basement party. Cole stands menacingly in front of a green felt pool table, stepping between a visibly flustered Tessa and a drunken guy trying to hit on her. Cole's jaw is clenched, eyes furious, radiating dangerous protective energy.",
-      "flavor_text": "\"Don't strip on top of the pool table, Shortcake.\"",
-      "scene_context": "The infamous Chapter 17 party scene. Cole's intense, borderline-feral protectiveness over Tessa is on full display. It's chaotic, tension-filled, and undeniably proves he considers her strictly off-limits to everyone else.",
-      "stats": {
-        "magic_and_mystery": 15,
-        "power_and_action": 85,
-        "mind_and_mischief": 30,
         "heart_and_soul": 75,
         "luck_and_destiny": 60
       },
-      "stat_total": 265
+      "stat_total": 260
     },
     {
-      "id": "bbg-005",
-      "title": "One Punch for Her",
+      "id": "bbg-004",
+      "title": "The Beach Revelation",
       "universe": "The Bad Boy's Girl",
       "rarity": "standard",
-      "art_description": "Cole's fist connects with his own brother Jay's jaw. Jay reels backward in shock. Cole's expression is pure, protective fury. Tessa watches, stunned.",
-      "flavor_text": "\"You broke her heart. I broke your jaw.\"",
-      "scene_context": "Tessa has loved Jay for years, but when Jay betrays her, Cole doesn't hesitate to violently defend her honor—even against his own brother.",
+      "art_description": "Cole — 6'1\", athletic, shaggy brown hair, baby blue eyes glistening with vulnerability, scruffy stubble — sits cross-legged on a beach blanket, cupping Tessa's cheek gently. Tessa — long waist-length blond hair catching the warm light, green eyes wide and teary — hugs her knees to her chest. The sun hangs low over the ocean behind them. Raw, earnest atmosphere. 6:5 landscape composition.",
+      "flavor_text": "You'll always be my shortcake. Weight doesn't matter.",
+      "scene_context": "The emotional turning point where Cole apologizes for fourteen years of 'misery'. He reveals that he was always in love with her and bullied her out of jealousy over Jay and his own insecurities. He affirms that he never cared about her weight, only her.",
       "stats": {
-        "magic_and_mystery": 10,
-        "power_and_action": 95,
+        "magic_and_mystery": 35,
+        "power_and_action": 25,
         "mind_and_mischief": 15,
-        "heart_and_soul": 80,
-        "luck_and_destiny": 50
+        "heart_and_soul": 90,
+        "luck_and_destiny": 85
       },
       "stat_total": 250
     },
     {
+      "id": "bbg-005",
+      "title": "Drenched Desire",
+      "universe": "The Bad Boy's Girl",
+      "rarity": "standard",
+      "art_description": "Cole — 6'1\", athletic build, shaggy brown hair wet and slicked back, baby blue eyes shining, shirtless showing defined abs — and Tessa — long blond hair plastered to her skin, green eyes wide — are pressed together in the middle of a swimming pool. Cole's hands skim up Tessa's sides to cup the side of her neck. Their foreheads pressed together intimately, water rippling around them. 6:5 landscape composition.",
+      "flavor_text": "Stop overthinking, Tessie. Just enjoy the moment.",
+      "scene_context": "What began as a playful pancake batter fight ends in high-tension proximity in the Stone family pool. It is the first time Tessa admits to herself that she wants to be closer to him.",
+      "stats": {
+        "magic_and_mystery": 5,
+        "power_and_action": 50,
+        "mind_and_mischief": 60,
+        "heart_and_soul": 90,
+        "luck_and_destiny": 55
+      },
+      "stat_total": 260
+    },
+    {
       "id": "bbg-006",
-      "title": "Cold Stone",
+      "title": "Supply Closet Tryst",
       "universe": "The Bad Boy's Girl",
       "rarity": "full_art_rare",
-      "art_description": "Cole and Tessa sharing ice cream at night. He looks at her with ocean-blue eyes, completely stripped of his usual sarcasm and bravado. He gently wipes a smudge of ice cream off her cheek. Intimate, vulnerable, portrait 5:7.",
-      "flavor_text": "\"I'm terrified of how much I want you.\"",
-      "scene_context": "The bad boy finally lets his guard down. Underneath the teasing, the Kit Kat theft, and the arrogance is a boy who is deeply, hopelessly in love with his Shortcake.",
+      "art_description": "Cole — 6'1\", athletic, shaggy brown hair, baby blue eyes intense, leather cuff on wrist — and Tessa — long waist-length blond hair, green eyes, flushed cheeks — hidden inside a barricaded school supply closet. Cole's lips are on Tessa's neck as she arches her back, closes her eyes flushed with desire, arms wound tightly around his neck. Dim lighting focuses on the frantic energy and their tangled limbs. Shelves of supplies frame the tight space. Portrait 5:7 composition.",
+      "flavor_text": "I'm finding a better spot for this after school.",
+      "scene_context": "Unable to wait for a moment alone, the couple sneaks into a closet between classes. This scene highlights their 'honeymoon phase' and the irresistible magnetic pull between them.",
       "stats": {
-        "magic_and_mystery": 45,
-        "power_and_action": 25,
-        "mind_and_mischief": 30,
-        "heart_and_soul": 100,
-        "luck_and_destiny": 85
+        "magic_and_mystery": 10,
+        "power_and_action": 70,
+        "mind_and_mischief": 90,
+        "heart_and_soul": 80,
+        "luck_and_destiny": 40
       },
-      "stat_total": 285
+      "stat_total": 290
     },
     {
       "id": "bbg-007",
-      "title": "The Motorcycle Escape",
+      "title": "The Silver Mermaid's Dip",
       "universe": "The Bad Boy's Girl",
       "rarity": "full_art_rare",
-      "art_description": "Tessa clinging tightly to Cole as they speed down an empty highway on his motorcycle at sunset. Her eyes are closed, a genuine smile on her face. Cole looks back at her in the rearview mirror. Wind in their hair, warm golden hour light.",
-      "flavor_text": "\"Hold on tight.\"",
-      "scene_context": "Riding Cole's motorcycle represents Tessa finally letting go of her insecurities and fears. With him, she finds the freedom to be bold, reckless, and truly happy.",
+      "art_description": "On a crowded dance floor at the Town Hall gala, Cole — 6'1\", athletic, brown hair gelled back, baby blue eyes, sharp jawline, in a tailored suit with a steel-gray tie — performs a professional-grade dip with Tessa — long blond hair cascading, green eyes, wearing an exquisite silver mermaid-style gown with a shimmery lace bodice, diamond teardrop earrings, and a sparkling tiara. His eyes locked onto hers with pure adoration. The crowd, including a stunned Jay and Nicole, watches in awe. Portrait 5:7 composition.",
+      "flavor_text": "And that, ladies and gentlemen, is how you do a dip.",
+      "scene_context": "The climax of Cole's plan to 'dethrone' Nicole. By presenting Tessa as a stunning, confident beauty at the Farrow Hills gala, he forces the town to see her as more than an outcast. This is the moment they officially become the 'it' couple.",
       "stats": {
-        "magic_and_mystery": 40,
-        "power_and_action": 75,
-        "mind_and_mischief": 30,
-        "heart_and_soul": 80,
-        "luck_and_destiny": 65
+        "magic_and_mystery": 25,
+        "power_and_action": 50,
+        "mind_and_mischief": 40,
+        "heart_and_soul": 90,
+        "luck_and_destiny": 85
       },
       "stat_total": 290
     },
@@ -269,13 +270,13 @@
       "title": "Buri Buri Ass Dance",
       "universe": "Shinchan",
       "rarity": "standard",
-      "art_description": "Shinchan faces away from the viewer, pants down, performing his infamous buri buri butt-shaking dance in the middle of a crowded park. His bare bottom wiggles proudly. Misae charges toward him, face bright red with fury, arm outstretched. Hiroshi covers his face in shame on a bench behind them. Other families stare in disbelief. Cherry blossom trees, sunny day, pure shameless Shinchan energy.",
+      "art_description": "Extreme close-up of Shinchan from behind, bent over with his enormous yellow-clad butt dominating the frame, performing his infamous buri buri dance. His face peeks over his shoulder with a mischievous smirk and thick eyebrows furrowed. He wears his signature red shirt. Explosive pink and magenta radial speed lines burst outward from his butt like a shockwave, with sparkles and lens flares adding absurd dramatic intensity.",
       "flavor_text": "Buri buri~!",
       "scene_context": "Shinchan's signature provocation: dropping his pants and shaking his butt at the worst possible moment. It's pure mischief — deliberate, shameless, and guaranteed to send Misae into a rage. The buri buri dance is the single most recognizable Shinchan moment worldwide.",
       "stats": {
         "magic_and_mystery": 15,
-        "power_and_action": 60,
-        "mind_and_mischief": 95,
+        "power_and_action": 65,
+        "mind_and_mischief": 90,
         "heart_and_soul": 40,
         "luck_and_destiny": 40
       },
@@ -303,7 +304,7 @@
       "title": "Nanako-sensei Crush",
       "universe": "Shinchan",
       "rarity": "standard",
-      "art_description": "Shinchan leans against a fence outside the kindergarten, one hand behind his head, the other offering a picked flower to Nanako-sensei with hearts floating around his head. Nanako smiles nervously, sweatdrop on her forehead. Kazama, Nene, Bo-chan, and Masao watch from behind a bush, jaws dropped. Afternoon sun, kindergarten playground in the background.",
+      "art_description": "Shinchan stands in a sunny park, blushing bright red, offering a small bouquet of picked wildflowers to a beautiful young woman with long brown hair (Nanako-sensei), who kneels on a picnic blanket looking flustered with a sweatdrop, hand over her mouth. Pink hearts float around Shinchan's head. Behind a bush to the left, Kazama, Nene, Bo-chan, and Masao peek out with shocked faces. Cherry blossom trees in full bloom, lush green grass, blue sky with fluffy clouds. A bento box and water bottle sit on the blanket.",
       "flavor_text": "Nanako-sensei, you smell like sunshine today!",
       "scene_context": "Shinchan's shameless crush on his beautiful college-student teacher Nanako-sensei is one of the show's longest-running gags. He flirts with the confidence of a grown man, she has no idea how to handle a five-year-old suitor, and everyone else can only watch in stunned silence.",
       "stats": {
@@ -320,7 +321,7 @@
       "title": "Misae's Iron Fist",
       "universe": "Shinchan",
       "rarity": "standard",
-      "art_description": "Misae towers over Shinchan with her fist raised, a vein popping on her forehead. Shinchan stands below her with a comically enormous bump already growing on his head, shaped like a mountain, yet his expression is completely unfazed — he's already planning his next move. The living room behind them shows evidence of whatever chaos triggered this: knocked-over vase, crayon drawings on the wall, Shiro hiding behind the couch.",
+      "art_description": "Misae towers over Shinchan with her fist raised, a vein popping on her forehead. Shinchan stands below her with the classic bump on his head, yet his expression is completely unfazed — he's already planning his next move. The living room behind them shows evidence of whatever chaos triggered this: knocked-over vase, crayon drawings on the wall, Shiro hiding behind the couch.",
       "flavor_text": "The bump grew. So did his next idea.",
       "scene_context": "The Misae head-bump is as iconic as Shinchan himself. No matter how many times she whacks him, the bump grows cartoonishly large and Shinchan is completely unfazed within seconds. It's the eternal cycle: mischief, punishment, repeat. Underneath it all, pure mother-son love.",
       "stats": {
@@ -351,18 +352,18 @@
     },
     {
       "id": "sc-006",
-      "title": "Himawari Chaos",
+      "title": "The Nohara siblings",
       "universe": "Shinchan",
       "rarity": "standard",
-      "art_description": "Baby Himawari sits in Shinchan's lap on the living room floor, both hands clamped onto his cheeks, stretching his face into a grotesque rubber mask. Shinchan's eyes bulge, mouth distorted, arms flailing. Himawari giggles with pure baby delight, completely in control. Misae watches from the kitchen doorway, torn between intervening and laughing. Toys scattered around them, afternoon light through the window. Warm, chaotic, and deeply funny.",
-      "flavor_text": "She's a baby. He never stood a chance.",
-      "scene_context": "Himawari may be a baby, but she rules the Nohara household. Her iron grip on Shinchan's face is one of their most iconic sibling moments — he screams, she laughs, and for once in his life Shinchan has met someone he can't out-chaos. The roles reverse completely.",
+      "art_description": "Shinchan and baby Himawari press their faces flat against a glass window from the same side, squishing their cheeks, noses, and lips into hilarious distorted blobs. Shinchan is on top, pulling a grotesque face on purpose, while Himawari below him copies him with innocent glee, her chubby cheeks pancaked against the glass. Their breath fogs the surface. Viewed from the other side of the glass, warm indoor light behind them.",
+      "flavor_text": "Two Noharas. One glass. Zero dignity.",
+      "scene_context": "The Nohara siblings share a rare moment of synchronized mischief. Shinchan, the eternal troublemaker, finally finds a partner-in-crime in his baby sister. No rivalry, no face-grabbing — just two kids being perfectly, beautifully silly together.",
       "stats": {
-        "magic_and_mystery": 10,
-        "power_and_action": 65,
-        "mind_and_mischief": 80,
-        "heart_and_soul": 55,
-        "luck_and_destiny": 50
+        "magic_and_mystery": 5,
+        "power_and_action": 55,
+        "mind_and_mischief": 85,
+        "heart_and_soul": 85,
+        "luck_and_destiny": 30
       },
       "stat_total": 260
     },
@@ -392,10 +393,10 @@
       "flavor_text": "\"It is curious that you should be destined for this wand when its brother gave you that scar.\"",
       "scene_context": "The defining moment Harry truly realizes he is a wizard. The connection between his wand and Voldemort's establishes the inescapable destiny that will tie them together until the very end.",
       "stats": {
-        "magic_and_mystery": 95,
+        "magic_and_mystery": 90,
         "power_and_action": 15,
         "mind_and_mischief": 20,
-        "heart_and_soul": 40,
+        "heart_and_soul": 45,
         "luck_and_destiny": 90
       },
       "stat_total": 260
@@ -409,10 +410,10 @@
       "flavor_text": "Not Slytherin... not Slytherin...",
       "scene_context": "Harry's first moments at Hogwarts. The Sorting Hat deliberates between Slytherin and Gryffindor while Harry desperately whispers his plea. This single choice shapes everything that follows — and it's Harry's choice, not the Hat's.",
       "stats": {
-        "magic_and_mystery": 95,
+        "magic_and_mystery": 90,
         "power_and_action": 10,
         "mind_and_mischief": 15,
-        "heart_and_soul": 60,
+        "heart_and_soul": 65,
         "luck_and_destiny": 75
       },
       "stat_total": 255
@@ -443,10 +444,10 @@
       "flavor_text": "\"He will not be killed! He is mine!\"",
       "scene_context": "Goblet of Fire. Harry's first true duel with the resurrected Dark Lord. Their twin cores lock, saving Harry's life and allowing him to see the echoes of his parents one last time before escaping.",
       "stats": {
-        "magic_and_mystery": 95,
+        "magic_and_mystery": 90,
         "power_and_action": 70,
         "mind_and_mischief": 15,
-        "heart_and_soul": 50,
+        "heart_and_soul": 55,
         "luck_and_destiny": 40
       },
       "stat_total": 270
@@ -460,11 +461,11 @@
       "flavor_text": "\"It was foolish to come here tonight, Tom.\"",
       "scene_context": "Order of the Phoenix. The only wizard Voldemort ever feared displays exactly why. A masterclass in magical combat that proves sheer power is nothing without absolute control and wisdom.",
       "stats": {
-        "magic_and_mystery": 100,
+        "magic_and_mystery": 90,
         "power_and_action": 90,
-        "mind_and_mischief": 60,
+        "mind_and_mischief": 65,
         "heart_and_soul": 15,
-        "luck_and_destiny": 5
+        "luck_and_destiny": 10
       },
       "stat_total": 270
     },
@@ -477,10 +478,10 @@
       "flavor_text": "Always.",
       "scene_context": "Snape's memories in the Pensieve reveal the truth: his entire life was shaped by his love for Lily Potter. The silver doe patronus — matching hers — proves that Severus Snape protected Harry for decades out of undying love.",
       "stats": {
-        "magic_and_mystery": 85,
+        "magic_and_mystery": 90,
         "power_and_action": 15,
-        "mind_and_mischief": 5,
-        "heart_and_soul": 100,
+        "mind_and_mischief": 10,
+        "heart_and_soul": 90,
         "luck_and_destiny": 75
       },
       "stat_total": 280
@@ -495,21 +496,21 @@
       "scene_context": "Harry's tragedy isn't that he must fight Voldemort, but that he grew up without the love of his family. The Mirror of Erised beautifully and heartbreakingly encapsulates the core motivation for everything he does.",
       "stats": {
         "magic_and_mystery": 90,
-        "power_and_action": 5,
-        "mind_and_mischief": 10,
-        "heart_and_soul": 100,
+        "power_and_action": 10,
+        "mind_and_mischief": 15,
+        "heart_and_soul": 90,
         "luck_and_destiny": 75
       },
       "stat_total": 280
     },
     {
       "id": "dc-001",
-      "title": "Crash into Radiator Springs",
+      "title": "Bessie",
       "universe": "Disney Cars",
       "rarity": "standard",
-      "art_description": "Lightning McQueen tangled in power lines and road, having torn up the main street of a sleepy Route 66 town. Dust cloud settles. Broken asphalt, knocked-over traffic cones. The neon signs of Radiator Springs flicker in the desert dusk. Mater watches from behind a fence.",
-      "flavor_text": "Precision instrument of speed and aerodynamics. Stuck in a fence.",
-      "scene_context": "Lightning McQueen, the arrogant rookie racer, accidentally destroys the main street of a forgotten Route 66 town. This humbling crash forces him to slow down and discover what actually matters — the beginning of his entire character arc.",
+      "art_description": "Lightning McQueen sits on the main street of Radiator Springs, covered in cacti and leaves, looking sheepish and out of place. Lizzie, an old black Model T, watches from the steps of a curio shop behind him. Route 66 signs, a 'Radiator Springs' banner, vintage gas pumps, hubcap collections, and desert cacti surround the scene. Illustrated cartoon style.",
+      "flavor_text": "Turn left. Turn right. Bessie don't care.",
+      "scene_context": "Lightning McQueen, the arrogant rookie racer, is sentenced to repave the road he destroyed using Bessie — the town's ancient, impossibly slow road-paving machine. It's the ultimate humiliation for a speed-obsessed race car, and the beginning of his entire character arc.",
       "stats": {
         "magic_and_mystery": 40,
         "power_and_action": 75,
@@ -524,32 +525,32 @@
       "title": "Tractor Tipping",
       "universe": "Disney Cars",
       "rarity": "standard",
-      "art_description": "Mater and McQueen hide behind a hay bale at the edge of a moonlit field, stifling laughter. A row of sleeping tractors snores peacefully. One tractor mid-tip, legs in the air, startled awake. In the far background, Frank the combine harvester's headlights flick on ominously. Dusty farmland, fireflies, mischievous night energy.",
+      "art_description": "Mater laughs hysterically in the foreground of a moonlit desert field. A massive tractor lies tipped over on its side to the right, wheels and axle in the air. McQueen peeks nervously from behind in the middle distance. Desert buttes rise against a starry blue night sky. Another tractor tips in the far background. Mischievous nighttime energy.",
       "flavor_text": "I swear, Mater, if we die doing this—",
       "scene_context": "Mater introduces McQueen to his favorite pastime: sneaking into fields at night and scaring sleeping tractors. It's juvenile, dangerous, and the exact moment McQueen starts having genuine fun for the first time — not racing-podium fun.",
       "stats": {
         "magic_and_mystery": 20,
-        "power_and_action": 65,
-        "mind_and_mischief": 90,
+        "power_and_action": 60,
+        "mind_and_mischief": 80,
         "heart_and_soul": 15,
-        "luck_and_destiny": 60
+        "luck_and_destiny": 75
       },
       "stat_total": 250
     },
     {
       "id": "dc-003",
-      "title": "Cruisin' Radiator Springs",
+      "title": "Our Town",
       "universe": "Disney Cars",
       "rarity": "standard",
-      "art_description": "The newly paved main street of Radiator Springs at night. The vintage neon signs of Flo's V8 Cafe, Ramone's House of Body Art, and the Cozy Cone Motel are all glowing brilliantly in vibrant colors. The townsfolk cars cruise slowly down the street together, reflecting the neon light off their polished paint jobs. Beautiful, nostalgic atmosphere.",
-      "flavor_text": "\"They're not just fixing the road. They're fixing the town.\"",
-      "scene_context": "After McQueen finishes fixing the road and gets a makeover, evening falls and the forgotten town's neon signs buzz back to life. It's the visual and emotional climax of McQueen bringing life back to Radiator Springs.",
+      "art_description": "The empty main street of Radiator Springs stretches into the distance under a warm afternoon sky. Luigi's Casa Della Tires, the RS courthouse, and Ramone's House of Body Art line the quiet road. Jagged desert mountains rise behind the town. Not a single car in sight — just sun-baked asphalt and faded signs of a once-thriving Route 66 stop. Retro poster art style.",
+      "flavor_text": "Lights don't shine as brightly as they shone before.",
+      "scene_context": "Before McQueen arrived, Radiator Springs was a ghost town — bypassed by the interstate decades ago, its businesses empty, its residents stuck in the past. This quiet, sun-baked beauty is what McQueen stumbles into and ultimately fights to protect.",
       "stats": {
-        "magic_and_mystery": 80,
+        "magic_and_mystery": 50,
         "power_and_action": 10,
-        "mind_and_mischief": 10,
-        "heart_and_soul": 95,
-        "luck_and_destiny": 60
+        "mind_and_mischief": 15,
+        "heart_and_soul": 90,
+        "luck_and_destiny": 90
       },
       "stat_total": 255
     },
@@ -557,95 +558,95 @@
       "id": "dc-004",
       "title": "Turn Right to Go Left",
       "universe": "Disney Cars",
-      "rarity": "full_art_rare",
-      "art_description": "Doc Hudson tearing around a dusty dirt track curve, executing a flawless, sweeping power-drift. A massive dust cloud kicks up behind his rear tires. Lightning McQueen watches in complete shock from behind a cluster of cacti in the foreground. Golden hour desert lighting, motion blur conveying intense speed and precision.",
-      "flavor_text": "\"I'll tell you what. You drive like you fix roads. Lousy!\"",
+      "rarity": "standard",
+      "art_description": "Doc Hudson and Lightning McQueen race side by side along a dusty desert road outside Radiator Springs. Doc, a blue Hudson Hornet, rides steady and confident. McQueen, red and determined, tries to keep pace. Warm golden light washes over the desert landscape — sandstone buttes and rock formations rise in the background. Watercolor sketch style with loose brush strokes. Landscape 6:5 composition.",
+      "flavor_text": "You drive like you fix roads. Lousy!",
       "scene_context": "Doc Hudson proves he isn't just a grumpy old judge—he still has the magic. The drifting technique he demonstrates here is exactly what saves McQueen from wiping out in the final Piston Cup race.",
       "stats": {
         "magic_and_mystery": 25,
-        "power_and_action": 85,
-        "mind_and_mischief": 65,
+        "power_and_action": 75,
+        "mind_and_mischief": 60,
         "heart_and_soul": 60,
-        "luck_and_destiny": 50
+        "luck_and_destiny": 40
       },
-      "stat_total": 285
+      "stat_total": 260
     },
     {
       "id": "dc-005",
-      "title": "Sally's Drive",
+      "title": "The Cozy Cone",
       "universe": "Disney Cars",
       "rarity": "standard",
-      "art_description": "Sally and McQueen cruise side by side along a winding mountain road at golden hour. Below them, the vast Arizona desert stretches to the horizon. The old road hugs red rock cliffs, wildflowers line the shoulder. Sally glances at McQueen — he's not looking at the view anymore, he's looking at her. Warm cinematic light, sweeping landscape.",
-      "flavor_text": "Some roads change where you're going. Others change who you are.",
-      "scene_context": "Sally takes McQueen on a drive along the old mountain road, showing him the beauty of Route 66 before the interstate bypassed it. The moment McQueen stops looking at the view and starts looking at her marks his transformation from racer to person.",
+      "art_description": "McQueen and Sally parked side by side outside the Cozy Cone Motel at night. The iconic orange cone-shaped rooms glow warmly behind them. McQueen looks content and at ease, a genuine smile on his face. Sally, a blue Porsche, smiles back warmly. Night sky with swirling clouds and stars, the motel's warm light casting a cozy glow. Calla lilies and desert plants frame the scene.",
+      "flavor_text": "A little slice of heaven on Route 66.",
+      "scene_context": "The Cozy Cone Motel — Sally's pride and joy, and the place where McQueen discovers that life isn't just about the next race. Their quiet evenings together, parked side by side under the stars, mark his transformation from a self-centered racer to someone who cares about a place and its people.",
       "stats": {
-        "magic_and_mystery": 55,
-        "power_and_action": 40,
-        "mind_and_mischief": 20,
-        "heart_and_soul": 75,
-        "luck_and_destiny": 60
+        "magic_and_mystery": 30,
+        "power_and_action": 15,
+        "mind_and_mischief": 25,
+        "heart_and_soul": 90,
+        "luck_and_destiny": 90
       },
       "stat_total": 250
     },
     {
       "id": "dc-006",
-      "title": "Guido's Pit Stop",
+      "title": "Team Radiator Springs",
       "universe": "Disney Cars",
       "rarity": "standard",
-      "art_description": "Tiny blue Guido moving in an absolute blur around Lightning McQueen in the pit lane. Four tires are suspended in mid-air simultaneously as Guido wields his air wrench. In the neighboring pit box, Chick Hicks' massive, heavily equipped pit crew drop their grills and mustaches to the ground in utter shock. Fast-paced, comedic action.",
-      "flavor_text": "\"Peet stop.\"",
-      "scene_context": "During the final Piston Cup tiebreaker race, Chick Hicks' massive pit crew mocks tiny Guido. In response, Guido single-handedly changes all four of McQueen's tires in under four seconds—the ultimate underdog triumph.",
+      "art_description": "The entire Radiator Springs crew assembled at the Piston Cup racetrack. McQueen grins proudly in front bearing the Rust-eze logo. Above them on the team hauler, Doc Hudson is displayed as 'The Fabulous Hudson Hornet #51.' Guido, Luigi, Fillmore the VW van, Mater, and the rest of the gang surround McQueen in the pit area. A 'Radiator Springs' sign marks their station. Bustling racetrack stadium in the background.",
+      "flavor_text": "Peet stop.",
+      "scene_context": "At the final Piston Cup race, McQueen's real pit crew shows up — his Radiator Springs family. Doc Hudson, revealed as the legendary Hudson Hornet, serves as crew chief. The moment proves McQueen didn't just find a pit stop in Radiator Springs. He found a home.",
       "stats": {
-        "magic_and_mystery": 20,
-        "power_and_action": 80,
-        "mind_and_mischief": 85,
-        "heart_and_soul": 35,
+        "magic_and_mystery": 25,
+        "power_and_action": 70,
+        "mind_and_mischief": 40,
+        "heart_and_soul": 85,
         "luck_and_destiny": 40
       },
       "stat_total": 260
     },
     {
       "id": "dc-007",
-      "title": "Pushing The King Home",
+      "title": "The Rookie",
       "universe": "Disney Cars",
       "rarity": "full_art_rare",
-      "art_description": "McQueen stops inches from the finish line and reverses to push the battered, crumpled King across instead. The massive Dinoco 400 stadium is silent, then erupts. Chick Hicks crosses first but no one watches him. Sunset floods the track. An act of pure sportsmanship. Epic wide shot, crowd on their feet.",
-      "flavor_text": "A grumpy old race car once told him: it's just an empty cup.",
-      "scene_context": "McQueen stops inches from the finish line to push the wrecked King across instead, sacrificing the Piston Cup. The stadium erupts. He loses the race but wins something far more important — becoming the kind of racer Doc Hudson was.",
+      "art_description": "Lightning McQueen in the center of the massive Piston Cup stadium, the roaring crowd a blur of color and light behind him. Dust and tire smoke swirl around him. The stadium lights blaze against a vivid sky. McQueen is pure confidence and raw speed — a rookie who believes he's already the greatest. Epic dramatic low angle. Portrait 5:7 composition.",
+      "flavor_text": "Speed. I am speed.",
+      "scene_context": "The opening of the Piston Cup season. Lightning McQueen — brash, arrogant, and impossibly fast — bursts onto the biggest stage in racing. He doesn't have friends, a crew chief, or even a real sponsor. But he has speed, and in his mind, that's all he needs. The moment that introduces the world to a rookie who will learn the hard way that winning isn't everything.",
       "stats": {
-        "magic_and_mystery": 40,
-        "power_and_action": 60,
-        "mind_and_mischief": 15,
-        "heart_and_soul": 90,
+        "magic_and_mystery": 30,
+        "power_and_action": 90,
+        "mind_and_mischief": 60,
+        "heart_and_soul": 25,
         "luck_and_destiny": 75
       },
       "stat_total": 280
     },
     {
       "id": "pk-001",
-      "title": "Pikachu Refuses the Pokeball",
-      "universe": "Pokemon",
-      "rarity": "standard",
-      "art_description": "Ash holds out a Pokeball on a dirt road outside Pallet Town. Pikachu sits defiantly, turning away with folded arms. Professor Oak's lab visible in the background. Morning light, the beginning of everything. Pikachu's cheeks spark slightly with annoyance.",
-      "flavor_text": "He didn't want a master. He wanted a partner.",
-      "scene_context": "The very first episode. Ash receives Pikachu as his starter Pokemon, but Pikachu refuses to enter the Pokeball. This defiant act establishes the entire series: their bond must be earned, not forced. It's where everything begins.",
+      "title": "Charmander's Flame",
+      "universe": "Pokémon",
+      "rarity": "full_art_rare",
+      "art_description": "A tiny, weak Charmander sits alone on a rock in heavy rain, holding a large leaf over its flickering tail flame. The flame is almost out — barely a faint orange glow. Charmander looks scared and exhausted, eyes closed, rain streaming down its body. Ash kneels beside it, draping his jacket over Charmander to shield the flame, his expression fierce with determination. Dark stormy sky, puddles reflecting the dying ember of the tail. Portrait 5:7 composition.",
+      "flavor_text": "The flame was almost out. Then someone cared.",
+      "scene_context": "Charmander was abandoned by its trainer Damian, who promised to return but never did. It waited loyally on a rock in a rainstorm, its life-sustaining tail flame nearly extinguished. Ash found it, shielded it, and rushed it to safety. Charmander's unwavering loyalty to Ash — and eventually its fiery defiance as Charizard — all traces back to this moment of rescue.",
       "stats": {
         "magic_and_mystery": 80,
-        "power_and_action": 20,
-        "mind_and_mischief": 55,
-        "heart_and_soul": 30,
-        "luck_and_destiny": 65
+        "power_and_action": 25,
+        "mind_and_mischief": 10,
+        "heart_and_soul": 90,
+        "luck_and_destiny": 80
       },
-      "stat_total": 250
+      "stat_total": 285
     },
     {
       "id": "pk-002",
       "title": "Shielding Pikachu",
-      "universe": "Pokemon",
+      "universe": "Pokémon",
       "rarity": "standard",
       "art_description": "A battered Ash stands firm in front of an injured Pikachu, his arms spread wide to shield him from a massive flock of diving Spearows. Heavy rain pours down. A bright lightning strike begins to form above them.",
       "flavor_text": "It took a storm to show what kind of Trainer he truly was.",
-      "scene_context": "Episode 1. Ash sacrifices himself to protect a Pokemon that has treated him with nothing but hostility. This single act of pure selflessness is what finally earns Pikachu's absolute, unwavering loyalty.",
+      "scene_context": "Episode 1. Ash sacrifices himself to protect a Pokémon that has treated him with nothing but hostility. This single act of pure selflessness is what finally earns Pikachu's absolute, unwavering loyalty.",
       "stats": {
         "magic_and_mystery": 35,
         "power_and_action": 60,
@@ -658,11 +659,11 @@
     {
       "id": "pk-003",
       "title": "Team Rocket Blasts Off",
-      "universe": "Pokemon",
+      "universe": "Pokémon",
       "rarity": "standard",
       "art_description": "Jessie, James, and Meowth launched into the sky by a Thunderbolt, their hot air balloon disintegrating around them. They spin into the distance as a star twinkles. Pikachu stands below, cheeks sparking, satisfied. Blue sky, contrail of smoke.",
       "flavor_text": "Looks like Team Rocket's blasting off again!",
-      "scene_context": "The recurring gag that defines Pokemon's humor. Jessie, James, and Meowth's elaborate schemes always end the same way — blasted into the sky by Pikachu's Thunderbolt. Their persistence in failure is both hilarious and oddly admirable.",
+      "scene_context": "The recurring gag that defines Pokémon's humor. Jessie, James, and Meowth's elaborate schemes always end the same way — blasted into the sky by Pikachu's Thunderbolt. Their persistence in failure is both hilarious and oddly admirable.",
       "stats": {
         "magic_and_mystery": 40,
         "power_and_action": 70,
@@ -675,33 +676,33 @@
     {
       "id": "pk-004",
       "title": "Bye Bye Butterfree",
-      "universe": "Pokemon",
-      "rarity": "standard",
-      "art_description": "Ash, teary-eyed but smiling bravely, waves goodbye as his Butterfree flies away into the golden sunset alongside a pink Butterfree. Pikachu stands beside him, looking sad. The cliffs and ocean stretch into the distance.",
+      "universe": "Pokémon",
+      "rarity": "full_art_rare",
+      "art_description": "Ash, teary-eyed but smiling bravely, waves goodbye as his Butterfree flies away into the golden sunset alongside a pink Butterfree. Pikachu stands beside him, looking sad. The cliffs and ocean stretch into the distance. Portrait 5:7 composition.",
       "flavor_text": "\"You take care of her, Butterfree!\"",
-      "scene_context": "The first time Ash releases a Pokemon. It taught an entire generation of kids a profound lesson about love and growing up: sometimes, loving someone means knowing when to let them go.",
+      "scene_context": "The first time Ash releases a Pokémon. It taught an entire generation of kids a profound lesson about love and growing up: sometimes, loving someone means knowing when to let them go.",
       "stats": {
-        "magic_and_mystery": 70,
-        "power_and_action": 15,
-        "mind_and_mischief": 5,
-        "heart_and_soul": 100,
-        "luck_and_destiny": 60
+        "magic_and_mystery": 90,
+        "power_and_action": 25,
+        "mind_and_mischief": 10,
+        "heart_and_soul": 90,
+        "luck_and_destiny": 75
       },
-      "stat_total": 250
+      "stat_total": 290
     },
     {
       "id": "pk-005",
       "title": "Charizard's Seismic Toss",
-      "universe": "Pokemon",
+      "universe": "Pokémon",
       "rarity": "standard",
       "art_description": "Charizard silhouetted against the Earth from high up in the atmosphere, holding Magmar in a tight grip as they plummet downward in a spinning globe of fire. Intense kinetic energy and heat.",
       "flavor_text": "He took the battle to the stratosphere, and brought the heat down with him.",
       "scene_context": "The battle against Blaine. Charizard finally shows his true, terrifying power by carrying Magmar into the upper atmosphere and crashing down in an earth-shattering Seismic Toss. One of the most unforgettable anime battles.",
       "stats": {
-        "magic_and_mystery": 55,
-        "power_and_action": 100,
+        "magic_and_mystery": 60,
+        "power_and_action": 90,
         "mind_and_mischief": 15,
-        "heart_and_soul": 50,
+        "heart_and_soul": 55,
         "luck_and_destiny": 30
       },
       "stat_total": 250
@@ -709,36 +710,36 @@
     {
       "id": "pk-006",
       "title": "Tears of Stone",
-      "universe": "Pokemon",
-      "rarity": "full_art_rare",
-      "art_description": "Pikachu stands on the chest of Ash, turned to stone by crossfire between Mew and Mewtwo. Pikachu's cheeks spark desperately, sending Thunderbolts into Ash's stone form. Nothing works. Tears roll down Pikachu's face. All the Pokemon begin to cry, their tears glowing and floating upward. The stone begins to crack with golden light. Cathedral-like stadium space, deeply emotional.",
+      "universe": "Pokémon",
+      "rarity": "standard",
+      "art_description": "Pikachu stands on the chest of Ash, turned to stone by crossfire between Mew and Mewtwo. Pikachu's cheeks spark desperately, sending Thunderbolts into Ash's stone form. Nothing works. Tears roll down Pikachu's face. All the Pokémon begin to cry, their tears glowing and floating upward. The stone begins to crack with golden light. Cathedral-like stadium space, deeply emotional.",
       "flavor_text": "A desperate spark that faded into tears.",
-      "scene_context": "From Pokemon: The First Movie. Ash is turned to stone by crossfire between Mew and Mewtwo. Pikachu desperately shocks him, then cries. Every Pokemon's tears, carrying pure emotion, bring Ash back to life. The scene that made an entire generation cry in theaters.",
+      "scene_context": "From Pokémon: The First Movie. Ash is turned to stone by crossfire between Mew and Mewtwo. Pikachu desperately shocks him, then cries. Every Pokémon's tears, carrying pure emotion, bring Ash back to life. The scene that made an entire generation cry in theaters.",
       "stats": {
-        "magic_and_mystery": 95,
-        "power_and_action": 30,
-        "mind_and_mischief": 15,
-        "heart_and_soul": 85,
-        "luck_and_destiny": 55
+        "magic_and_mystery": 85,
+        "power_and_action": 25,
+        "mind_and_mischief": 10,
+        "heart_and_soul": 80,
+        "luck_and_destiny": 50
       },
-      "stat_total": 280
+      "stat_total": 250
     },
     {
       "id": "pk-007",
       "title": "The World Champion",
-      "universe": "Pokemon",
-      "rarity": "full_art_rare",
+      "universe": "Pokémon",
+      "rarity": "standard",
       "art_description": "Ash and Pikachu standing in the center of the massive Masters Eight stadium, holding the World Coronation Series trophy high. Confetti rains down. Both are exhausted but beaming with absolute joy.",
       "flavor_text": "The boy from Pallet Town is finally the best.",
       "scene_context": "After decades of journeys, leagues, and near-misses, Ash finally defeats Leon to become the strongest Trainer in the world. A moment that broke the internet and brought tears to fans worldwide.",
       "stats": {
-        "magic_and_mystery": 40,
-        "power_and_action": 90,
-        "mind_and_mischief": 60,
-        "heart_and_soul": 80,
-        "luck_and_destiny": 10
+        "magic_and_mystery": 30,
+        "power_and_action": 85,
+        "mind_and_mischief": 50,
+        "heart_and_soul": 70,
+        "luck_and_destiny": 15
       },
-      "stat_total": 280
+      "stat_total": 250
     },
     {
       "id": "mar-001",
@@ -834,9 +835,9 @@
       "flavor_text": "Born from the same star. Found across a galaxy.",
       "scene_context": "From The Super Mario Galaxy Movie. Peach discovers that Rosalina is her long-lost older sister — both born from stardust. When they touch hands, they can summon the power of the cosmos. Rosalina had sent infant Peach to the Mushroom Kingdom years ago to protect her. The emotional core of the film.",
       "stats": {
-        "magic_and_mystery": 100,
-        "power_and_action": 20,
-        "mind_and_mischief": 5,
+        "magic_and_mystery": 90,
+        "power_and_action": 25,
+        "mind_and_mischief": 10,
         "heart_and_soul": 90,
         "luck_and_destiny": 70
       },
@@ -844,18 +845,18 @@
     },
     {
       "id": "mar-007",
-      "title": "Cosmic Rebirth",
+      "title": "The Axe Bridge",
       "universe": "Mario",
       "rarity": "standard",
-      "art_description": "Peach and Rosalina float above Planet Bowser, hands joined, cosmic energy cascading from their bodies. Below them, the planet transforms — lava cools into green fields, oceans form in craters, mountains rise from ash. Mario, Luigi, and Yoshi watch from a rocky outcrop as life blooms across the surface. Stardust rains down. The moment destruction becomes creation.",
-      "flavor_text": "From the ashes of a fallen world, a new universe has bloomed.",
-      "scene_context": "From The Super Mario Galaxy Movie's climax. After defeating the Bowsers, Peach revives a dying Rosalina. Together the sisters use their combined cosmic power to terraform Planet Bowser into a new living world. Destruction remade into creation — the ultimate expression of the sisters' bond.",
+      "art_description": "Mario sprints across a narrow stone bridge over a sea of bubbling lava in Bowser's castle. Bowser stands at the far end, massive and menacing, flames erupting from his jaws. Mario's hand reaches for the gleaming golden axe at the bridge's edge. The bridge chains are already glowing red-hot. Dark castle walls, fire bars spinning, lava casting an intense orange glow upward across the entire scene.",
+      "flavor_text": "One axe. One bridge. The king falls.",
+      "scene_context": "World 8-4 of Super Mario Bros. The final confrontation. Mario reaches Bowser on the bridge and grabs the axe, severing the chains and dropping the King of Koopas into the lava below. The moment that defined video game boss fights and established the template every game would follow.",
       "stats": {
-        "magic_and_mystery": 90,
-        "power_and_action": 45,
-        "mind_and_mischief": 5,
-        "heart_and_soul": 60,
-        "luck_and_destiny": 50
+        "magic_and_mystery": 50,
+        "power_and_action": 90,
+        "mind_and_mischief": 50,
+        "heart_and_soul": 30,
+        "luck_and_destiny": 30
       },
       "stat_total": 250
     }

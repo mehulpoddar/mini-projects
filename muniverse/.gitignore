@@ -1,2 +1,8 @@
 output/
 .venv/
+assets/art/*.png
+assets/art/*.jpg
+assets/art/*.jpeg
+assets/art/raw/*.png
+assets/art/raw/*.jpg
+assets/art/raw/*.jpeg

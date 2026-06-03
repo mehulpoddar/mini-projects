@@ -10,8 +10,10 @@ Requires: realesrgan-ncnn-vulkan binary in PATH.
   Download from https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/releases
 
 Usage:
-    python scripts/upscale_art.py              # upscale all raw images
-    python scripts/upscale_art.py --ids hp-001  # upscale specific card(s)
+    python scripts/upscale_art.py                        # upscale all raw images (4x)
+    python scripts/upscale_art.py --ids hp-001            # upscale specific card(s)
+    python scripts/upscale_art.py --prefix dc,hp          # only upscale dc-* and hp-* images
+    python scripts/upscale_art.py --skip-prefix dc        # upscale all except dc-* images
 """
 
 import argparse
@@ -29,13 +31,21 @@ ART_DIR = BASE_DIR / "assets" / "art"
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp"}
 
 
-def find_raw_images(ids: list[str] | None = None) -> list[Path]:
-    """Find raw images to upscale, optionally filtered by card IDs."""
+def find_raw_images(
+    ids: list[str] | None = None,
+    prefixes: list[str] | None = None,
+    skip_prefixes: list[str] | None = None,
+) -> list[Path]:
+    """Find raw images to upscale, optionally filtered by card IDs or prefixes."""
     images = []
     for path in sorted(RAW_DIR.iterdir()):
         if path.suffix.lower() not in IMAGE_EXTENSIONS:
             continue
         if ids and path.stem not in ids:
+            continue
+        if prefixes and not any(path.stem.startswith(p) for p in prefixes):
+            continue
+        if skip_prefixes and any(path.stem.startswith(p) for p in skip_prefixes):
             continue
         images.append(path)
     return images
@@ -70,13 +80,21 @@ def run_upscale(binary: str, input_path: Path, output_path: Path) -> bool:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Upscale raw card art with Real-ESRGAN (4x)",
+        description="Upscale raw card art with Real-ESRGAN",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
         "--ids",
         nargs="*",
         help="Card IDs to upscale (default: all images in raw/)",
+    )
+    parser.add_argument(
+        "--prefix",
+        help="Comma-separated prefixes to include (e.g. dc,hp)",
+    )
+    parser.add_argument(
+        "--skip-prefix",
+        help="Comma-separated prefixes to exclude (e.g. dc,hp)",
     )
     args = parser.parse_args()
 
@@ -94,13 +112,15 @@ def main():
         print("Save downloaded art images there before running this script.")
         sys.exit(1)
 
-    images = find_raw_images(args.ids)
+    prefixes = [p.strip() for p in args.prefix.split(",")] if args.prefix else None
+    skip_prefixes = [p.strip() for p in args.skip_prefix.split(",")] if args.skip_prefix else None
+    images = find_raw_images(args.ids, prefixes, skip_prefixes)
 
     if not images:
         print("No images found in raw/ to upscale.")
         return
 
-    print(f"Found {len(images)} image(s) to upscale:\n")
+    print(f"Found {len(images)} image(s) to upscale (4x):\n")
     for img in images:
         w, h = get_dimensions(img)
         print(f"  {img.name}: {w}×{h}px")

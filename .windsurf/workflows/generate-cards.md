@@ -44,6 +44,9 @@ Before generating cards, read `muniverse/README.md` and `muniverse/data/cards.js
 
    **Do NOT compute `stat_total` yourself.** Leave it as 0 — it will be validated and filled by the script in step 3.
 
+   **Universe-specific rules:**
+   - **The Bad Boy's Girl:** Read `muniverse/prompts/bbg-context.md` for Cole and Tessa's physical descriptions. Every BBG card's `art_description` must include brief appearance details for any depicted character (hair color, eye color, build, outfit) drawn from that file, so the AI image generator knows what they look like.
+
    Follow the README's balancing constraints (stat caps, specialist/generalist mix). **Scene-specific scoring is non-negotiable** — every stat must be justified by what actually happens in that specific scene. Never score by universe stereotype or general character traits. Do not artificially adjust stats for deck-wide balance. Present the generated cards to the user for review before proceeding.
 
 3. **Validate stat totals and append to cards.json**

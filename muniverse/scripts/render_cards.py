@@ -166,6 +166,10 @@ def render_cards(card_ids: list[str] | None = None, merge: bool = False, back: b
         else:
             print(f"  No card back found at {CARD_BACK.relative_to(BASE_DIR)} — merging without cover/backs")
         _merge_pdfs(pdf_paths, back_pdf, interleave_backs=back)
+        for p in pdf_paths:
+            p.unlink(missing_ok=True)
+        if back_pdf:
+            back_pdf.unlink(missing_ok=True)
 
     print(f"\nRendered {len(pdf_paths)} card(s) to {OUTPUT_DIR}/")
 

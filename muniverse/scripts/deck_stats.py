@@ -30,9 +30,10 @@ def running_totals(cards):
 
 
 def validate_stat_caps(data):
-    """Check each card's stat_total is within its rarity cap.
-    Returns (ok, errors)."""
+    """Check each card's stat_total is within its rarity cap and
+    no individual stat exceeds max_stat. Returns (ok, errors)."""
     caps = data["stat_caps"]
+    max_stat = data.get("max_stat", 90)
     errors = []
     for card in data["cards"]:
         total = sum(card["stats"][cat] for cat in CATEGORIES)
@@ -43,6 +44,12 @@ def validate_stat_caps(data):
             errors.append(f"{card['id']}: computed={total} != stored={stored}")
         elif total < lo or total > hi:
             errors.append(f"{card['id']}: total={total} out of range {lo}-{hi}")
+        for cat in CATEGORIES:
+            if card["stats"][cat] > max_stat:
+                label = cat.replace('_', ' ').title()
+                errors.append(
+                    f"{card['id']}: {label}={card['stats'][cat]} exceeds max {max_stat}"
+                )
     return len(errors) == 0, errors
 
 
