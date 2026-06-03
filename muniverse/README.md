@@ -61,11 +61,11 @@ Instead of saying "1st, 2nd, 3rd…", call out the opponent's risk level:
 
 | Rank | Callout      |
 |------|--------------|
-| 1st (best) | **Reckless** |
-| 2nd | **Chicken**  |
-| 3rd | **Crafty**   |
-| 4th | **Brave**    |
-| 5th (worst) | **Legend**   |
+| 1st (best) | ***A**mateur*  |
+| 2nd | ***B**asic*    |
+| 3rd | ***C**rafty*   |
+| 4th | ***D**eranged* |
+| 5th (worst) | ***E**pic*     |
 
 ---
 
@@ -86,7 +86,13 @@ Cards should have **2–3 competitive stats** (55–80 range) alongside clear we
 The deck will naturally develop category imbalances from authentic scene-based scoring. This is desirable — it makes certain stats rarer and more strategic. Run `deck_stats.py` after any card changes to review deck-wide averages. If adjustments are needed, make them by adding or swapping scenes — not by tweaking individual card stats.
 
 ### Mix Specialists and Generalists
-Include specialist cards (2–3 spike stats, weak everywhere else) alongside generalist "Jack-of-all-Trades" cards (~40–50 across the board). Generalists are safe defensive plays; specialists are high-risk, high-reward.
+
+Each card is auto-classified by `deck_stats.py` based on thresholds in `cards.json`:
+
+| Profile | Definition | Gameplay Role |
+|---------|-----------|---------------|
+| **Specialist** | ≥2 stats ≥70 AND ≥2 stats ≤30 | High-risk, high-reward — dominant in their spikes, vulnerable everywhere else |
+| **Balanced** | Everything else | Versatile — some strengths but no extreme peaks or valleys |
 
 ### Rarity Distribution
 Target ratio of **~4:1** — roughly 4 Standard cards for every 1 Full Art Rare. Full Art Rares should feel genuinely special and be reserved for the most iconic moments in each universe.

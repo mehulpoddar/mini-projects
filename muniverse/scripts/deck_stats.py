@@ -33,6 +33,7 @@ def validate_stat_caps(data):
     """Check each card's computed stat total is within its rarity cap and
     no individual stat exceeds max_stat. Returns (ok, errors)."""
     caps = data["stat_caps"]
+    min_stat = data.get("min_stat", 5)
     max_stat = data.get("max_stat", 90)
     errors = []
     for card in data["cards"]:
@@ -42,12 +43,28 @@ def validate_stat_caps(data):
         if total < lo or total > hi:
             errors.append(f"{card['id']}: total={total} out of range {lo}-{hi}")
         for cat in CATEGORIES:
-            if card["stats"][cat] > max_stat:
-                label = cat.replace('_', ' ').title()
+            val = card["stats"][cat]
+            label = cat.replace('_', ' ').title()
+            if val < min_stat:
                 errors.append(
-                    f"{card['id']}: {label}={card['stats'][cat]} exceeds max {max_stat}"
+                    f"{card['id']}: {label}={val} below min {min_stat}"
+                )
+            if val > max_stat:
+                errors.append(
+                    f"{card['id']}: {label}={val} exceeds max {max_stat}"
                 )
     return len(errors) == 0, errors
+
+
+def classify_card(card, profiles):
+    """Classify a card as specialist or balanced."""
+    vals = [card["stats"][cat] for cat in CATEGORIES]
+    sp = profiles["specialist"]
+    spikes = sum(1 for v in vals if v >= sp["spike_min"])
+    weaknesses = sum(1 for v in vals if v <= sp["weakness_max"])
+    if spikes >= sp["min_spikes"] and weaknesses >= sp["min_weaknesses"]:
+        return "specialist"
+    return "balanced"
 
 
 def print_deck_stats():
@@ -75,6 +92,20 @@ def print_deck_stats():
     print(f"    {'Grand Total':<22} {grand_total:>7} {grand_total / count:>7.1f}")
 
     print()
+
+    # --- Card profile distribution ---
+    profiles = data.get("card_profiles")
+    if profiles:
+        counts = {"specialist": [], "balanced": []}
+        for card in cards:
+            profile = classify_card(card, profiles)
+            counts[profile].append(card["id"])
+        print("Card profiles:")
+        for ptype in ["specialist", "balanced"]:
+            ids = counts[ptype]
+            pct = len(ids) / count * 100
+            print(f"  {ptype.capitalize():<12} {len(ids):>3} ({pct:.0f}%)")
+        print()
 
     # --- Stat cap check ---
     caps_ok, cap_errors = validate_stat_caps(data)
