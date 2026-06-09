@@ -59,13 +59,13 @@ A mind-game variant where Player B can try to read Player A's strategy:
 
 Instead of saying "1st, 2nd, 3rd…", call out the opponent's risk level:
 
-| Rank | Callout      |
-|------|--------------|
-| 1st (best) | ***A**mateur*  |
-| 2nd | ***B**asic*    |
-| 3rd | ***C**rafty*   |
-| 4th | ***D**eranged* |
-| 5th (worst) | ***E**pic*     |
+| Rank        | Callout        | Meaning                                                |
+|-------------|----------------|--------------------------------------------------------|
+| 1st (best)  | ***A**FK*      | Asleep at the wheel — the safe, default pick           |
+| 2nd         | ***B**ot*      | Predictable, like an algorithm chose for you           |
+| 3rd         | ***C**lockin'* | Putting in real work — a bold, calculated flex         |
+| 4th         | ***D**eranged* | Unhinged and chaotic — terrible odds, full send anyway |
+| 5th (worst) | ***E**instein* | Oh you're a genius! (are you though?)                  |
 
 ---
 

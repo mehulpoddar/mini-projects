@@ -25,6 +25,10 @@ CARD_BACK = ART_DIR / "card-back.png"
 
 ART_EXTENSIONS = [".png", ".jpg", ".jpeg", ".webp"]
 
+# Print resolution: 500 DPI at card size (2.5" × 3.5")
+PRINT_DPI = 500
+MAX_ART_PX = round(3.5 * PRINT_DPI)  # 1750 — longest card edge at target DPI
+
 # Minimum dimensions for print quality (300 DPI at card size)
 MIN_DIMENSIONS = {
     "standard": (1800, 1500),       # 6:5 landscape
@@ -87,7 +91,30 @@ def validate_art(cards: list[dict]) -> bool:
     return True
 
 
-def render_cards(card_ids: list[str] | None = None, merge: bool = False, back: bool = False, skip_validation: bool = False):
+def _prepare_art(art_path: Path) -> Path:
+    """Downsize art for print and save as temp JPEG. Caller must delete the temp file."""
+    with Image.open(art_path) as img:
+        if img.mode == "RGBA":
+            bg = Image.new("RGB", img.size, (0, 0, 0))
+            bg.paste(img, mask=img.split()[3])
+            img = bg
+        elif img.mode != "RGB":
+            img = img.convert("RGB")
+
+        w, h = img.size
+        longest = max(w, h)
+        if longest > MAX_ART_PX:
+            scale = MAX_ART_PX / longest
+            img = img.resize((round(w * scale), round(h * scale)), Image.LANCZOS)
+
+        OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+        tmp_fd, tmp_path = tempfile.mkstemp(suffix=".jpg", dir=str(OUTPUT_DIR))
+        os.close(tmp_fd)
+        img.save(tmp_path, "JPEG", quality=95)
+        return Path(tmp_path)
+
+
+def render_cards(card_ids: list[str] | None = None, merge: bool = False, back_interleaved: bool = False, back_separate: bool = False, skip_validation: bool = False):
     data = load_cards()
     cards = data["cards"]
 
@@ -126,88 +153,105 @@ def render_cards(card_ids: list[str] | None = None, merge: bool = False, back: b
             )
             template = env.get_template(template_name)
             art_path = find_art(card["id"])
-            art_uri = f"file://{art_path.resolve()}"
-            html = template.render(card=card, art_path=art_uri)
-
-            tmp_fd, tmp_path = tempfile.mkstemp(suffix=".html", dir=str(OUTPUT_DIR))
+            prepared_art = _prepare_art(art_path)
             try:
-                with os.fdopen(tmp_fd, "w") as tmp:
-                    tmp.write(html)
+                art_uri = f"file://{prepared_art.resolve()}"
+                html = template.render(card=card, art_path=art_uri)
 
-                page = browser.new_page()
-                page.goto(f"file://{tmp_path}")
-                page.wait_for_load_state("networkidle")
+                tmp_fd, tmp_path = tempfile.mkstemp(suffix=".html", dir=str(OUTPUT_DIR))
+                try:
+                    with os.fdopen(tmp_fd, "w") as tmp:
+                        tmp.write(html)
 
-                pdf_path = OUTPUT_DIR / f"{card['id']}.pdf"
-                page.pdf(
-                    path=str(pdf_path),
-                    width="2.5in",
-                    height="3.5in",
-                    margin={"top": "0", "right": "0", "bottom": "0", "left": "0"},
-                    print_background=True,
-                )
-                page.close()
-                pdf_paths.append(pdf_path)
+                    page = browser.new_page()
+                    page.goto(f"file://{tmp_path}")
+                    page.wait_for_load_state("networkidle")
 
-                print(f"  {card['id']} → {pdf_path.name}")
+                    pdf_path = OUTPUT_DIR / f"{card['id']}.pdf"
+                    page.pdf(
+                        path=str(pdf_path),
+                        width="2.5in",
+                        height="3.5in",
+                        margin={"top": "0", "right": "0", "bottom": "0", "left": "0"},
+                        print_background=True,
+                    )
+                    page.close()
+                    pdf_paths.append(pdf_path)
+
+                    print(f"  {card['id']} → {pdf_path.name}")
+                finally:
+                    os.unlink(tmp_path)
             finally:
-                os.unlink(tmp_path)
+                prepared_art.unlink(missing_ok=True)
 
         browser.close()
 
+    # Render card-back PDF if needed for interleaving or separate output
+    need_back = (merge and len(pdf_paths) > 1) or back_separate
+    back_pdf = None
+    if need_back and CARD_BACK.exists():
+        with sync_playwright() as p2:
+            b2 = p2.chromium.launch()
+            back_pdf = _render_back_pdf(CARD_BACK, b2)
+            b2.close()
+        print(f"  card-back → {back_pdf.name}")
+    elif need_back:
+        print(f"  No card back found at {CARD_BACK.relative_to(BASE_DIR)}")
+
     if merge and len(pdf_paths) > 1:
-        back_pdf = None
-        if CARD_BACK.exists():
-            with sync_playwright() as p2:
-                b2 = p2.chromium.launch()
-                back_pdf = _render_back_pdf(CARD_BACK, b2)
-                b2.close()
-            print(f"  card-back → {back_pdf.name}")
-        else:
-            print(f"  No card back found at {CARD_BACK.relative_to(BASE_DIR)} — merging without cover/backs")
-        _merge_pdfs(pdf_paths, back_pdf, interleave_backs=back)
+        # When --back-separate is used (without --back-interleaved), don't include back in merged PDF
+        merge_back = back_pdf if not (back_separate and not back_interleaved) else None
+        _merge_pdfs(pdf_paths, merge_back, interleave_backs=back_interleaved)
         for p in pdf_paths:
             p.unlink(missing_ok=True)
-        if back_pdf:
+        # Only delete back_pdf if it was merged in (not kept separate)
+        if back_pdf and not back_separate:
             back_pdf.unlink(missing_ok=True)
+
+    if back_separate and back_pdf:
+        print(f"  Card back saved separately → {back_pdf.name}")
 
     print(f"\nRendered {len(pdf_paths)} card(s) to {OUTPUT_DIR}/")
 
 
 def _render_back_pdf(back_image: Path, browser) -> Path:
     """Render the card back image as a single-page PDF."""
-    art_uri = f"file://{back_image.resolve()}"
-    html = f"""<!DOCTYPE html>
+    prepared = _prepare_art(back_image)
+    try:
+        art_uri = f"file://{prepared.resolve()}"
+        html = f"""<!DOCTYPE html>
 <html><head><style>
   * {{ margin: 0; padding: 0; }}
-  html, body {{ width: 2.5in; height: 3.5in; overflow: hidden; }}
-  img {{ width: 100%; height: 100%; object-fit: cover; }}
+  html, body {{ width: 2.5in; height: 3.5in; overflow: hidden; background: black; display: flex; align-items: center; justify-content: center; }}
+  img {{ width: 102%; height: 102%; object-fit: cover; display: block; }}
   @page {{ size: 2.5in 3.5in; margin: 0; }}
 </style></head>
 <body><img src="{art_uri}"></body></html>"""
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    tmp_fd, tmp_path = tempfile.mkstemp(suffix=".html", dir=str(OUTPUT_DIR))
-    try:
-        with os.fdopen(tmp_fd, "w") as tmp:
-            tmp.write(html)
+        OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+        tmp_fd, tmp_path = tempfile.mkstemp(suffix=".html", dir=str(OUTPUT_DIR))
+        try:
+            with os.fdopen(tmp_fd, "w") as tmp:
+                tmp.write(html)
 
-        page = browser.new_page()
-        page.goto(f"file://{tmp_path}")
-        page.wait_for_load_state("networkidle")
+            page = browser.new_page()
+            page.goto(f"file://{tmp_path}")
+            page.wait_for_load_state("networkidle")
 
-        pdf_path = OUTPUT_DIR / "card-back.pdf"
-        page.pdf(
-            path=str(pdf_path),
-            width="2.5in",
-            height="3.5in",
-            margin={"top": "0", "right": "0", "bottom": "0", "left": "0"},
-            print_background=True,
-        )
-        page.close()
-        return pdf_path
+            pdf_path = OUTPUT_DIR / "card-back.pdf"
+            page.pdf(
+                path=str(pdf_path),
+                width="2.5in",
+                height="3.5in",
+                margin={"top": "0", "right": "0", "bottom": "0", "left": "0"},
+                print_background=True,
+            )
+            page.close()
+            return pdf_path
+        finally:
+            os.unlink(tmp_path)
     finally:
-        os.unlink(tmp_path)
+        prepared.unlink(missing_ok=True)
 
 
 def _merge_pdfs(pdf_paths: list[Path], back_pdf: Path | None = None, interleave_backs: bool = False):
@@ -255,8 +299,9 @@ def main():
         epilog="Examples:\n"
                "  python render_cards.py                  # all cards → individual PDFs\n"
                "  python render_cards.py hp-001 sc-003    # specific cards only\n"
-               "  python render_cards.py --merge          # all cards + merged deck PDF (card-back as cover)\n"
-               "  python render_cards.py --merge --back    # merged PDF with card-back interleaved for double-sided printing",
+               "  python render_cards.py --merge                   # all cards + merged deck PDF\n"
+               "  python render_cards.py --merge --back-interleaved # merged PDF with card-back interleaved for double-sided printing\n"
+               "  python render_cards.py --back-separate            # all cards + separate card-back.pdf",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
@@ -267,12 +312,17 @@ def main():
     parser.add_argument(
         "--merge",
         action="store_true",
-        help="Merge all rendered cards into muniverse-deck.pdf (card-back as cover page)",
+        help="Merge all rendered cards into muniverse-deck.pdf",
     )
     parser.add_argument(
-        "--back",
+        "--back-interleaved",
         action="store_true",
         help="Interleave card-back after every front page in merged PDF (requires --merge)",
+    )
+    parser.add_argument(
+        "--back-separate",
+        action="store_true",
+        help="Render card-back as a separate PDF (not included in merged deck)",
     )
     parser.add_argument(
         "--skip-validation",
@@ -280,9 +330,9 @@ def main():
         help="Skip art presence and dimension checks",
     )
     args = parser.parse_args()
-    if args.back and not args.merge:
-        parser.error("--back requires --merge")
-    render_cards(args.ids if args.ids else None, merge=args.merge, back=args.back, skip_validation=args.skip_validation)
+    if args.back_interleaved and not args.merge:
+        parser.error("--back-interleaved requires --merge")
+    render_cards(args.ids if args.ids else None, merge=args.merge, back_interleaved=args.back_interleaved, back_separate=args.back_separate, skip_validation=args.skip_validation)
     print("\n" + "=" * 42)
     print("DECK BALANCE REPORT")
     print("=" * 42)
