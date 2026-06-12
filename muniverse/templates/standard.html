@@ -34,7 +34,7 @@
   .card-inner {
     width: 100%;
     height: 100%;
-    border-radius: 0;
+    border-radius: 55px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@
 
   .card-title {
     font-family: 'Cinzel', serif;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
     color: #1a1a1a;
     flex: 1;
@@ -64,7 +64,7 @@
 
   .card-universe {
     font-family: 'Lora', serif;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     color: #5a5a5a;
     background: rgba(0,0,0,0.06);
@@ -110,10 +110,13 @@
   .card-flavor {
     padding: 10px 26px;
     font-style: italic;
-    font-size: 18px;
-    color: #4a4a4a;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.45;
+    letter-spacing: 0.2px;
+    background: none;
   }
 
   /* --- Stats --- */
@@ -129,25 +132,27 @@
   .stat-row {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 14px;
   }
 
   .stat-label {
-    font-size: 15px;
-    font-weight: 600;
-    color: #3a3a3a;
-    width: 170px;
+    font-size: 19px;
+    font-weight: 700;
+    color: #2a2a2a;
+    width: 200px;
     flex-shrink: 0;
     text-transform: uppercase;
-    letter-spacing: 0.6px;
+    letter-spacing: 1px;
     white-space: nowrap;
+    line-height: 1;
+    background: none;
   }
 
   .stat-bar-track {
     flex: 1;
-    height: 10px;
+    height: 14px;
     background: #dddcd4;
-    border-radius: 5px;
+    border-radius: 7px;
     overflow: hidden;
     border: 1px solid #c8c7c0;
   }
@@ -158,12 +163,14 @@
   }
 
   .stat-value {
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 700;
     color: #2a2a2a;
-    width: 30px;
+    width: 42px;
     text-align: right;
     font-family: 'Cinzel', serif;
+    line-height: 1;
+    background: none;
   }
 
   .stat-magic .stat-bar-fill  { background: linear-gradient(90deg, #6d28d9, #a78bfa); }
@@ -183,13 +190,13 @@
 
   .card-total {
     font-family: 'Cinzel', serif;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
     color: #3a3a3a;
   }
 
   .card-rarity {
-    font-size: 15px;
+    font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: #7a7a7a;

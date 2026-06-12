@@ -102,7 +102,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 24px;
+    padding: 35px;
     z-index: 2;
   }
 
@@ -127,7 +127,7 @@
   /* --- Title --- */
   .card-title {
     font-family: 'Cinzel', serif;
-    font-size: 26px;
+    font-size: 32px;
     font-weight: 900;
     color: #ffd700;
     text-shadow: 0 2px 12px rgba(0,0,0,0.8), 0 0 30px rgba(0,0,0,0.6), 0 0 20px rgba(255,215,0,0.15);
@@ -137,15 +137,19 @@
   /* --- Flavor Text --- */
   .card-flavor {
     font-style: italic;
-    font-size: 18px;
-    color: rgba(255,255,255,0.85);
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.95);
     line-height: 1.4;
+    letter-spacing: 0.2px;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.6);
+    background: none;
   }
 
   /* --- Universe Badge --- */
   .card-universe {
     font-family: 'Lora', serif;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     color: rgba(255,255,255,0.85);
     background: rgba(255,255,255,0.12);
@@ -177,25 +181,27 @@
   .stat-row {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 14px;
   }
 
   .stat-label {
-    font-size: 15px;
-    font-weight: 600;
-    color: rgba(255,255,255,0.7);
-    width: 170px;
+    font-size: 19px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.9);
+    width: 200px;
     flex-shrink: 0;
     text-transform: uppercase;
-    letter-spacing: 0.6px;
+    letter-spacing: 1px;
     white-space: nowrap;
+    line-height: 1;
+    background: none;
   }
 
   .stat-bar-track {
     flex: 1;
-    height: 10px;
+    height: 14px;
     background: rgba(255,255,255,0.08);
-    border-radius: 5px;
+    border-radius: 7px;
     overflow: hidden;
   }
 
@@ -207,12 +213,14 @@
 
   .stat-value {
     font-family: 'Cinzel', serif;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 700;
-    color: rgba(255,255,255,0.9);
-    width: 30px;
+    color: rgba(255,255,255,0.95);
+    width: 42px;
     text-align: right;
     flex-shrink: 0;
+    line-height: 1;
+    background: none;
   }
 
   .stat-magic .stat-bar-fill  { background: linear-gradient(90deg, #7c3aed, #c4b5fd); }
@@ -231,19 +239,19 @@
 
   .card-total {
     font-family: 'Cinzel', serif;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
     color: #ffd700;
-    background: transparent;
+    background: none;
   }
 
   .card-rarity {
-    font-size: 15px;
+    font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: rgba(255,215,0,0.8);
     font-weight: 700;
-    background: transparent;
+    background: none;
   }
 
   /* --- Print (2.5" × 3.5" at 300 DPI = 750×1050px) --- */

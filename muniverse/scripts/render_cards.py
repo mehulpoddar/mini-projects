@@ -25,9 +25,9 @@ CARD_BACK = ART_DIR / "card-back.png"
 
 ART_EXTENSIONS = [".png", ".jpg", ".jpeg", ".webp"]
 
-# Print resolution: 500 DPI at card size (2.5" × 3.5")
-PRINT_DPI = 500
-MAX_ART_PX = round(3.5 * PRINT_DPI)  # 1750 — longest card edge at target DPI
+# Print resolution: for card size (2.5" × 3.5")
+PRINT_DPI = 400
+MAX_ART_PX = round(3.5 * PRINT_DPI)  # longest card edge at target DPI
 
 # Minimum dimensions for print quality (300 DPI at card size)
 MIN_DIMENSIONS = {
@@ -92,7 +92,7 @@ def validate_art(cards: list[dict]) -> bool:
 
 
 def _prepare_art(art_path: Path) -> Path:
-    """Downsize art for print and save as temp JPEG. Caller must delete the temp file."""
+    """Downsize art for print and save as temp PNG. Caller must delete the temp file."""
     with Image.open(art_path) as img:
         if img.mode == "RGBA":
             bg = Image.new("RGB", img.size, (0, 0, 0))
@@ -108,9 +108,9 @@ def _prepare_art(art_path: Path) -> Path:
             img = img.resize((round(w * scale), round(h * scale)), Image.LANCZOS)
 
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-        tmp_fd, tmp_path = tempfile.mkstemp(suffix=".jpg", dir=str(OUTPUT_DIR))
+        tmp_fd, tmp_path = tempfile.mkstemp(suffix=".png", dir=str(OUTPUT_DIR))
         os.close(tmp_fd)
-        img.save(tmp_path, "JPEG", quality=95)
+        img.save(tmp_path, "PNG")
         return Path(tmp_path)
 
 
@@ -223,7 +223,7 @@ def _render_back_pdf(back_image: Path, browser) -> Path:
 <html><head><style>
   * {{ margin: 0; padding: 0; }}
   html, body {{ width: 2.5in; height: 3.5in; overflow: hidden; background: black; display: flex; align-items: center; justify-content: center; }}
-  img {{ width: 102%; height: 102%; object-fit: cover; display: block; }}
+  img {{ width: calc(100% - 8mm); height: calc(100% - 8mm); object-fit: cover; display: block; }}
   @page {{ size: 2.5in 3.5in; margin: 0; }}
 </style></head>
 <body><img src="{art_uri}"></body></html>"""
